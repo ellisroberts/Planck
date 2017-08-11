@@ -1,4 +1,4 @@
-from keras.applications.vgg16 import VGG16, preprocess_input, decode_predictions
+from keras.applications.vgg19 import VGG19, preprocess_input, decode_predictions
 from keras.preprocessing import image
 from keras.layers.core import Lambda
 from keras.models import Sequential
@@ -9,6 +9,9 @@ import numpy as np
 import keras
 import sys
 import cv2
+
+# python3 grad-cam.py --path-to-img
+final_conv_layer_name = 'block5_conv4' # use block5_conv3 for VGG16
 
 def target_category_loss(x, category_index, nb_classes):
     return tf.multiply(x, K.one_hot([category_index], nb_classes))
@@ -36,7 +39,7 @@ def register_gradient():
             return grad * tf.cast(grad > 0., dtype) * \
                 tf.cast(op.inputs[0] > 0., dtype)
 
-def compile_saliency_function(model, activation_layer='block5_conv3'):
+def compile_saliency_function(model, activation_layer=final_conv_layer_name):
     input_img = model.input
     layer_dict = dict([(layer.name, layer) for layer in model.layers[1:]])
     layer_output = layer_dict[activation_layer].output
@@ -58,7 +61,7 @@ def modify_backprop(model, name):
                 layer.activation = tf.nn.relu
 
         # re-instanciate a new model
-        new_model = VGG16(weights='imagenet')
+        new_model = VGG19(weights='imagenet')
     return new_model
 
 def deprocess_image(x):
@@ -123,7 +126,7 @@ def grad_cam(input_model, image, category_index, layer_name):
 
 preprocessed_input = load_image(sys.argv[1])
 
-model = VGG16(weights='imagenet')
+model = VGG19(weights='imagenet')
 
 predictions = model.predict(preprocessed_input)
 top_1 = decode_predictions(predictions)[0][0]
@@ -131,7 +134,7 @@ print('Predicted class:')
 print('%s (%s) with probability %.2f' % (top_1[1], top_1[0], top_1[2]))
 
 predicted_class = np.argmax(predictions)
-cam, heatmap = grad_cam(model, preprocessed_input, predicted_class, "block5_conv3")
+cam, heatmap = grad_cam(model, preprocessed_input, predicted_class, final_conv_layer_name)
 cv2.imwrite("gradcam.jpg", cam)
 
 register_gradient()
