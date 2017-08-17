@@ -10,7 +10,7 @@ import keras
 import sys
 import cv2
 
-# python3 grad-cam.py --path-to-img
+# python3 grad-cam.py path-to-img
 final_conv_layer_name = 'block5_conv4' # use block5_conv3 for VGG16
 
 def target_category_loss(x, category_index, nb_classes):
@@ -32,6 +32,8 @@ def load_image(path):
     return x
 
 def register_gradient():
+    # guided backpropagation, as described in Springenberg et al. 2015
+    # simply sets grad = 0 at the indices where grad <= 0 or inputs <= 0
     if "GuidedBackProp" not in ops._gradient_registry._registry:
         @ops.RegisterGradient("GuidedBackProp")
         def _GuidedBackProp(op, grad):
@@ -43,9 +45,9 @@ def compile_saliency_function(model, activation_layer=final_conv_layer_name):
     input_img = model.input
     layer_dict = dict([(layer.name, layer) for layer in model.layers[1:]])
     layer_output = layer_dict[activation_layer].output
-    max_output = K.max(layer_output, axis=3)
-    saliency = K.gradients(K.sum(max_output), input_img)[0]
-    return K.function([input_img, K.learning_phase()], [saliency])
+    max_output = K.max(layer_output, axis=3) # max along feature channel axis?
+    saliency = K.gradients(K.sum(max_output), input_img)[0] # K.gradients is an auto-differentiator?
+    return K.function([input_img, K.learning_phase()], [saliency]) # K.learning_phase is ?
 
 def modify_backprop(model, name):
     g = tf.get_default_graph()
@@ -60,7 +62,7 @@ def modify_backprop(model, name):
             if layer.activation == keras.activations.relu:
                 layer.activation = tf.nn.relu
 
-        # re-instanciate a new model
+        # re-instantiate a new model
         new_model = VGG19(weights='imagenet')
     return new_model
 
@@ -124,22 +126,25 @@ def grad_cam(input_model, image, category_index, layer_name):
     cam = 255 * cam / np.max(cam)
     return np.uint8(cam), heatmap
 
-preprocessed_input = load_image(sys.argv[1])
+if __name__=="__main__":
 
-model = VGG19(weights='imagenet')
+    preprocessed_input = load_image(sys.argv[1])
+    model = VGG19(weights='imagenet')
+    print(model.summary())
 
-predictions = model.predict(preprocessed_input)
-top_1 = decode_predictions(predictions)[0][0]
-print('Predicted class:')
-print('%s (%s) with probability %.2f' % (top_1[1], top_1[0], top_1[2]))
+    predictions = model.predict(preprocessed_input)
+    print(predictions)
+    top_1 = decode_predictions(predictions)[0][0]
+    print('Predicted class:')
+    print('%s (%s) with probability %.2f' % (top_1[1], top_1[0], top_1[2]))
 
-predicted_class = np.argmax(predictions)
-cam, heatmap = grad_cam(model, preprocessed_input, predicted_class, final_conv_layer_name)
-cv2.imwrite("gradcam.jpg", cam)
+    '''predicted_class = np.argmax(predictions)
+    cam, heatmap = grad_cam(model, preprocessed_input, predicted_class, final_conv_layer_name)
+    cv2.imwrite("gradcam.jpg", cam)
 
-register_gradient()
-guided_model = modify_backprop(model, 'GuidedBackProp')
-saliency_fn = compile_saliency_function(guided_model)
-saliency = saliency_fn([preprocessed_input, 0])
-gradcam = saliency[0] * heatmap[..., np.newaxis]
-cv2.imwrite("guided_gradcam.jpg", deprocess_image(gradcam))
+    register_gradient()
+    guided_model = modify_backprop(model, 'GuidedBackProp')
+    saliency_fn = compile_saliency_function(guided_model)
+    saliency = saliency_fn([preprocessed_input, 0])
+    gradcam = saliency[0] * heatmap[..., np.newaxis]
+    cv2.imwrite("guided_gradcam.jpg", deprocess_image(gradcam))'''
