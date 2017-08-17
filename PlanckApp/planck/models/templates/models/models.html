@@ -1,0 +1,12 @@
+<h1>Classifer</h1>
+
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+<form action="{% url 'models:classify'%}" method="post">
+{% csrf_token %}
+<input type="text" name="model" id="model" />
+<label for="Updload Intermediate Model"> Upload Intermediate Model </label><br></br>
+<input type="text" name="image" id="image" />
+<label for="Updload Image"> Upload Image to Classify </label><br></br>
+<input type="submit" value="OK">
+</form>
