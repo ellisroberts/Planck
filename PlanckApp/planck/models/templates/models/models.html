@@ -2,11 +2,14 @@
 
 {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
 
-<form action="{% url 'models:classify'%}" method="post">
+<form  method="post" enctype="multipart/form-data">
 {% csrf_token %}
-<input type="text" name="model" id="model" />
-<label for="Updload Intermediate Model"> Upload Intermediate Model </label><br></br>
-<input type="text" name="image" id="image" />
-<label for="Updload Image"> Upload Image to Classify </label><br></br>
+<input type="text" name="cnn" id="cnn" />
+<label for="Updload network"> Upload Neural Network </label><br></br>
+<input type="text" name="weights" id="weights" />
+<label for="Updload Image"> Upload Filters </label><br></br>
+<input type="text" name="numResults", id="numResults" />
+<label for="Set Number of Results to Display"> How Many Top Results to Display </label><br></br>
+{{form}}
 <input type="submit" value="OK">
 </form>

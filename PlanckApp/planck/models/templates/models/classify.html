@@ -1,0 +1,17 @@
+<h1>Classifier Results</h1>
+
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+<ul>
+{% for result in image.result_set_all() }
+<li> Output is {{result.output}} </li><br></br>
+<li> Probability is {{result.probability}} </li><br></br>
+<li> Result is {{result.result}} </li><br></br>
+</ul>
+
+<form action="{% url 'models:train'%}" method="post">
+{% csrf_token %}
+<input type="text", value="checker" id="checker">
+<label for="Is Correct"> Is Result Expected? </label> 
+<input type="submit" value="OK">
+</form>
