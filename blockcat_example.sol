@@ -82,7 +82,6 @@ contract BasicToken is ERC20Basic {
   using SafeMath for uint;
 
   mapping(address => uint) balances;
-
   /**
    * @dev Fix for the ERC20 short address attack.
    */
