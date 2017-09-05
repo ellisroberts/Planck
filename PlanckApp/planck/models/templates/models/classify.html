@@ -3,10 +3,12 @@
 {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
 
 <ul>
-{% for result in image.result_set_all() }
-<li> Output is {{result.output}} </li><br></br>
-<li> Probability is {{result.probability}} </li><br></br>
-<li> Result is {{result.result}} </li><br></br>
+{% for result in image.result_set.all %}
+<h2> RESULT {{result.instance}} </h2><br></br>    
+    <li> Output is {{result.output}} </li><br></br>
+    <li> Probability is {{result.probability}} </li><br></br>
+    <li> Result is {{result.result}} </li><br></br>
+{% endfor %}
 </ul>
 
 <form action="{% url 'models:train'%}" method="post">

@@ -133,7 +133,6 @@ def returnPredictions(image, inputWeights, cnn, numResults):
     predictions = model.predict(preprocessed_input)
     return decode_predictions(predictions, top=numResults)[0];
 
-    predictions = model.predict(preprocessed_input)
 if __name__=="__main__":
 
     preprocessed_input = load_image(sys.argv[1])
