@@ -35,38 +35,53 @@
 \tableofcontents
 
 \section{Mission Statement}
-As more facets of everyday life become governed by AI, it is incumbent upon both end users and machine learning engineers to insist that such systems be capable of not only making correct autonomous decisions, but also \emph{justifying} them.  Planck is a decentralized deep learning visual collaboration platform that empowers a democratic user base to enforce appropriate, human-interpretable justifications on prospective machine learning models.  In doing so, we build the necessary trust to accelerate their adoption in critical-use cases across industry verticals.
+As more facets of everyday life become governed by AI, it is incumbent upon consumers, engineers, and researchers to insist that such systems be capable of not only making correct decisions, but also \emph{justifying} them.
+
+The automated institutions of the future will wield the social and political power currently held by a handful of humans who are, at least in principle in Western democracies, ultimately accountable to the citizens or shareholders they govern.  Decentralized transparency into the inner workings of these institutions is necessary for the continuation of the accountability and avenues of recourse that underlie equitable, just, and prosperous societies.
+
+Planck.ai empowers its democratic user base to enforce human-interpretable justifications on prospective machine learning models.  Our decentralized deep learning visual collaboration platform builds the necessary trust with key stakeholders to accelerate AI adoption in critical-use cases across industry verticals.
 
 \section{Background}
-In the past decade, deep learning has shattered benchmarks firmly out of reach to previous machine learning methods in fields as diverse as image recognition to natural language processing.  The rapid pace of innovation in these areas suggests that the greatest barriers to their commercial adoption will soon not only be technical, but also sociological.
+In the past decade, advances in deep learning have shattered machine learning benchmarks firmly out of reach of previous state-of-the-art algorithms, in diverse fields ranging from image recognition to natural language processing.  The rapid pace of innovation in these areas suggests that the greatest barriers to their commercial adoption will soon not only be technical, but also sociological.
 
-Do I understand the assumptions and rationale behind your predictions?  Where should I expect your knowledge to be strongest and weakest?  Why should I trust you?  These are all reasonable questions a human being is capable of answering to varying degrees of satisfaction, yet the very complexity underlying the power of deep neural networks makes these types of justifications highly nontrivial.  
+Beginning in their first math class, schoolchildren are indoctrinated to \emph{show their work}.  The pedagogical benefits are obvious - it is difficult to imagine how one could learn anything beyond rudimentary arithmetic if given only a set of question-and-answer pairs.  Partial credit incentivizes partial progress, because the final answer to a particular question is secondary to the correct application of the underlying principles.  It is not enough to memorize the textbook example questions; one must be able to generalize to new, unseen examples.  It is not enough to know how wrong one's final answer is; one must also know \emph{where} the error was made.
 
-In parallel with machine learning advances, the past decade has also upended paradigms of electronic payment via the proliferation of cryptocurrencies -  digital assets that leverage cryptographic protocols to secure a distributed public ledger of transactions - the blockchain.  Bitcoin (BTC), the market capitalization leader as of 2017 ($\sim$70B USD), pioneered the concept of storing digital assets on a network of miners - computational nodes that preserve the integrity of the ledger by verifying existing and broadcasting new transactions into the network.  Miners are incentivized by BTC block rewards, distributed approximately according to the computational work done.  In 2014, Ethereum (ETH) unified a fractured ecosystem of distributed applications by introducing \emph{smart contract} functionality to the blockchain, allowing parties to enter into binding contracts whose internal logic is visible and verifiable between them.
+In practice, machine learning can be simplistically defined as function approximation via optimization of a specific loss function over a dataset.   
 
-Planck (PLK) builds on top of the Ethereum platform by providing a UI on which individual contributors are immediately compensated for improving the state-of-the-art deep neural networks by gathering and labeling data from the wild, and auditing model predictions.
+Do I understand and accept the assumptions and rationale behind your predictions?  Where should I expect your knowledge to be strongest and weakest?  Why should I trust you?  These are all reasonable questions a human being is capable of answering to varying degrees of satisfaction, yet the very complexity underlying the power of deep neural networks makes generating these justifications nontrivial.  
 
+In parallel, the past decade has also upended paradigms of electronic payment via the proliferation of cryptocurrencies -  digital assets that leverage cryptographic protocols to secure a distributed public ledger of transactions - the blockchain.  Bitcoin (BTC), the market capitalization leader as of 2017 ($\sim$70B USD), pioneered the concept of storing digital assets on a network of miners - computational nodes that preserve the integrity of the system by verifying existing transactions and broadcasting new transactions into the network.  Miners are incentivized by BTC block rewards, distributed approximately proportionally to the computational work done.
+
+In 2014, Ethereum (ETH) unified a fractured ecosystem of distributed applications by introducing \emph{smart contract} functionality to the blockchain, allowing parties to enter into binding contracts whose internal logic is visible and verifiable.  Planck (PLK) builds on top of the Ethereum platform by providing a UI on which individual contributors are immediately compensated for improving the state-of-the-art deep neural networks by gathering and labeling data from the wild, and auditing model predictions.
 
 \section{Applications}
 \subsection{Employment in the Post-AI Economy}
+
 One of the central tenets of deep learning is end-to-end feature extraction, but there is no intrinsic guarantee that these features learned on a training set \emph{in the lab} reflect those required for business objectives \emph{in the wild}.  Symptoms of this misalignment include catastrophic predictions on small perturbations of image inputs (adversarial example ref) and 
 
-Whereas the industrial revolution created new wealth by leveraging advancements in mechanical and chemical engineering to multiply the productivity of manual labor, the AI revolution creates new wealth by leveraging advancements in data ubiquity, machine learning algorithms, and parallelized hardware.
+Whereas the industrial revolution created new wealth by leveraging advancements in mechanical and chemical engineering to multiply the productivity of manual labor, the AI revolution creates new wealth by leveraging advancements in data ubiquity, machine learning algorithms, and parallelized hardware to multiply the productivity of \emph{intellectual labor}.
 
 \subsection{An Interface to Empower the Citizen Data Scientist}
 
-
 \subsection{Auditing-As-A-Service on the Blockchain}
-One application of crowdsourcing that has really taken off in some segments of the machine learning communityis the use of crowdsourcing to evaluate learned models. This is especially useful for unsupervisedmodels for which there is no objective notion of ground truth.As an example, consider topic models. A topic model discovers thematic topics from a set of documents,for instance, New York Times articles from the past year. In this context, a topic is a distribution over wordsin a vocabulary. Every word in the vocabulary occurs in every topic, but with a different probability orweight. For example, a topic model might learn a food topic that places high weight on cheese, kale,and bread, or a politics topic that places high weight on election, senate, and bill.Topic models are often used for data exploration and summarization. In order to be useful in these contexts,the learned model should be human-interpretable in the sense that the topics it discovers should make senseto people. However, human interpretability is hard to quantify, and as a result, topic models are oftenevaluated based on other criteria such as predictive power.
+
+\subsection{Liquidity for Data-As-A-Commodity}
 
 \subsection{Counterparty Risk Elimination}
 
 \section{Technologies}
 
 \subsection{Interpretable Deep Learning}
-The greater the stakes of a decision, the greater the importance of the rationale behind it.  The rapid pace of progress on various benchmarks in the machine learning research community suggests, Black-box models eventually reach a sociological barrier to adoption rather than a technical one.  Studies in this area (refs here) unsurprisingly show that systems that provide justifications behind correct decisions to human users are more likely to be trusted.  Take for example image segmentation models, which must balance two intertwined criteria: \emph{class discrimination} and \emph{accuracy}.
+The greater the stakes of a decision, the greater the importance of the rationale behind it.  The rapid pace of progress on various benchmarks in the machine learning research community suggests, Black-box models eventually reach a sociological barrier to adoption rather than a technical one.  Studies in this area (refs here) unsurprisingly show that systems providing justifications behind correct decisions to human users are more likely to be trusted to those that are only simply correct.  Take for example image segmentation models, which must balance two intertwined criteria: \emph{class discrimination} and \emph{accuracy}.
 
 In 2016, the General Data Protection Regulation was passed by the European Parliament, one of the legislative bodies of the European Union.  The act reaffirmed the directives of its predecessor, the Data Protection Directive, by specifying:
+
+\begin{enumerate}
+\item{It is well known that popular convolutional neural network architectures do not generalize well on images far from their training distributions.  They are almost universally highly susceptible to adversarial attacks - even small, pathological perturbations from canonical inputs can lead to wildly divergent, high-confidence predictions.  
+
+Insight from the network's human-interpretable justification of erroneous predictions can allow non-experts to meaningfully contribute to }
+\item{Whereas a core value proposition of blockchain technology is its trust-free nature, }
+\end{enumerate}
 
 \begin{enumerate}
 \item{Right to Explanation: usual regression and classification algorithms are fundamentally function approximators that minimize prediction error on a unseen test set, with no intrinsic constraint on causality.  }
@@ -74,10 +89,18 @@ In 2016, the General Data Protection Regulation was passed by the European Parli
 
 \subsection{Interactive Semantic Segmentation}
 
-
+\section{Alpha Release}
+The initial release of the Planck platform is a proof-of-concept demonstrating several core features, allowing users to:
+\begin{itemize}
+\item{visualize salient regions in image classification, image captioning, and visual question answering (VQA) tasks.}
+\item{update the weights of convolutional neural networks pre-trained on ImageNet, after contributing new data \& labels or correcting incorrect predictions on existing data.}
+\item{share datasets, neural network architectures, \& corresponding weights with other contributors}
+\item{identify systematic biases in models by inspecting a visualization of the topological structure of a low-dimensional (i.e. t-SNE) embedding of its performance on a test dataset.}
+\end{itemize}
 
 \section{Crowdsale}
-Planck (PLK) is a utility token that incentivizes contributors on the Planck platform to gather data, provide labels, audit predictions, and improve models.  A PLK buyback structure allows users to seamlessly reserve GPU cloud infrastructure for interactive neural network training and inference.
+Planck (PLK) is a utility token that incentivizes contributors on the Planck platform to gather data, provide labels, audit predictions, and improve models.  A PLK buyback structure allows users to seamlessly reserve GPU infrastructure for interactive neural network training and inference.
+
 
 The immutable total supply of 1,000,000,000 PLK will be distributed in the following manner:
 \begin{itemize}
@@ -96,18 +119,9 @@ The immutable total supply of 1,000,000,000 PLK will be distributed in the follo
 \section{Roadmap}
 
 \section{Legal}
+In \emph{Securities and Exchange Commission v. W. J. Howey Co.}, 328 U.S. 293 (1946), Justice Murphy of Supreme Court of the United States formulated the so-called \emph{Howey test} to determine whether a particular contract qualifies as an "investment contract" under the \emph{Securities Act of 1933} 15 U.S.C. : 77b.  PLK tokens do \emph{not} qualify as such because they are utility tokens that allow 
 
 \section{References}
-
-\section{Alpha Release}
-The alpha release demonstrates the 
-
-\begin{enumerate}
-\item{It is well known that popular convolutional neural network architectures do not generalize well on images far from their training distributions.  They are almost universally highly susceptible to adversarial attacks - even small, pathological perturbations from canonical inputs can lead to wildly divergent, high-confidence predictions.  
-
-Insight from the network's human-interpretable justification of erroneous predictions can allow non-experts to meaningfully contribute to }
-\item{Whereas a core value proposition of blockchain technology is its trust-free nature, }
-\end{enumerate}
 
 \section{Why This Name?}
 Planck.ai quantizes ``making the world a better place" into a series of singular, indivisible contributions.
