@@ -8,7 +8,7 @@ import tensorflow as tf
 import numpy as np
 import keras
 import sys
-import opencv as cv2
+import cv2
 
 # python3 grad-cam.py path-to-img
 final_conv_layer_name = 'block5_conv4' # use block5_conv3 for VGG16

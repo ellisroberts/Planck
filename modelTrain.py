@@ -8,7 +8,7 @@ import tensorflow as tf
 import numpy as np
 import keras
 import sys
-import opencv as cv2
+import cv2
 from django.conf import settings
 import os
 import pdb
@@ -16,7 +16,8 @@ import pdb
 def getResizedIm(path, height, width):
     # Load as grayscale
     print(path)
-    img = image.load_img(path, target_size=(224,224))
+    img = cv2.imread(path)
+    img = cv2.resize(img, (224, 224))
     # Reduce size
     return img
 
@@ -39,7 +40,6 @@ def TrainModel(model):
 
     model.fit(images, labels)
     return model
-
 
     #recompile model if needed
     #run fit function to train

@@ -47,11 +47,11 @@ def index(request):
 
         model.save('current.hdf5')
         #create Image object
-        if (len(list(Image.objects.all())) == 0):
+        try:
+            image = Image.objects.get(name=imageFile.name)
+        except Image.DoesNotExist:
             image = Image(name=imageFile.name)
             image.save()
-        else:
-            image = Image.objects.get(name=imageFile.name)
             Result.objects.all().delete()
 
         #need to properly serialize predictions to output them on webpage
