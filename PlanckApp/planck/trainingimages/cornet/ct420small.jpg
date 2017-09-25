@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="keywords" content="Music Shop, Maidstone, Kent, Musical Instruments, Guitars, Guitar Accessories, Brass and Woodwind, Guitar amps,Fender, Washburn, Casio Keyboards, Electric Pianos" />
+<meta name="description" content="Music Matters Maidstone Kent, We offer products that will be useful for everyone from musical instruments and accessories to lighting, DJ equipment, speakers and accessories and home electrical all at internet prices." />
+<title>Music Matters| Musical Instruments and Accessories for all your Musical needs.</title>
+<link rel="shortcut icon" href="/ekmps/shops/granisty/favicon.ico" type="image/x-icon" />
+<link rel="icon" href="/ekmps/shops/granisty/favicon.ico" type="image/x-icon" />
+<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.js"></script>
+<script type="text/javascript">
+	var $j = jQuery;
+	
+	$j(window).ready(function() {
+		$j("input[rel='clear']").focus(function() {if ($j(this).val() == this.defaultValue) {$j(this).val('');}});
+		$j("input[rel='clear']").blur(function() {if ($j(this).val() == '') {$j(this).val(this.defaultValue);}});
+	});
+</script>
+
+<script type="text/javascript" src="/ekmps/designs/assets/master/598/js/jlsTextShadow.js"></script>
+<script type="text/javascript" src="/ekmps/designs/assets/master/598/js/animateToClass.js"></script>
+<script type="text/javascript">
+
+	function doSearch(){
+		$j("#search .search-text").focus(function(){
+			$j(this).switchClass("blurred", "focused", 600, function(){ 
+				$j(this).parent().find('input[type="submit"]').addClass('focused');
+			});
+			$j("#nav-bar li a").each(function(){
+				$j(this).switchClass("normal", "shrink", 600);
+			});
+		});
+		
+		$j("#search .search-text").blur(function(){
+			$j(this).parent().find('input[type="submit"]').removeClass('focused');
+			$j(this).switchClass("focused", "blurred", 600);
+			$j("#nav-bar li a").each(function(){
+				$j(this).switchClass("shrink", "normal", 600);
+			});
+		});	
+	}
+
+	$j(function(){
+		$j().jlsTextShadow({'getColor': '#nav-bar', 'applyColor': '#extra-page-nav a', 'intensity': 0.3, 'xyb': '0 -1px 0'});
+		$j().jlsTextShadow({'getColor': 'a#checkout', 'applyColor': 'a#checkout', 'intensity': 0.6, 'xyb': '0 1px 0'});
+		
+		
+		// IF IE DONT DO SEARCH
+		if(!$j.browser.msie){ doSearch(); }
+		if($j.browser.msie){
+			if($j.browser.version != '6.0' && $j.browser.version != '7.0' && $j.browser.version != '8.0'){
+				doSearch();
+			}
+		}
+		// END IF
+	});
+	
+	// location stuff
+	$j(function(){
+				
+		$j("#location").find('a[href="index.asp"]').addClass('home');
+		$j("#location").find('a').each(function(){
+			$j(this).wrap('<li />');
+		});
+				
+	});
+	
+	// view cart icon
+	$j(function(){
+				
+		if ( $j("#ecommerce-links").find('#mini-cart .number-of-items').html() != 0 ) { $j("#ecommerce-links").find('.view-cart').addClass('full'); }
+				
+	});
+	
+</script>
+
+<!--[if IE]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+    
+<style type="text/css">
+	
+	/* reset */
+	p {margin-top: 0px;}
+	p:last-child { margin-bottom:0; }
+	
+	form {margin: 0; padding: 0;}
+	a img {border: none 0;}
+	input {outline: none 0;}
+	h1, h2, h3, h4, h5, h6 {margin: 0; font-size: 16px; font-weight: bold;}
+	
+	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; } /* HTML 5 elements */
+	
+	/* .clear {clear: both; color: #5f5f5f}  Use .cf instead */
+	.cf:before, .cf:after {content:"";display:table;}
+	.cf:after {clear:both;}
+	.cf {zoom:1;}
+	
+	body {margin: 0; padding: 0; font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#111; background: #9E9E9E; color: #666666;;}
+	
+	a { color: #666666 /* #666 */; }
+	a:hover { text-decoration: none; }
+	
+	/* structure */
+	#container { width:980px; margin:0 auto; padding: 5px; background: #FFF;}
+
+	#header { }
+	#logo { float: left;}
+	#logo .demo-logo {margin: 25px 0 25px 10px;}
+	#tag-line {float: right;}
+	#tag-line .demo-tag-line {margin: 37px 10px 0 0;}
+	
+	/* nav-bar */
+	#nav-bar {background: url(/ekmps/designs/assets/master/598/images/top-nav-bg.png) #5f5f5f /* #5f5f5f */; border-radius: 4px; box-shadow: 0 1px 1px #c4c4c4; margin: 10px 0;}
+	#nav-bar .gloss {background: url(/ekmps/designs/assets/master/598/images/top-nav-shine-bg.png) repeat-x left top; display: block;}
+		#extra-page-nav {float: left; font-weight: bold; overflow: hidden;}
+		#extra-page-nav, #extra-page-menu li {padding: 0; margin: 0; list-style: none;}
+		#extra-page-nav li {float: left; border-right: solid 1px #515151 /* #515151 */; box-shadow: 1px 0 1px #808080 /* #808080 */, inset -1px 0 1px #808080 /* #808080 */;}
+		#extra-page-nav li a {display: block; padding: 15px 0 15px 0; padding-left: 30px; padding-right: 30px; color: #ffffff /* #fff */; text-decoration: none;}
+		#extra-page-nav li a.shrink {padding-left: 25px; padding-right: 25px; }
+		#extra-page-nav li a:hover, #extra-page-nav li.selected a {background: #4a4a4a /* #4a4a4a */; box-shadow: inset 0 0 5px #000000 /* #000 */;}
+		#extra-page-nav li:first-child a {border-radius: 4px 0 0 4px;}
+	
+		#search {float: right; margin: 9px 9px 0 0; position: relative;}
+		#search .search-text {border-radius: 30px; border: none 0; background: url(/ekmps/designs/assets/master/598/images/top-nav-shine-bg.png) repeat-x left -11px #696969 /* #696969 */; box-shadow: inset 0 1px 1px #4a4a4a; padding: 5px 9px 5px 25px; width: 88px; font-size: 11px; color: #fff; margin: 2px 0 0;}
+		#search .search-text.blurred {}
+		#search .search-text.focused {background: #fff; width: 175px; color: #696969 /* #666 */;}
+		
+		#search .search-button {left: 0; top: 0; position: absolute; background: url(/ekmps/designs/assets/master/598/images/search-bg.png) no-repeat center top; border: none; width: 11px; height: 13px; line-height: 300px; overflow: hidden; cursor: pointer; font-size: 0; padding: 0; margin: 8px 0 0 7px;}
+		#search .search-button.focused {background-color: #696969 /* #5f5f5f */; background-position: center bottom;}
+		
+	/* columns */
+	.side-bar { width: 180px; float:left; }
+	#main-col { width:600px; float:left; margin: 0 10px}
+	
+	/* location */
+	#location-bar {float: left; width: 788px; margin: 0 0 10px 10px; clear: right; background: #f2f2f2 /* #f2f2f2 */; border-radius: 2px; border: solid 1px #cccccc /* #cccccc */; height: 32px;}
+		#location {font-size: 0px; position: relative; float: left; width: 540px;}
+		#location ul, #location li {margin: 0; padding: 0; list-style: none;}
+		#location li {float: left; border-right: solid 1px #cccccc /* #ccc */; height: 32px;}
+		#location li a {text-decoration: none; display: block; color: #393939; padding: 9px 9px; font-size: 11px;}
+		#location li a.home {background: url(/ekmps/designs/assets/master/598/images/ico-home.png) no-repeat center center; text-indent: -10000px; width: 13px;}
+		
+		#ecommerce-links {float: right; font-size: 11px; margin: 0; padding: 0; list-style: none;}
+		#ecommerce-links li {margin: 0; padding: 0; list-style: none; float: left; border-left: solid 1px #cccccc /* #ccc */;  height: 32px;}
+		#ecommerce-links li a {text-decoration: none; display: block; color: #393939; padding: 9px 9px; font-size: 11px;}
+		
+		#ecommerce-links .popup {display: none; background: #fff; width: 205px; border: solid 1px #cccccc /* #cccccc */; border-top: none; position: absolute; z-index: 2000; right: -1px; top: 33px; border-radius: 0 0 2px 2px;}
+		#ecommerce-links .popup header {background: #f2f2f2 /* #f2f2f2 */; border-bottom: solid 1px #cccccc /* #ccc */; padding: 10px; color: #393939;}
+		
+			/* minicart */
+			#ecommerce-links li.view-cart {position: relative;}
+			#ecommerce-links li.view-cart a#view-cart {background: url(/ekmps/designs/assets/master/598/images/ico-cart-empty.png) no-repeat 90% center; padding-right: 35px;}
+			#ecommerce-links li.view-cart.full a#view-cart {background-image: url(/ekmps/designs/assets/master/598/images/ico-cart-full.png);}
+			#ecommerce-links li.view-cart:hover a#view-cart {box-shadow: inset 0 2px 3px #cccccc;}
+			#ecommerce-links li.view-cart .border-hide {width: 100%; display: none; position: absolute; bottom: -1px; left: 0; height: 1px; background: #f2f2f2; border-right: solid 1px #cccccc;}
+			#ecommerce-links .view-cart:hover #mini-cart {display: block;}
+			#ecommerce-links .view-cart:hover .border-hide {display: block;}
+			
+			#ecommerce-links #mini-cart .cart-item {border-bottom: solid 1px #cccccc; padding: 5px 10px;}
+			#ecommerce-links #mini-cart .cart-name {float: left; display: block;}
+			#ecommerce-links #mini-cart .cart-qty {float: left; display: block; font-weight: bold; margin-left: 5px;}
+			#ecommerce-links #mini-cart .cart-price {float: right; display: block; text-align: right; color: #0088cc; font-weight: bold;}
+			#ecommerce-links #mini-cart .cart-total {padding: 10px 10px; font-size: 14px; line-height: 18px;}
+			#ecommerce-links #mini-cart .total-label {float: left; display: block; font-size: 13px;}
+			#ecommerce-links #mini-cart .total-amount {float: right; display: block; text-align: right; color: #0088cc; font-weight: bold; font-size: 16px;}
+			#ecommerce-links #mini-cart .number-of-items {display: none;}
+			#ecommerce-links #mini-cart-buttons {background: #f2f2f2; padding: 10px 0; border-radius: 0 0 2px 2px; border-top: solid 1px #cccccc;}
+			#ecommerce-links #mini-cart-buttons a#checkout {background: url(/ekmps/designs/assets/master/598/images/top-nav-shine-bg.png) repeat-x left -10px #0088cc/* #0088cc */; border-radius: 20px; color: #ffffff /* #fff */; padding: 6px 0; width: 175px; margin: 0 auto; text-align: center; font-weight: bold; font-size: 14px; border: solid 2px #0088cc;}
+			#ecommerce-links #mini-cart-buttons a#checkout:hover {background-color:#009deb /* #009deb */;}
+			
+			/* my account */
+			#ecommerce-links li.my-account {position: relative;}
+			#ecommerce-links li.my-account:hover a#my-account-link {box-shadow: inset 0 2px 3px #cccccc;}
+			#ecommerce-links .my-account .border-hide {width: 100%; display: none; position: absolute; bottom: -1px; left: 0; height: 1px; background: #f2f2f2; border-right: solid 1px #cccccc;}
+			#ecommerce-links .my-account:hover .border-hide {display: block;}
+			#ecommerce-links .my-account:hover #my-account-popup {display: block;}
+			#ecommerce-links #my-account-popup table td {padding: 0; margin: 0;}
+			#ecommerce-links .my-account-text {border: solid 1px #cccccc; border-radius: 2px; width: 177px; padding: 5px 10px; font-size: 12px; margin: 3px 3px 0; background: #f2f2f2;}
+			#ecommerce-links .my-account-text:focus {background: #fff;}
+			#ecommerce-links .my-account-button {background: url(/ekmps/designs/assets/master/598/images/top-nav-shine-bg.png) repeat-x left -10px #0088cc/* #0088cc */; border-radius: 3px; color: #ffffff /* #fff */; padding: 6px 20px; text-align: center; font-weight: bold; font-size: 13px; border: solid 2px #0088cc; margin: 3px; cursor: pointer;}
+			#ecommerce-links .my-account-button:hover {background-color:#009deb /* #009deb */;}
+			
+			/* newsletter */
+			#ecommerce-links li.newsletter {position: relative;}
+			#ecommerce-links li.newsletter:hover a#newsletter-link {box-shadow: inset 0 2px 3px #cccccc;}
+			#ecommerce-links .newsletter .border-hide {width: 100%; display: none; position: absolute; bottom: -1px; left: 0; height: 1px; background: #f2f2f2; border-right: solid 1px #ccc;}
+			#ecommerce-links .newsletter:hover .border-hide {display: block;}
+			#ecommerce-links .newsletter:hover #newsletter-popup {display: block;}
+			#ecommerce-links #newsletter-popup .newsletter-text {border: solid 1px #cccccc; border-radius: 2px; width: 177px; padding: 5px 10px; font-size: 12px; margin: 3px 3px 0; background: #f2f2f2;}
+			#ecommerce-links #newsletter-popup .newsletter-text:focus {background: #fff;}
+			#ecommerce-links #newsletter-popup .newsletter-text.hide {display: none;}
+			#ecommerce-links #newsletter-popup .newsletter-button {background: url(/ekmps/designs/assets/master/598/images/top-nav-shine-bg.png) repeat-x left -10px #0088cc/* #0088cc */; border-radius: 3px; color: #ffffff /* #fff */; padding: 6px 20px; text-align: center; font-weight: bold; font-size: 13px; border: solid 2px #0088cc; margin: 3px; cursor: pointer;}
+			#ecommerce-links #newsletter-popup .newsletter-button:hover {background-color: #009deb /* #009deb */;}
+			
+	
+	/* side bar */
+	section.element {margin: 0 0 10px;}
+	section.element header {border-radius: 3px 3px 0 0; background: #455d83 /* #455d83 */; color: #ffffff /* #fff */; font-size: 12px; padding: 7px 10px; font-weight: bold;}
+	section.element .element-cont {border: solid 1px #cccccc; border-bottom-width: 2px; border-radius: 0 0 3px 3px; font-size: 12px;}
+	section.element .element-cont img {max-width: 178px;}
+	
+		/* category menu */
+
+	    #leftMenu {width: 178px; border: solid 1px #CCC; background: #fff; }
+	    #leftMenu ul, #leftMenu li {list-style: none; margin: 0; padding: 0;}
+	    #leftMenu li {position: relative}
+	    #leftMenu li:first-child a {border-top: none;}
+	    #leftMenu li a {display: block; border-top: solid 1px #cccccc; background: #f2f2f2; display: block; padding: 5px 10px; text-decoration: none; color: #333; font-family: 'Oswald', sans-serif; text-transform: uppercase; font-size: 13px; text-shadow:0px 1px 1px #FFF;}
+	    #leftMenu li a:hover {background: #CCC;}
+	    #leftMenu li ul {display: none;}
+	    #leftMenu li:hover ul {display: block; width: 180px; position: absolute; background: #fff; border: solid 1px #ccc; right: -150px; top: 5px; z-index: 1000;}
+
+	
+	/*footer */
+	#footer {font-size: 11px; margin: 10px 0 0;}
+		#footer a {color: #393939; text-decoration: none;}
+		#footer a:hover { text-decoration: underline;}
+		#footer #copyright {float: left;}
+		#footer #system-links {float: right; color: #0088cc}
+		
+	#payment-graphics {border-top: solid 1px #cccccc; padding: 10px 0 0; margin: 10px 0 20px;}
+	#payment-graphics #credit-cards {float: left;}
+	#payment-graphics #secure-payment {float: right;}
+	
+</style>
+
+<script type="text/javascript">
+    $j(window).bind('load', function(){
+        $j("#leftMenu>ul li:has(ul)").addClass('dropable');
+    });
+</script>
+
+
+
+<!-- Divido -->
+
+<script type="text/javascript">
+        $(document).ready(function() {
+            var divido_widget = jQuery('div[data-divido-widget]');
+            var divido_amount = divido_widget.attr('data-divido-amount').replace(/£|,/g,'');
+            if (divido_amount > 250) {       
+                jQuery('div[data-divido-widget]').attr('data-divido-amount', divido_amount);
+            } else {
+                divido_widget.remove();
+            }
+        });
+             
+    
+        (function() {
+        var dcode = document.createElement('script'); dcode.type = 'text/javascript';
+        var pkey = document.createAttribute("data-divido-public-key"); pkey.value = 'live_pk_cac588850.eebc605ff41f86e5fe1ffc5d2d533be4';
+        dcode.src = ('https:' == document.location.protocol ? 'https://' : 'http://') +'cdn.divido.com/calculator/' + pkey.value + '.js';
+        dcode.setAttributeNode(pkey);
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(dcode, s);
+        })();
+        
+    </script>
+<link rel="canonical" href="http://www.musicmattersdirect.co.uk/index.asp" /><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-63228475-1', 'auto', {allowLinker: true});
+  ga('require', 'linker');
+  ga('linker:autoLink', ['19.trusted-secure.com']);
+
+  ga('send', 'pageview');
+
+</script><script>EKMdataLayer = [{'Username': 'granisty'}];</script><meta name="google-site-verification" content="ocrLbcE0XSijv5MgTdC_nRVRGBQGXtLpD-6YjCMEU-s" /><link type="text/css" rel="stylesheet" href="/ekmps/css/softcart.css" /><script async type="text/JavaScript" data-ekm-softcart-options="{}" data-ekm-softcart-lc="{&quot;close&quot;: &quot;close&quot;, &quot;Shopping Cart Updated&quot;: &quot;Shopping Cart Updated&quot;, &quot;No items in cart&quot;: &quot;No items in cart&quot;, &quot;Quantity&quot;: &quot;Quantity&quot;, &quot;remove&quot;: &quot;remove&quot;, &quot;Items: &quot;: &quot;Items: &quot;, &quot;Sub Total: &quot;: &quot;Sub Total: &quot;, &quot;Delivery: &quot;: &quot;Delivery: &quot;, &quot;Vat: &quot;: &quot;Vat: &quot;, &quot;Total: &quot;: &quot;Total: &quot;, &quot;View Cart&quot;: &quot;View Cart&quot;, &quot;Continue Shopping&quot;: &quot;Continue Shopping&quot;, &quot;Checkout&quot;: &quot;Checkout&quot;, &quot;Go To Checkout&quot;: &quot;Go To Checkout&quot;, &quot;Sorry, there was a problem&quot;: &quot;Sorry, there was a problem&quot;, &quot;Back&quot;: &quot;Back&quot;, &quot;Sorry, could not add to cart&quot;: &quot;Sorry, could not add to cart&quot;, &quot;Please ensure you've completed all the required fields.&quot;: &quot;Please ensure you've completed all the required fields.&quot;, &quot;Sorry, could not complete request&quot;: &quot;Sorry, could not complete request&quot;, &quot;There was an error processing your request.&quot;: &quot;There was an error processing your request.&quot;, &quot;More Details&quot;: &quot;More Details&quot;, &quot;Connection Problem&quot;: &quot;Connection Problem&quot;, &quot;There was a problem communicating with the server.&quot;: &quot;There was a problem communicating with the server.&quot;, &quot;Please check your internet connection and try again.&quot;: &quot;Please check your internet connection and try again.&quot;, &quot;Please try again.&quot;: &quot;Please try again. &quot;, &quot;Redirecting to Product Page&quot;: &quot;Redirecting to Product Page&quot;}" src="/ekmps/scripts/softcart.min.js?_=11"></script><script async src="/ekmps/scripts/historytracker.js"></script><link type="text/css" rel="stylesheet" href="/ekmps/css/productimagebadge.css" /><script async type="text/javascript" src="/ekmps/scripts/productimagebadge.min.js?_=3" data-ekm-locale="English" data-ekm-product-badge-style="Banner/Large" data-ekm-product-badge-spacing="2" data-ekm-product-badge-x="0" data-ekm-product-badge-y="0" data-ekm-product-badge-dir="vertical" data-ekm-sitename="granisty" ></script></head>
+	
+<body>
+	
+    <div id="container" class="cf">
+    	
+        <div id="header" class="cf">
+			<div id="logo"><div style="text-align: center;"><a href="index.asp"><img src="/ekmps/shops/granisty/resources/design/Headerbanner.jpg" /></a></div>
+</div><!-- #logo -->
+			
+			
+		</div><!-- #header -->
+		
+		
+		<div id="nav-bar" class="cf"><span class="gloss cf">
+			<ul id="extra-page-nav"><li><a href="index.asp" class="normal">Home</a></li><li><a href="http://www.musicmattersdirect.co.uk/blog" class="normal">Blog</a></li><li><a href="guitar-servicing-4-w.asp" class="normal">Guitar Servicing</a></li><li><a href="contact-amp-info-2-w.asp" class="normal">Contact &amp; Info</a></li><li><a href="finance-22-w.asp" class="normal">Finance</a></li><li><a href="music-books-25-w.asp" class="normal">Music Books</a></li></ul><!-- #extra-page-menu -->
+		
+			<div id="search">
+				<form name="searchbox" method="post" action="index.asp?function=search">
+					<input type="text" name="search" size="20" value="" class="search-text blurred"/>
+					<input type="submit" value="Search" class="search-button"/>
+				</form>
+			</div><!-- #search -->
+		</span></div><!-- #nav-bar -->
+		
+		
+		<div id="columns" class="cf">
+        
+        	<div class="side-bar">
+				
+				
+				<section class="element" id="category-menu">
+					<header>Browse Categories</header>
+						<div id="leftMenu">
+							<ul><li><a href="pre-loved-gear-523-c.asp">Pre Loved Gear</a>
+				<ul><li><a href="pre-loved-gear-458-c.asp">Pre Loved Gear</a></li></ul>
+				</li>
+				<li><a href="best-sellers-623-c.asp">Best Sellers</a>
+				
+				</li>
+				<li><a href="mixing-desks-131-c.asp">Mixing Desks</a>
+				<ul><li><a href="personal-audio-138-c.asp">Personal audio</a></li><li><a href="pro-audio--accessories-142-c.asp">Pro Audio & Accessories</a></li><li><a href="public-address-134-c.asp">Public address</a></li><li><a href="speakers-132-c.asp">Speakers</a></li><li><a href="storage-168-c.asp">Storage</a></li><li><a href="vocalzone-652-c.asp">Vocalzone</a></li></ul>
+				</li>
+				<li><a href="audio-leads-26-c.asp">Audio Leads</a>
+				<ul><li><a href="av-leads-35-c.asp">AV Leads</a></li></ul>
+				</li>
+				<li><a href="batteries--power-supplies-150-c.asp">Batteries & Power Supplies</a>
+				<ul><li><a href="batteries-304-c.asp">Batteries</a></li><li><a href="battery-chargers-310-c.asp">Battery chargers</a></li><li><a href="power-leads-151-c.asp">Power leads</a></li></ul>
+				</li>
+				<li><a href="amplification-509-c.asp">Amplification</a>
+				<ul><li><a href="acoustic-guitar-amps-497-c.asp">Acoustic Guitar Amps</a></li><li><a href="bass-guitar-amps-494-c.asp">Bass Guitar Amps</a></li><li><a href="busking-amps-645-c.asp">Busking Amps</a></li><li><a href="guitar-amps-495-c.asp">Guitar Amps</a></li></ul>
+				</li>
+				<li><a href="brass--woodwind-510-c.asp">Brass & Woodwind</a>
+				<ul><li><a href="stands--accessories-375-c.asp">Stands & Accessories</a></li><li><a href="bags--cases-237-c.asp">Bags & cases</a></li><li><a href="brass-436-c.asp">Brass</a></li><li><a href="clarinets-595-c.asp">Clarinets</a></li><li><a href="flutes-590-c.asp">Flutes</a></li><li><a href="harmonica-373-c.asp">Harmonica</a></li><li><a href="recorder-360-c.asp">Recorder</a></li><li><a href="saxophones-593-c.asp">Saxophones</a></li><li><a href="tuners-390-c.asp">Tuners</a></li></ul>
+				</li>
+				<li><a href="digital-pianos-531-c.asp">Digital Pianos</a>
+				
+				</li>
+				<li><a href="drums-508-c.asp">Drums</a>
+				<ul><li><a href="accessories-377-c.asp">Accessories</a></li><li><a href="bags--cases-366-c.asp">Bags & cases</a></li><li><a href="kits-365-c.asp">Kits</a></li><li><a href="sticks--brushes-359-c.asp">Sticks & Brushes</a></li></ul>
+				</li>
+				<li><a href="folk-instruments--accessories-511-c.asp">Folk Instruments & Accessories</a>
+				<ul><li><a href="banjos-478-c.asp">Banjos</a></li><li><a href="dulcimers-678-c.asp">Dulcimers</a></li><li><a href="folk-accessories-443-c.asp">Folk Accessories</a></li><li><a href="mandolins-477-c.asp">Mandolins</a></li></ul>
+				</li>
+				<li><a href="guitar-accessories-513-c.asp">Guitar Accessories</a>
+				<ul><li><a href="guitar-bags--cases-481-c.asp">Guitar Bags & Cases</a></li><li><a href="guitar-capos-425-c.asp">Guitar Capos</a></li><li><a href="guitar-cleaning--care-445-c.asp">Guitar Cleaning & Care</a></li><li><a href="guitar-effects-cases-434-c.asp">Guitar Effects Cases</a></li><li><a href="guitar-essentials-424-c.asp">Guitar Essentials</a></li><li><a href="guitar-leads-428-c.asp">Guitar Leads</a></li><li><a href="guitar-pickups-437-c.asp">Guitar Pickups</a></li><li><a href="guitar-plectrums-479-c.asp">Guitar Plectrums</a></li><li><a href="guitar-slides-438-c.asp">Guitar Slides</a></li><li><a href="guitar-stands--holders-435-c.asp">Guitar Stands & Holders</a></li><li><a href="guitar-straps-433-c.asp">Guitar Straps</a></li><li><a href="guitar-string-winders-711-c.asp">Guitar String Winders</a></li><li><a href="guitar-tuners-450-c.asp">Guitar Tuners</a></li></ul>
+				</li>
+				<li><a href="guitars-514-c.asp">Guitars</a>
+				<ul><li><a href="12-string-guitars-496-c.asp">12 String Guitars</a></li><li><a href="acoustic-guitars-485-c.asp">Acoustic Guitars</a></li><li><a href="bass-guitars-486-c.asp">Bass Guitars</a></li><li><a href="classical-guitars-487-c.asp">Classical Guitars</a></li><li><a href="electric-guitars-488-c.asp">Electric Guitars</a></li><li><a href="electro-acoustic-guitars-491-c.asp">Electro Acoustic Guitars</a></li><li><a href="left-handed-guitars-489-c.asp">Left Handed Guitars</a></li><li><a href="semi-acoustic-guitars-490-c.asp">Semi Acoustic Guitars</a></li><li><a href="travel-guitars-492-c.asp">Travel Guitars</a></li></ul>
+				</li>
+				<li><a href="clearance-632-c.asp">Clearance</a>
+				
+				</li>
+				<li><a href="keyboards--accessories-515-c.asp">Keyboards & Accessories</a>
+				<ul><li><a href="accessories-389-c.asp">Accessories</a></li><li><a href="bags--cases-238-c.asp">Bags & Cases</a></li><li><a href="keyboards-476-c.asp">Keyboards</a></li><li><a href="midi-controllers-227-c.asp">MIDI controllers</a></li><li><a href="pedals-228-c.asp">Pedals</a></li><li><a href="stands-246-c.asp">Stands</a></li></ul>
+				</li>
+				<li><a href="midi--usb-516-c.asp">MIDI & USB</a>
+				<ul><li><a href="midi-leads-367-c.asp">MIDI Leads</a></li><li><a href="midi-pc-interfaces-225-c.asp">MIDI PC Interfaces</a></li><li><a href="midi-sound-module-382-c.asp">MIDI Sound Module</a></li></ul>
+				</li>
+				<li><a href="music-stands--holders-520-c.asp">Music stands & Holders</a>
+				<ul><li><a href="holders-702-c.asp">Holders</a></li><li><a href="music-stands-245-c.asp">Music stands</a></li></ul>
+				</li>
+				<li><a href="percussion-517-c.asp">Percussion</a>
+				<ul><li><a href="accessories-392-c.asp">Accessories</a></li><li><a href="instruments-357-c.asp">Instruments</a></li><li><a href="stands-381-c.asp">Stands</a></li></ul>
+				</li>
+				<li><a href="ukuleles-521-c.asp">Ukuleles</a>
+				<ul><li><a href="accessories-618-c.asp">Accessories</a></li><li><a href="banjo-ukulele-619-c.asp">Banjo Ukulele</a></li><li><a href="baritone-614-c.asp">Baritone</a></li><li><a href="concert-615-c.asp">Concert</a></li><li><a href="guitarlele-663-c.asp">Guitarlele</a></li><li><a href="soprano-616-c.asp">Soprano</a></li><li><a href="tenor-617-c.asp">Tenor</a></li></ul>
+				</li>
+				<li><a href="violins--accessories-518-c.asp">Violins & Accessories</a>
+				<ul><li><a href="accessories-610-c.asp">Accessories</a></li><li><a href="pickups-234-c.asp">Pickups</a></li><li><a href="violins-429-c.asp">Violins</a></li></ul>
+				</li>
+				<li><a href="guitar-strings-633-c.asp">Guitar Strings</a>
+				<ul><li><a href="12-string-acoustic-guitar-strings-640-c.asp">12 String Acoustic Guitar Strings</a></li><li><a href="acoustic-guitar-strings-634-c.asp">Acoustic Guitar Strings</a></li><li><a href="bass-guitar-strings-647-c.asp">Bass Guitar Strings</a></li><li><a href="classical-guitar-648-c.asp">Classical Guitar</a></li><li><a href="electric-guitar-strings-637-c.asp">Electric Guitar Strings</a></li></ul>
+				</li>
+				<li><a href="headphones-658-c.asp">Headphones</a>
+				
+				</li>
+				<li><a href="ipad--tab-holders-649-c.asp">iPad & Tab Holders</a>
+				
+				</li>
+				<li><a href="microphones--accessories-660-c.asp">Microphones & Accessories</a>
+				<ul><li><a href="boundary-mics-704-c.asp">Boundary Mics</a></li><li><a href="handheld-mics-705-c.asp">Handheld Mics</a></li><li><a href="instrument-mics-706-c.asp">Instrument Mics</a></li><li><a href="microphone-accessories-709-c.asp">Microphone Accessories</a></li><li><a href="usb-mics-708-c.asp">USB Mics</a></li><li><a href="wireless-mics-707-c.asp">Wireless Mics</a></li></ul>
+				</li>
+				<li><a href="pa-systems-661-c.asp">PA Systems</a>
+				
+				</li>
+				<li><a href="music-bags-650-c.asp">Music Bags</a>
+				
+				</li>
+				<li><a href="guitar-effect-pedals-667-c.asp">Guitar Effect Pedals</a>
+				<ul><li><a href="boss-pedals-668-c.asp">Boss Pedals</a></li><li><a href="diago-pedals-669-c.asp">Diago Pedals</a></li><li><a href="digitech-pedals-670-c.asp">Digitech Pedals</a></li><li><a href="fender-pedals-671-c.asp">Fender Pedals</a></li><li><a href="jim-dunlop-pedals-674-c.asp">JIm Dunlop Pedals</a></li><li><a href="mooer-pedals-675-c.asp">Mooer Pedals</a></li><li><a href="mxr-pedals-673-c.asp">MXR Pedals</a></li><li><a href="tc-electronic-pedals-676-c.asp">TC Electronic Pedals</a></li><li><a href="vox-pedals-677-c.asp">Vox Pedals</a></li></ul>
+				</li>
+				<li><a href="home-recording--interfaces-452-c.asp">Home Recording & Interfaces</a>
+				
+				</li>
+				<li><a href="metronomes-230-c.asp">Metronomes</a>
+				
+				</li>
+				<li><a href="banjos--accessories-698-c.asp">Banjos & Accessories</a>
+				
+				</li>
+				<li><a href="di-boxes-710-c.asp">DI Boxes</a>
+				
+				</li>
+				<li><a href="ear-protectors-701-c.asp">Ear protectors</a>
+				
+				</li>
+				<li><a href="guitar-parts-471-c.asp">Guitar Parts</a>
+				<ul><li><a href="electronics-681-c.asp">Electronics</a></li><li><a href="hardware--parts-682-c.asp">Hardware & Parts</a></li></ul>
+				</li>
+				<li><a href="harmonicas---accessories-700-c.asp">Harmonicas &  Accessories</a>
+				
+				</li>
+				<li><a href="ocarinas-695-c.asp">Ocarinas</a>
+				
+				</li>
+				<li><a href="tuning-and-pitch-pipes-694-c.asp">Tuning and Pitch Pipes</a>
+				
+				</li>
+				</ul>
+				
+				</div>
+					</section><!-- #category-menu -->
+				
+				
+				
+				<section class="element" id="category-menu">
+					<header>Browse Our Manufactures</header>
+						<div id="leftMenu">
+							<ul><li><a href="adastra-573-c.asp">Adastra</a>
+				
+				</li>
+				<li><a href="admira-605-c.asp">Admira</a>
+				
+				</li>
+				<li><a href="akg-631-c.asp">AKG</a>
+				
+				</li>
+				<li><a href="aulos-606-c.asp">Aulos</a>
+				
+				</li>
+				<li><a href="avlink-572-c.asp">AVLink</a>
+				
+				</li>
+				<li><a href="boss-505-c.asp">Boss</a>
+				<ul><li><a href="effects-pedals-580-c.asp">Effects Pedals</a></li><li><a href="tuners-585-c.asp">Tuners</a></li></ul>
+				</li>
+				<li><a href="brunswick-613-c.asp">Brunswick</a>
+				
+				</li>
+				<li><a href="casio-499-c.asp">Casio</a>
+				
+				</li>
+				<li><a href="chord-420-c.asp">Chord</a>
+				<ul><li><a href="accessories-539-c.asp">Accessories</a></li><li><a href="acoustic-guitars-541-c.asp">Acoustic Guitars</a></li><li><a href="amplification-538-c.asp">Amplification</a></li><li><a href="bass-guitars-537-c.asp">Bass Guitars</a></li><li><a href="brass--woodwind-555-c.asp">Brass & Woodwind</a></li><li><a href="drums--percussion-540-c.asp">Drums & Percussion</a></li><li><a href="effects-pedals-569-c.asp">Effects Pedals</a></li><li><a href="electric-guitars-536-c.asp">Electric Guitars</a></li><li><a href="electro-acoustic-guitars-570-c.asp">Electro Acoustic Guitars</a></li><li><a href="folk-instruments-556-c.asp">Folk Instruments</a></li><li><a href="guitar-accessories-567-c.asp">Guitar Accessories</a></li><li><a href="keyboard--accessories-568-c.asp">Keyboard & Accessories</a></li><li><a href="microphones-575-c.asp">Microphones</a></li><li><a href="ukuleles-571-c.asp">Ukuleles</a></li></ul>
+				</li>
+				<li><a href="citronic-574-c.asp">Citronic</a>
+				
+				</li>
+				<li><a href="cort-503-c.asp">Cort</a>
+				
+				</li>
+				<li><a href="daddario-635-c.asp">D'addario</a>
+				<ul><li><a href="acoustic-strings-636-c.asp">Acoustic Strings</a></li><li><a href="electric-guitar-strings-638-c.asp">Electric Guitar Strings</a></li></ul>
+				</li>
+				<li><a href="dixon-612-c.asp">Dixon</a>
+				
+				</li>
+				<li><a href="ebs-554-c.asp">EBS</a>
+				
+				</li>
+				<li><a href="eko-525-c.asp">Eko</a>
+				
+				</li>
+				<li><a href="faith-589-c.asp">Faith</a>
+				
+				</li>
+				<li><a href="fender-500-c.asp">Fender</a>
+				<ul><li><a href="accessories-542-c.asp">Accessories</a></li><li><a href="amplifiers-543-c.asp">Amplifiers</a></li></ul>
+				</li>
+				<li><a href="freshman-504-c.asp">Freshman</a>
+				<ul><li><a href="acoustic-546-c.asp">Acoustic</a></li><li><a href="amplifiers-548-c.asp">Amplifiers</a></li><li><a href="electro-acoustic-547-c.asp">Electro Acoustic</a></li></ul>
+				</li>
+				<li><a href="hercules-561-c.asp">Hercules</a>
+				<ul><li><a href="brass--woodwind-stands-562-c.asp">Brass & Woodwind Stands</a></li><li><a href="guitar-stands-583-c.asp">Guitar Stands</a></li><li><a href="microphone-stands-584-c.asp">Microphone Stands</a></li></ul>
+				</li>
+				<li><a href="hidersine-611-c.asp">Hidersine</a>
+				
+				</li>
+				<li><a href="hohner-559-c.asp">Hohner</a>
+				<ul><li><a href="harmonicas-560-c.asp">Harmonicas</a></li></ul>
+				</li>
+				<li><a href="ibanez-529-c.asp">Ibanez</a>
+				<ul><li><a href="bass-guitars-550-c.asp">Bass Guitars</a></li><li><a href="electric-guitars-549-c.asp">Electric Guitars</a></li></ul>
+				</li>
+				<li><a href="kala-527-c.asp">Kala</a>
+				
+				</li>
+				<li><a href="lag-506-c.asp">LAG</a>
+				<ul><li><a href="acoustic-551-c.asp">Acoustic</a></li><li><a href="electro-acoustic-552-c.asp">Electro Acoustic</a></li></ul>
+				</li>
+				<li><a href="lanikai-528-c.asp">lanikai</a>
+				
+				</li>
+				<li><a href="lee-oskar-557-c.asp">Lee Oskar</a>
+				<ul><li><a href="harmonicas-558-c.asp">Harmonicas</a></li></ul>
+				</li>
+				<li><a href="ozark-578-c.asp">Ozark</a>
+				
+				</li>
+				<li><a href="qtx-530-c.asp">qtx</a>
+				
+				</li>
+				<li><a href="roland-581-c.asp">Roland</a>
+				
+				</li>
+				<li><a href="rotosound-639-c.asp">Rotosound</a>
+				
+				</li>
+				<li><a href="shubb-579-c.asp">Shubb</a>
+				
+				</li>
+				<li><a href="sigma-502-c.asp">Sigma</a>
+				<ul><li><a href="acoustic-534-c.asp">Acoustic</a></li><li><a href="electro-acoustic-535-c.asp">Electro Acoustic</a></li></ul>
+				</li>
+				<li><a href="simon--patrick-601-c.asp">Simon & Patrick</a>
+				<ul><li><a href="dulcimers-603-c.asp">Dulcimers</a></li><li><a href="guitars-602-c.asp">Guitars</a></li></ul>
+				</li>
+				<li><a href="squier-576-c.asp">Squier</a>
+				<ul><li><a href="electrics-577-c.asp">Electrics</a></li></ul>
+				</li>
+				<li><a href="tc-electronic-642-c.asp">TC Electronic</a>
+				
+				</li>
+				<li><a href="tgi-620-c.asp">TGI</a>
+				
+				</li>
+				<li><a href="trevor-james-591-c.asp">Trevor James</a>
+				<ul><li><a href="clarinets-596-c.asp">Clarinets</a></li><li><a href="flutes-592-c.asp">Flutes</a></li><li><a href="saxophones-594-c.asp">Saxophones</a></li></ul>
+				</li>
+				<li><a href="vivace-597-c.asp">Vivace</a>
+				<ul><li><a href="clarinets-604-c.asp">Clarinets</a></li><li><a href="flutes-598-c.asp">Flutes</a></li><li><a href="saxophones-599-c.asp">Saxophones</a></li></ul>
+				</li>
+				<li><a href="vox-643-c.asp">Vox</a>
+				
+				</li>
+				<li><a href="washburn-501-c.asp">Washburn</a>
+				<ul><li><a href="acoustic-532-c.asp">Acoustic</a></li><li><a href="electro-acoustic-533-c.asp">Electro Acoustic</a></li><li><a href="folk-instruments-582-c.asp">Folk Instruments</a></li></ul>
+				</li>
+				</ul>
+				
+				</div>
+					</section><!-- #category-menu -->
+				
+				
+
+			</div><!-- .side-bar -->
+			
+			<div id="location-bar" class="cf">
+				<div id="location" class="cf"><ul><span><a href="./"><span>Home</span></a></span><script type="application/ld+json">{"@context": "http://schema.org","@type": "BreadcrumbList","itemListElement": [{"@type": "ListItem","position": 1,"item": {"@id": "./","name": "Home"}}]}</script></ul></div>
+				<ul id="ecommerce-links" class="cf">
+					<style type="text/css">
+.ekmResponseSignupForm.style1{
+padding:10px;
+font-family:Tahoma, Sans-Serif;
+font-size:9pt;
+border:0px;
+display:inline;
+}
+.ekmResponseSignupForm.style1 ol{
+list-style:none;
+margin:0;
+padding:0;
+}
+.ekmResponseSignupForm.style1 legend{
+display:none;
+}
+.ekmResponseSignupForm.style1 label{
+margin-top:2px;
+}
+.ekmResponseSignupForm.style1 input{
+display:block;
+}
+.ekmResponseSignupForm.style1 .ekmResponseSignupButton{
+margin-top:10px;
+margin-left:75px;
+}
+</style>
+						<li class="newsletter"><a href="#" id="newsletter-link">Newsletter</a><span class="border-hide"></span>
+							<div id="newsletter-popup" class="popup">
+								<header class="element-header">Newsletter Signup</header>
+						<form data-thanktranslation='Thanks' method="post" action="http://www.ekmresponse.com/Web%20Services/RecipientSignup.ashx?GroupID=31795&UserID=12421&Hash2=bcb4ab3e46e230df93181d5e9e24125b" onsubmit="return ekmResponseSignupUser(this)" ><input id="ekmResponseFirstName" name="ekmResponseFirstName" type="text" value="First Name" class="ekmResponseFirstName newsletter-text hide" rel="clear"  /><input id="ekmResponseLastName" name="ekmResponseLastName" type="text" value="Last Name" class="ekmResponseLastName newsletter-text hide" rel="clear"  /><input id="ekmResponseEmailAddress" name="ekmResponseEmailAddress" type="text" value="Email Address" class="ekmResponseEmailAddress newsletter-text" rel="clear"  /><input class="newsletter-button" id="ekmResponseSignupButton" class="ekmResponseSignupButton" name="ekmResponseSignupButton" type="submit" value="Sign Up" /></form>
+							</div><!-- #newsletter -->
+						</li>
+						<script type="text/javascript" src="/ekmps/scripts/newslettersignup.js"></script>
+					
+					
+					<li class="my-account">
+						<a href="#" id="my-account-link">My Account</a><span class="border-hide"></span>
+						<div id="my-account-popup" class="popup">
+							<header>My Account</header>
+						
+<script language="javascript">
+function CheckForm(form){
+	var errMsg = '';
+	if (form.form_email.value == '' || form.form_email.value == form.form_email.defaultValue) { errMsg = ''; }
+	else if (form.form_password && (form.form_password.value == '' || form.form_password.value == form.form_password.defaultValue)) { errMsg = ''; }
+	else if (form.form_orderid && (form.form_orderid.value == '' || form.form_orderid.value == form.form_orderid.defaultValue)) { errMsg = 'Please enter your order no.'; }
+	if (errMsg != '') { alert(':\n\r\n\r' + errMsg); return false; } else { return true; }
+}
+</script><form name="ekm_customerlogin" method="post" action="https://19.trusted-secure.com/at/www.musicmattersdirect.co.uk/index.asp?function=SECUREAREA-LOGINSSL&location=ct420small%2Ejpg&uid=DC8C9C75-D1D0-416D-8DCB-BBE162061981" onSubmit="return CheckForm(this);" style="margin:0px; padding:0px;"><table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td><input type="text" name="form_email" style="" class="my-account-text"" size="20" maxlength="50" value="Email Address" onFocus="if (this.value=='Email Address'){this.value=''};" onBlur="if (this.value==''){this.value='Email Address'};"></td></tr><tr><td><input type="text" name="form_password_fake" style="display:block;" class="my-account-text"" value="Password" size="20" maxlength="25" onFocus="this.style.display='none'; this.form.form_password.style.display='block'; this.form.form_password.focus();"><input type="password" name="form_password" style="display:none;" class="my-account-text"" value="" size="20" maxlength="25" onBlur="if (this.value==''){this.style.display='none'; this.form.form_password_fake.style.display='block';};"></td></tr><tr><td><input type="submit" value="Login" name="submitCL" style="" class="my-account-button""></td></tr><tr><td><a href="index.asp?function=MAILPASS&from=cl" style="color:#000000;"><font size="1">Forgotten your password?</font></a></td></tr></table></form>
+						</div><!-- #my-account -->
+						</li>
+					
+					
+						<li class="view-cart"><a href="index.asp?function=CART" id="view-cart">View Cart</a><span class="border-hide"></span>
+							<div id="mini-cart" class="popup">
+						<div id="cart-content" class="cf"><header>Your Shopping Cart</header><!--ekm:tag:minicart:maxcharacters(17) ekm:tag:minicart:imageheight(50) ekm:tag:minicart:imagewidth(50) ekm:tag:minicart:output_content:start(&lt;div class=&quot;cart-item cf&quot;&gt;&lt;span class=&quot;cart-name&quot;&gt;[product_name]...&lt;/span&gt; &lt;span class=&quot;cart-qty&quot;&gt;(x[product_qty])&lt;/span&gt; &lt;span class=&quot;cart-price&quot;&gt;[product_price]&lt;/span&gt;&lt;/div&gt;) --><!--ekm:tag:minicart:output_content:end()--></div><!-- #cart-content --><div class="cart-total cf"><span class="total-label">Total</span> <span class="total-amount"><span id="ekm_minicart_total">&#163;0.00</span></span> <div class="number-of-items"><span id="ekm_minicart_product_count">0</span></div></div>
+							<div id="mini-cart-buttons" class="cf"><a href="index.asp?function=CART" id="checkout">Checkout Now</a></div>
+							</div>
+						</li>
+						
+					
+				</ul>
+			</div>
+			
+        	<div id="main-col"><script type="text/javascript" src="/ekmps/designs/assets/home/63/js/jlsMiniFader.min.js"></script>
+<script type="text/javascript">
+$j(window).bind('load', function(){
+    $j('#welcome-banner').jlsMiniFader({ 'delay': 5000, 'duration': 1000, 'hoverStop': true});
+});
+
+function sameHeight(c, scope){
+	if (scope){
+		$j(scope).each(function(){
+			var set = $j(this).find(c);
+			sameHeight(set);
+		});
+	}
+	else {
+		var h = 0;
+		$j(c).each(function(){
+			var th = $j(this).height()
+			h = (th > h)? th : h;
+		});
+        $j(c).height(h);	
+	}
+}
+        
+$j(window).bind('load', function(){
+	sameHeight('.item-name', '.row');
+	sameHeight('.item-short-description', '.row');
+});
+</script>
+
+<style type="text/css">
+
+	/* welcome-banner */
+	#welcome-banner {margin: 0 0 10px;}
+	#welcome-banner ul, #welcome-banner li {margin: 0; padding: 0; list-style: none;}
+    #welcome-banner li {display: none;}
+    #welcome-banner li.hidden {position: absolute; left: -10000px; width: 178px; display: block !important;}
+    #welcome-banner li.first {display: block !important;}
+	
+	/* items */
+	#special-offers-header, #products-header {background: #f2f2f2 /* #f5f5f5 */; padding: 7px 10px; color: #393939; font-size: 16px; font-weight: bold; margin: 0 0 10px; border: solid 1px #cccccc /* #c4c4c4 */; border-bottom-width: 2px; text-align: center;}
+	.item {width: 193px; float: left; margin: 0 10px 15px 0; text-align: center;}
+	.i-3 {margin-right: 0;}
+	.item-image {background: #fff; border: solid 1px #e3e3e3; padding: 5px; text-align: center; height: 181px;}
+	.item-name {margin: 5px 0; font-size: 13px;}
+	.item-name a {color: #444; text-decoration: none;}
+	.item-name a:hover {text-decoration: underline;}
+	.item-price {font-size: 16px; font-weight: bold; color: #0088cc /* #0088cc */;}
+	.item-rrp {font-size: 11px; font-style: italic; color: #999; text-decoration: line-through;}
+	.item-short-description {font-size: 10px; color: #999; margin: 5px 0;}
+	
+	/* welcome-area */
+	#welcome-area {}
+	#welcome-area header {background: #f2f2f2 /* #f5f5f5 */; padding: 7px 10px; color: #393939; font-size: 16px; font-weight: bold; margin: 0 0 10px; border: solid 1px #cccccc /* #c4c4c4 */; border-bottom-width: 2px; text-align: center;}
+	#welcome-area #welcome-cont {font-size: 13px; line-height: 1.5em;}
+
+</style>
+
+<div id="main-page">
+
+	<div id="welcome-banner">
+		<ul>
+			<li class="first showing"><div style="text-align: center;"><a href="http://www.musicmattersdirect.co.uk/ukuleles-521-c.asp"><img alt="" src="/ekmps/shops/granisty/resources/Design/ukulele-web-banner.png" style="width: 580px; height: 250px;" /></a></div>
+</li>
+			<li class="hidden"><br />
+&nbsp; &nbsp;<a href="http://www.musicmattersdirect.co.uk/guitar-amps-495-c.asp"><img alt="" src="/ekmps/shops/granisty/resources/Design/boss.png" style="width: 580px; height: 250px;" /></a></li>
+			<li class="hidden"><a href="http://www.musicmattersdirect.co.uk/electric-guitars-488-c.asp"><img alt="" src="/ekmps/shops/granisty/resources/Design/revstar.jpg" style="width: 580px; height: 250px;" /></a></li>
+			<li class="hidden"><a href="http://www.musicmattersdirect.co.uk/electro-acoustic-guitars-491-c.asp"><img alt="" src="/ekmps/shops/granisty/resources/Design/aseries.jpg" style="width: 580px; height: 250px;" /></a></li>
+			<li class="hidden"><img alt="" src="/ekmps/shops/granisty/resources/Design/pacifica.jpg" style="width: 580px; height: 250px;" /></li>
+			<li class="hidden"><img alt="" src="/ekmps/shops/granisty/resources/Design/mooerbanner2.jpg" style="width: 580px; height: 214px;" /></li>
+			<li class="hidden"><a href="http://www.musicmattersdirect.co.uk/guitar-amps-495-c.asp" target="_blank"><img alt="" src="/ekmps/shops/granisty/resources/Design/boss.png" style="width: 580px; height: 250px;" /></a></li>
+			<li class="hidden"><img alt="" src="/ekmps/shops/granisty/resources/Design/uh5-radio-mic.jpg" style="width: 582px; height: 261px;" /></li>
+			<li class="hidden"><img alt="" src="/ekmps/shops/granisty/resources/Design/citronic-mixers.jpg" style="width: 600px; height: 227px;" /></li>
+			<li class="hidden"><img alt="" src="/ekmps/shops/granisty/resources/Design/native-series.jpg" style="width: 582px; height: 266px;" /></li>
+		</ul>
+	</div>
+	
+	
+	
+	<div id="special-offers"><header id="special-offers-header">Special Offers</header><div class="row cf">
+		<section class="item i-1">
+			<div class="item-image"><a  href="alesis-dm-lite-electonic-drum-kit-12707-p.asp" data-ekm-badges="red-bestdeal" data-ekm-badges-max-width="72" data-ekm-badges-max-height="72"><img itemprop="image" src="/ekmps/shops/granisty/images/alesis-dm-lite-electonic-drum-kit-12707-p[ekm]180x112[ekm].png" width="180" height="112" alt="Alesis DM Lite Electonic Drum Kit" id="_EKM_SHOWDATA_PRODUCT_12707" border="0" /></a></div>
+			<header class="item-name"><a href="alesis-dm-lite-electonic-drum-kit-12707-p.asp">Alesis DM Lite Electonic Drum Kit</a></header>
+			<div class="item-short-description"></div>
+			<div class="item-price">&#163;229.99</div>
+			<div class="item-rrp">&#163;249.00</div>
+		</section><!-- .item -->
+		
+		<section class="item i-2">
+			<div class="item-image"><a  href="actionlhws-12640-p.asp" data-ekm-badges="" data-ekm-badges-max-width="72" data-ekm-badges-max-height="72"><img itemprop="image" src="/ekmps/shops/granisty/images/actionlhws-12640-p[ekm]60x180[ekm].jpg" width="60" height="180" alt="ACTIONLHWS" id="_EKM_SHOWDATA_PRODUCT_12640" border="0" /></a></div>
+			<header class="item-name"><a href="actionlhws-12640-p.asp">ACTIONLHWS</a></header>
+			<div class="item-short-description">Cort Action Series  Walnut Satin</div>
+			<div class="item-price">&#163;189.00</div>
+			<div class="item-rrp"></div>
+		</section><!-- .item -->
+		
+		<section class="item i-3">
+			<div class="item-image"><a  href="af510op-12613-p.asp" data-ekm-badges="red-bestseller yellow-perfectgift" data-ekm-badges-max-width="72" data-ekm-badges-max-height="72"><img itemprop="image" src="/ekmps/shops/granisty/images/af510op-12613-p[ekm]86x180[ekm].jpg" width="86" height="180" alt="AF510OP" id="_EKM_SHOWDATA_PRODUCT_12613" border="0" /></a></div>
+			<header class="item-name"><a href="af510op-12613-p.asp">AF510OP</a></header>
+			<div class="item-short-description">Cort Standard Series  Open Pore</div>
+			<div class="item-price">&#163;99.99</div>
+			<div class="item-rrp">&#163;125.00</div>
+		</section><!-- .item -->
+		</div><!-- .row --><div class="row cf">
+		<section class="item i-1">
+			<div class="item-image"><a  href="ashbury-rathlin-000c-electro-acoustic-14149-p.asp" data-ekm-badges="" data-ekm-badges-max-width="72" data-ekm-badges-max-height="72"><img itemprop="image" src="/ekmps/shops/granisty/images/ashbury-rathlin-000c-electro-acoustic-14149-p[ekm]137x180[ekm].jpeg" width="137" height="180" alt="Ashbury Rathlin 000C Electro Acoustic" id="_EKM_SHOWDATA_PRODUCT_14149" border="0" /></a></div>
+			<header class="item-name"><a href="ashbury-rathlin-000c-electro-acoustic-14149-p.asp">Ashbury Rathlin 000C Electro Acoustic</a></header>
+			<div class="item-short-description"></div>
+			<div class="item-price">&#163;219.00</div>
+			<div class="item-rrp">&#163;399.00</div>
+		</section><!-- .item -->
+		
+		<section class="item i-2">
+			<div class="item-image"><a  href="bj-5g-5-string-g-banjo-12685-p.asp" data-ekm-badges="red-bestseller yellow-perfectgift" data-ekm-badges-max-width="72" data-ekm-badges-max-height="72"><img itemprop="image" src="/ekmps/shops/granisty/images/bj-5g-5-string-g-banjo-12685-p[ekm]64x180[ekm].jpg" width="64" height="180" alt="BJ-5G 5-string G banjo" id="_EKM_SHOWDATA_PRODUCT_12685" border="0" /></a></div>
+			<header class="item-name"><a href="bj-5g-5-string-g-banjo-12685-p.asp">BJ-5G 5-string G banjo</a></header>
+			<div class="item-short-description"></div>
+			<div class="item-price">&#163;169.00</div>
+			<div class="item-rrp">&#163;189.00</div>
+		</section><!-- .item -->
+		
+		<section class="item i-3">
+			<div class="item-image"><a  href="bohemian-oil-can-ukulele--motor-oil-13620-p.asp" data-ekm-badges="" data-ekm-badges-max-width="72" data-ekm-badges-max-height="72"><img itemprop="image" src="/ekmps/shops/granisty/images/bohemian-oil-can-ukulele-motor-oil-13620-p[ekm]180x180[ekm].jpg" width="180" height="180" alt="BOHEMIAN OIL CAN UKULELE – MOTOR OIL" id="_EKM_SHOWDATA_PRODUCT_13620" border="0" /></a></div>
+			<header class="item-name"><a href="bohemian-oil-can-ukulele--motor-oil-13620-p.asp">BOHEMIAN OIL CAN UKULELE – MOTOR OIL</a></header>
+			<div class="item-short-description"></div>
+			<div class="item-price">&#163;119.00</div>
+			<div class="item-rrp"></div>
+		</section><!-- .item -->
+		</div><!-- .row --><div class="row cf">
+		<section class="item i-1">
+			<div class="item-image"><a  href="boss-rc1-loop-pedal-12710-p.asp" data-ekm-badges="red-bestseller" data-ekm-badges-max-width="72" data-ekm-badges-max-height="72"><img itemprop="image" src="/ekmps/shops/granisty/images/boss-rc1-loop-pedal-12710-p[ekm]180x180[ekm].jpg" width="180" height="180" alt="Boss RC1 Loop Pedal" id="_EKM_SHOWDATA_PRODUCT_12710" border="0" /></a></div>
+			<header class="item-name"><a href="boss-rc1-loop-pedal-12710-p.asp">Boss RC1 Loop Pedal</a></header>
+			<div class="item-short-description"></div>
+			<div class="item-price">&#163;79.00</div>
+			<div class="item-rrp">&#163;99.00</div>
+		</section><!-- .item -->
+		
+		<section class="item i-2">
+			<div class="item-image"><a  href="casio-ap260-12893-p.asp" data-ekm-badges="" data-ekm-badges-max-width="72" data-ekm-badges-max-height="72"><img itemprop="image" src="/ekmps/shops/granisty/images/casio-ap260-12893-p[ekm]180x142[ekm].jpg" width="180" height="142" alt="Casio AP260" id="_EKM_SHOWDATA_PRODUCT_12893" border="0" /></a></div>
+			<header class="item-name"><a href="casio-ap260-12893-p.asp">Casio AP260</a></header>
+			<div class="item-short-description"></div>
+			<div class="item-price">&#163;569.99</div>
+			<div class="item-rrp">&#163;749.00</div>
+		</section><!-- .item -->
+		
+		<section class="item i-3">
+			<div class="item-image"><a  href="casio-ctk-3400sk-electronic-keyboard-with-touch-sensitive-keys-6252-p.asp" data-ekm-badges="red-bestseller yellow-perfectgift" data-ekm-badges-max-width="72" data-ekm-badges-max-height="72"><img itemprop="image" src="/ekmps/shops/granisty/images/casio-ctk-3400sk-electronic-keyboard-with-touch-sensitive-keys-6252-p[ekm]180x180[ekm].jpg" width="180" height="180" alt="Casio CTK-3400SK Electronic Keyboard With Touch Sensitive Keys" id="_EKM_SHOWDATA_PRODUCT_6252" border="0" /></a></div>
+			<header class="item-name"><a href="casio-ctk-3400sk-electronic-keyboard-with-touch-sensitive-keys-6252-p.asp">Casio CTK-3400SK Electronic Keyboard With Touch Sensitive Keys</a></header>
+			<div class="item-short-description"></div>
+			<div class="item-price">&#163;149.99</div>
+			<div class="item-rrp">&#163;179.00</div>
+		</section><!-- .item -->
+		</div><!-- .row --><div class="row cf">
+		<section class="item i-1">
+			<div class="item-image"><a  href="cc34-classical-guitar-5149-p.asp" data-ekm-badges="red-perfectgift yellow-bestseller" data-ekm-badges-max-width="72" data-ekm-badges-max-height="72"><img itemprop="image" src="/ekmps/shops/granisty/images/cc34-classical-guitar-5149-p[ekm]69x180[ekm].jpg" width="69" height="180" alt="CC34 classical guitar" id="_EKM_SHOWDATA_PRODUCT_5149" border="0" /></a></div>
+			<header class="item-name"><a href="cc34-classical-guitar-5149-p.asp">CC34 classical guitar</a></header>
+			<div class="item-short-description"></div>
+			<div class="item-price">&#163;49.99</div>
+			<div class="item-rrp">&#163;59.00</div>
+		</section><!-- .item -->
+		
+		<section class="item i-2">
+			<div class="item-image"><a  href="chord-cmb4ce-bowl-back-electro-acoustic-guitar-gloss-blackburst-13816-p.asp" data-ekm-badges="" data-ekm-badges-max-width="72" data-ekm-badges-max-height="72"><img itemprop="image" src="/ekmps/shops/granisty/images/chord-cmb4ce-bowl-back-electro-acoustic-guitar-gloss-blackburst-13816-p[ekm]180x180[ekm].jpg" width="180" height="180" alt="Chord CMB4CE Bowl Back Electro Acoustic Guitar Gloss Blackburst" id="_EKM_SHOWDATA_PRODUCT_13816" border="0" /></a></div>
+			<header class="item-name"><a href="chord-cmb4ce-bowl-back-electro-acoustic-guitar-gloss-blackburst-13816-p.asp">Chord CMB4CE Bowl Back Electro Acoustic Guitar Gloss Blackburst</a></header>
+			<div class="item-short-description"></div>
+			<div class="item-price">&#163;109.99</div>
+			<div class="item-rrp">&#163;149.99</div>
+		</section><!-- .item -->
+		
+		<section class="item i-3">
+			<div class="item-image"><a  href="chord-cmb4ce-bowl-back-electro-acoustic-guitar-sunburst-13817-p.asp" data-ekm-badges="" data-ekm-badges-max-width="72" data-ekm-badges-max-height="72"><img itemprop="image" src="/ekmps/shops/granisty/images/chord-cmb4ce-bowl-back-electro-acoustic-guitar-sunburst-13817-p[ekm]180x180[ekm].jpg" width="180" height="180" alt="Chord CMB4CE Bowl Back Electro Acoustic Guitar Sunburst" id="_EKM_SHOWDATA_PRODUCT_13817" border="0" /></a></div>
+			<header class="item-name"><a href="chord-cmb4ce-bowl-back-electro-acoustic-guitar-sunburst-13817-p.asp">Chord CMB4CE Bowl Back Electro Acoustic Guitar Sunburst</a></header>
+			<div class="item-short-description"></div>
+			<div class="item-price">&#163;109.99</div>
+			<div class="item-rrp">&#163;149.99</div>
+		</section><!-- .item -->
+		</div><!-- .row --><div class="row cf">
+		<section class="item i-1">
+			<div class="item-image"><a  href="cort-m500t-bks-13800-p.asp" data-ekm-badges="" data-ekm-badges-max-width="72" data-ekm-badges-max-height="72"><img itemprop="image" src="/ekmps/shops/granisty/images/cort-m500t-bks-13800-p[ekm]180x180[ekm].png" width="180" height="180" alt="Cort M500T BKS" id="_EKM_SHOWDATA_PRODUCT_13800" border="0" /></a></div>
+			<header class="item-name"><a href="cort-m500t-bks-13800-p.asp">Cort M500T BKS</a></header>
+			<div class="item-short-description"></div>
+			<div class="item-price">&#163;259.99</div>
+			<div class="item-rrp"></div>
+		</section><!-- .item -->
+		
+		<section class="item i-2">
+			<div class="item-image"><a  href="cw26-western-guitar-package-13820-p.asp" data-ekm-badges="" data-ekm-badges-max-width="72" data-ekm-badges-max-height="72"><img itemprop="image" src="/ekmps/shops/granisty/images/cw26-western-guitar-package-13820-p[ekm]129x180[ekm].jpg" width="129" height="180" alt="CW26 Western Guitar Package" id="_EKM_SHOWDATA_PRODUCT_13820" border="0" /></a></div>
+			<header class="item-name"><a href="cw26-western-guitar-package-13820-p.asp">CW26 Western Guitar Package</a></header>
+			<div class="item-short-description"></div>
+			<div class="item-price">&#163;99.99</div>
+			<div class="item-rrp">&#163;129.99</div>
+		</section><!-- .item -->
+		
+		<section class="item i-3">
+			<div class="item-image"><a  href="digitech-trio--12884-p.asp" data-ekm-badges="" data-ekm-badges-max-width="72" data-ekm-badges-max-height="72"><img itemprop="image" src="/ekmps/shops/granisty/images/digitech-trio--12884-p[ekm]135x180[ekm].jpg" width="135" height="180" alt="Digitech Trio +" id="_EKM_SHOWDATA_PRODUCT_12884" border="0" /></a></div>
+			<header class="item-name"><a href="digitech-trio--12884-p.asp">Digitech Trio +</a></header>
+			<div class="item-short-description"></div>
+			<div class="item-price">&#163;219.00</div>
+			<div class="item-rrp">&#163;259.00</div>
+		</section><!-- .item -->
+		</div><!-- .row --><div class="row cf">
+		<section class="item i-1">
+			<div class="item-image"><a  href="diy-self-build-ukulele-12701-p.asp" data-ekm-badges="red-perfectgift yellow-bestseller" data-ekm-badges-max-width="72" data-ekm-badges-max-height="72"><img itemprop="image" src="/ekmps/shops/granisty/images/diy-self-build-ukulele-12701-p[ekm]119x180[ekm].jpg" width="119" height="180" alt="DIY self-build ukulele" id="_EKM_SHOWDATA_PRODUCT_12701" border="0" /></a></div>
+			<header class="item-name"><a href="diy-self-build-ukulele-12701-p.asp">DIY self-build ukulele</a></header>
+			<div class="item-short-description"></div>
+			<div class="item-price">&#163;18.99</div>
+			<div class="item-rrp">&#163;25.00</div>
+		</section><!-- .item -->
+		
+		<section class="item i-2">
+			<div class="item-image"><a  href="g100opbc-12541-p.asp" data-ekm-badges="red-bestseller" data-ekm-badges-max-width="72" data-ekm-badges-max-height="72"><img itemprop="image" src="/ekmps/shops/granisty/images/g100opbc-12541-p[ekm]135x180[ekm].jpg" width="135" height="180" alt="G100OPBC" id="_EKM_SHOWDATA_PRODUCT_12541" border="0" /></a></div>
+			<header class="item-name"><a href="g100opbc-12541-p.asp">G100OPBC</a></header>
+			<div class="item-short-description">Cort G Series  Open Pore Black Cherry</div>
+			<div class="item-price">&#163;149.00</div>
+			<div class="item-rrp"></div>
+		</section><!-- .item -->
+		
+		<section class="item i-3">
+			<div class="item-image"><a  href="gibson-es175-13554-p.asp" data-ekm-badges="" data-ekm-badges-max-width="72" data-ekm-badges-max-height="72"><img itemprop="image" src="/ekmps/shops/granisty/images/gibson-es175-13554-p[ekm]101x180[ekm].jpg" width="101" height="180" alt="Gibson ES175" id="_EKM_SHOWDATA_PRODUCT_13554" border="0" /></a></div>
+			<header class="item-name"><a href="gibson-es175-13554-p.asp">Gibson ES175</a></header>
+			<div class="item-short-description"></div>
+			<div class="item-price">&#163;2,600.00</div>
+			<div class="item-rrp"></div>
+		</section><!-- .item -->
+		</div><!-- .row --><div class="row cf">
+		<section class="item i-1">
+			<div class="item-image"><a  href="hartke-tx600-600-watt-bass-head-13623-p.asp" data-ekm-badges="" data-ekm-badges-max-width="72" data-ekm-badges-max-height="72"><img itemprop="image" src="/ekmps/shops/granisty/images/hartke-tx600-600-watt-bass-head-13623-p[ekm]180x82[ekm].jpg" width="180" height="82" alt="HARTKE TX600 600 Watt Bass Head" id="_EKM_SHOWDATA_PRODUCT_13623" border="0" /></a></div>
+			<header class="item-name"><a href="hartke-tx600-600-watt-bass-head-13623-p.asp">HARTKE TX600 600 Watt Bass Head</a></header>
+			<div class="item-short-description"></div>
+			<div class="item-price">&#163;369.99</div>
+			<div class="item-rrp">&#163;399.99</div>
+		</section><!-- .item -->
+		
+		<section class="item i-2">
+			<div class="item-image"><a  href="mahalo-soprano-ukulele-13825-p.asp" data-ekm-badges="" data-ekm-badges-max-width="72" data-ekm-badges-max-height="72"><img itemprop="image" src="/ekmps/shops/granisty/images/mahalo-soprano-ukulele-13825-p[ekm]180x88[ekm].jpg" width="180" height="88" alt="Mahalo Soprano Ukulele" id="_EKM_SHOWDATA_PRODUCT_13825" border="0" /></a></div>
+			<header class="item-name"><a href="mahalo-soprano-ukulele-13825-p.asp">Mahalo Soprano Ukulele</a></header>
+			<div class="item-short-description"></div>
+			<div class="item-price">&#163;29.99</div>
+			<div class="item-rrp"></div>
+		</section><!-- .item -->
+		
+		<section class="item i-3">
+			<div class="item-image"><a  href="mbc1-matthew-bellamy-signature-guitar-by-cort-10995-p.asp" data-ekm-badges="yellow-limitededition red-lastchance" data-ekm-badges-max-width="72" data-ekm-badges-max-height="72"><img itemprop="image" src="/ekmps/shops/granisty/images/mbc1-matthew-bellamy-signature-guitar-by-cort-10995-p[ekm]180x172[ekm].jpg" width="180" height="172" alt="MBC1 Matthew Bellamy Signature Guitar by Cort" id="_EKM_SHOWDATA_PRODUCT_10995" border="0" /></a></div>
+			<header class="item-name"><a href="mbc1-matthew-bellamy-signature-guitar-by-cort-10995-p.asp">MBC1 Matthew Bellamy Signature Guitar by Cort</a></header>
+			<div class="item-short-description"></div>
+			<div class="item-price">&#163;459.00</div>
+			<div class="item-rrp"></div>
+		</section><!-- .item -->
+		</div><!-- .row --><div class="row cf">
+		<section class="item i-1">
+			<div class="item-image"><a  href="music-man-silhouette-std-sunburst-inc-hard-case-13961-p.asp" data-ekm-badges="" data-ekm-badges-max-width="72" data-ekm-badges-max-height="72"><img itemprop="image" src="/ekmps/shops/granisty/images/music-man-silhouette-std-sunburst-inc-hard-case-13961-p[ekm]135x180[ekm].png" width="135" height="180" alt="Music Man Silhouette Std Sunburst Inc Hard Case" id="_EKM_SHOWDATA_PRODUCT_13961" border="0" /></a></div>
+			<header class="item-name"><a href="music-man-silhouette-std-sunburst-inc-hard-case-13961-p.asp">Music Man Silhouette Std Sunburst Inc Hard Case</a></header>
+			<div class="item-short-description"></div>
+			<div class="item-price">&#163;1,349.99</div>
+			<div class="item-rrp">&#163;1,799.99</div>
+		</section><!-- .item -->
+		
+		<section class="item i-2">
+			<div class="item-image"><a  href="pre-owned-fender-mustang-iv---v1-150-watt-2x12-guitar-amplifier-14137-p.asp" data-ekm-badges="" data-ekm-badges-max-width="72" data-ekm-badges-max-height="72"><img itemprop="image" src="/ekmps/shops/granisty/images/pre-owned-fender-mustang-iv-v1-150-watt-2x12-guitar-amplifier-14137-p[ekm]180x128[ekm].jpeg" width="180" height="128" alt="Pre Owned Fender Mustang IV - v1 150 Watt 2x12 Guitar Amplifier" id="_EKM_SHOWDATA_PRODUCT_14137" border="0" /></a></div>
+			<header class="item-name"><a href="pre-owned-fender-mustang-iv---v1-150-watt-2x12-guitar-amplifier-14137-p.asp">Pre Owned Fender Mustang IV - v1 150 Watt 2x12 Guitar Amplifier</a></header>
+			<div class="item-short-description"></div>
+			<div class="item-price">&#163;195.00</div>
+			<div class="item-rrp"></div>
+		</section><!-- .item -->
+		
+		<section class="item i-3">
+			<div class="item-image"><a  href="pre-owned-gibson-eb-5-strings-bass-14139-p.asp" data-ekm-badges="" data-ekm-badges-max-width="72" data-ekm-badges-max-height="72"><img itemprop="image" src="/ekmps/shops/granisty/images/pre-owned-gibson-eb-5-strings-bass-14139-p[ekm]180x72[ekm].jpg" width="180" height="72" alt="Pre Owned Gibson EB 5 Strings Bass" id="_EKM_SHOWDATA_PRODUCT_14139" border="0" /></a></div>
+			<header class="item-name"><a href="pre-owned-gibson-eb-5-strings-bass-14139-p.asp">Pre Owned Gibson EB 5 Strings Bass</a></header>
+			<div class="item-short-description"></div>
+			<div class="item-price">&#163;829.99</div>
+			<div class="item-rrp">&#163;1,150.00</div>
+		</section><!-- .item -->
+		</div><!-- .row --><div class="row cf">
+		<section class="item i-1">
+			<div class="item-image"><a  href="pre-owned-odyssey-otr140-trumpet-outfit---excellent-condition-14138-p.asp" data-ekm-badges="" data-ekm-badges-max-width="72" data-ekm-badges-max-height="72"><img itemprop="image" src="/ekmps/shops/granisty/images/pre-owned-odyssey-otr140-trumpet-outfit-excellent-condition-14138-p[ekm]180x135[ekm].jpeg" width="180" height="135" alt="Pre Owned Odyssey OTR140 Trumpet Outfit - Excellent Condition" id="_EKM_SHOWDATA_PRODUCT_14138" border="0" /></a></div>
+			<header class="item-name"><a href="pre-owned-odyssey-otr140-trumpet-outfit---excellent-condition-14138-p.asp">Pre Owned Odyssey OTR140 Trumpet Outfit - Excellent Condition</a></header>
+			<div class="item-short-description"></div>
+			<div class="item-price">&#163;149.99</div>
+			<div class="item-rrp">&#163;249.99</div>
+		</section><!-- .item -->
+		
+		<section class="item i-2">
+			<div class="item-image"><a  href="pre-owned-selmer-markvii-tenor-saxophone-13000-p.asp" data-ekm-badges="" data-ekm-badges-max-width="72" data-ekm-badges-max-height="72"><img itemprop="image" src="/ekmps/shops/granisty/images/pre-owned-selmer-markvii-tenor-saxophone-13000-p[ekm]105x180[ekm].jpg" width="105" height="180" alt="Pre Owned Selmer MarkVII Tenor Saxophone" id="_EKM_SHOWDATA_PRODUCT_13000" border="0" /></a></div>
+			<header class="item-name"><a href="pre-owned-selmer-markvii-tenor-saxophone-13000-p.asp">Pre Owned Selmer MarkVII Tenor Saxophone</a></header>
+			<div class="item-short-description"></div>
+			<div class="item-price">&#163;2,195.00</div>
+			<div class="item-rrp"></div>
+		</section><!-- .item -->
+		
+		<section class="item i-3">
+			<div class="item-image"><a  href="saga-gitane-gypsy-jazz-guitar-14148-p.asp" data-ekm-badges="" data-ekm-badges-max-width="72" data-ekm-badges-max-height="72"><img itemprop="image" src="/ekmps/shops/granisty/images/saga-gitane-gypsy-jazz-guitar-14148-p[ekm]135x180[ekm].png" width="135" height="180" alt="Saga Gitane Gypsy Jazz Guitar" id="_EKM_SHOWDATA_PRODUCT_14148" border="0" /></a></div>
+			<header class="item-name"><a href="saga-gitane-gypsy-jazz-guitar-14148-p.asp">Saga Gitane Gypsy Jazz Guitar</a></header>
+			<div class="item-short-description"></div>
+			<div class="item-price">&#163;799.00</div>
+			<div class="item-rrp">&#163;1,200.00</div>
+		</section><!-- .item -->
+		</div><!-- .row --><div class="row cf">
+		<section class="item i-1">
+			<div class="item-image"><a  href="salamander-grand-auditorium-solid-top-electro-acoustic-guitar-13818-p.asp" data-ekm-badges="" data-ekm-badges-max-width="72" data-ekm-badges-max-height="72"><img itemprop="image" src="/ekmps/shops/granisty/images/salamander-grand-auditorium-solid-top-electro-acoustic-guitar-13818-p[ekm]70x180[ekm].jpg" width="70" height="180" alt="Salamander Grand Auditorium Solid Top Electro Acoustic Guitar" id="_EKM_SHOWDATA_PRODUCT_13818" border="0" /></a></div>
+			<header class="item-name"><a href="salamander-grand-auditorium-solid-top-electro-acoustic-guitar-13818-p.asp">Salamander Grand Auditorium Solid Top Electro Acoustic Guitar</a></header>
+			<div class="item-short-description"></div>
+			<div class="item-price">&#163;129.99</div>
+			<div class="item-rrp">&#163;169.99</div>
+		</section><!-- .item -->
+		
+		<section class="item i-2">
+			<div class="item-image"><a  href="salamander-jumbo-solid-top-electro-acoustic-guitar-13819-p.asp" data-ekm-badges="" data-ekm-badges-max-width="72" data-ekm-badges-max-height="72"><img itemprop="image" src="/ekmps/shops/granisty/images/salamander-jumbo-solid-top-electro-acoustic-guitar-13819-p[ekm]70x180[ekm].jpg" width="70" height="180" alt="Salamander Jumbo Solid Top Electro Acoustic Guitar" id="_EKM_SHOWDATA_PRODUCT_13819" border="0" /></a></div>
+			<header class="item-name"><a href="salamander-jumbo-solid-top-electro-acoustic-guitar-13819-p.asp">Salamander Jumbo Solid Top Electro Acoustic Guitar</a></header>
+			<div class="item-short-description"></div>
+			<div class="item-price">&#163;119.99</div>
+			<div class="item-rrp">&#163;159.99</div>
+		</section><!-- .item -->
+		
+		<section class="item i-3">
+			<div class="item-image"><a  href="seagull-entourage-burnt-umber-qit-13832-p.asp" data-ekm-badges="red-20%off" data-ekm-badges-max-width="72" data-ekm-badges-max-height="72"><img itemprop="image" src="/ekmps/shops/granisty/images/seagull-entourage-burnt-umber-qit-13832-p[ekm]73x180[ekm].jpg" width="73" height="180" alt="Seagull Entourage Burnt Umber QIT" id="_EKM_SHOWDATA_PRODUCT_13832" border="0" /></a></div>
+			<header class="item-name"><a href="seagull-entourage-burnt-umber-qit-13832-p.asp">Seagull Entourage Burnt Umber QIT</a></header>
+			<div class="item-short-description"></div>
+			<div class="item-price">&#163;399.99</div>
+			<div class="item-rrp">&#163;499.00</div>
+		</section><!-- .item -->
+		</div><!-- .row --><div class="row cf">
+		<section class="item i-1">
+			<div class="item-image"><a  href="seagull-merlin-dulcimer-natural-mahoganay-11005-p.asp" data-ekm-badges="" data-ekm-badges-max-width="72" data-ekm-badges-max-height="72"><img itemprop="image" src="/ekmps/shops/granisty/images/seagull-merlin-dulcimer-natural-mahoganay-11005-p[ekm]97x180[ekm].jpg" width="97" height="180" alt="Seagull Merlin Dulcimer Natural Mahoganay" id="_EKM_SHOWDATA_PRODUCT_11005" border="0" /></a></div>
+			<header class="item-name"><a href="seagull-merlin-dulcimer-natural-mahoganay-11005-p.asp">Seagull Merlin Dulcimer Natural Mahoganay</a></header>
+			<div class="item-short-description"></div>
+			<div class="item-price">&#163;129.99</div>
+			<div class="item-rrp">&#163;149.00</div>
+		</section><!-- .item -->
+		
+		<section class="item i-2">
+			<div class="item-image"><a  href="sigma-gjm-sge-electro-acoustic-14140-p.asp" data-ekm-badges="" data-ekm-badges-max-width="72" data-ekm-badges-max-height="72"><img itemprop="image" src="/ekmps/shops/granisty/images/sigma-gjm-sge-electro-acoustic-14140-p[ekm]180x180[ekm].jpg" width="180" height="180" alt="Sigma GJM SGE Electro Acoustic" id="_EKM_SHOWDATA_PRODUCT_14140" border="0" /></a></div>
+			<header class="item-name"><a href="sigma-gjm-sge-electro-acoustic-14140-p.asp">Sigma GJM SGE Electro Acoustic</a></header>
+			<div class="item-short-description"></div>
+			<div class="item-price">&#163;279.99</div>
+			<div class="item-rrp"></div>
+		</section><!-- .item -->
+		
+		<section class="item i-3">
+			<div class="item-image"><a  href="stentor-student-i-44--violin-outfit-5891-p.asp" data-ekm-badges="" data-ekm-badges-max-width="72" data-ekm-badges-max-height="72"><img itemprop="image" src="/ekmps/shops/granisty/images/stentor-student-i-4-4-violin-outfit-5891-p[ekm]180x180[ekm].jpg" width="180" height="180" alt="Stentor Student I 4/4  Violin Outfit" id="_EKM_SHOWDATA_PRODUCT_5891" border="0" /></a></div>
+			<header class="item-name"><a href="stentor-student-i-44--violin-outfit-5891-p.asp">Stentor Student I 4/4  Violin Outfit</a></header>
+			<div class="item-short-description"></div>
+			<div class="item-price">&#163;134.99</div>
+			<div class="item-rrp"></div>
+		</section><!-- .item -->
+		</div><!-- .row --><div class="row cf">
+		<section class="item i-1">
+			<div class="item-image"><a  href="tc-electronic-polytune-2-mini-tuner-pedal-12873-p.asp" data-ekm-badges="" data-ekm-badges-max-width="72" data-ekm-badges-max-height="72"><img itemprop="image" src="/ekmps/shops/granisty/images/tc-electronic-polytune-2-mini-tuner-pedal-12873-p[ekm]102x180[ekm].jpg" width="102" height="180" alt="TC Electronic Polytune 2 Mini Tuner Pedal" id="_EKM_SHOWDATA_PRODUCT_12873" border="0" /></a></div>
+			<header class="item-name"><a href="tc-electronic-polytune-2-mini-tuner-pedal-12873-p.asp">TC Electronic Polytune 2 Mini Tuner Pedal</a></header>
+			<div class="item-short-description"></div>
+			<div class="item-price">&#163;84.99</div>
+			<div class="item-rrp"></div>
+		</section><!-- .item -->
+		
+		<section class="item i-2">
+			<div class="item-image"><a  href="vox-ac15vr-12925-p.asp" data-ekm-badges="" data-ekm-badges-max-width="72" data-ekm-badges-max-height="72"><img itemprop="image" src="/ekmps/shops/granisty/images/vox-ac15vr-12925-p[ekm]180x180[ekm].jpg" width="180" height="180" alt="Vox AC15VR" id="_EKM_SHOWDATA_PRODUCT_12925" border="0" /></a></div>
+			<header class="item-name"><a href="vox-ac15vr-12925-p.asp">Vox AC15VR</a></header>
+			<div class="item-short-description">15-watt Valve Reactor combo with 1 x 12" Celestion VX12 speaker</div>
+			<div class="item-price">&#163;299.00</div>
+			<div class="item-rrp">&#163;358.80</div>
+		</section><!-- .item -->
+		
+		<section class="item i-3">
+			<div class="item-image"><a  href="yamaha-pacifica-212vqm-electric-guitar-quilted-maple-tobacco-13663-p.asp" data-ekm-badges="" data-ekm-badges-max-width="72" data-ekm-badges-max-height="72"><img itemprop="image" src="/ekmps/shops/granisty/images/yamaha-pacifica-212vqm-electric-guitar-quilted-maple-tobacco-13663-p[ekm]180x180[ekm].jpg" width="180" height="180" alt="Yamaha Pacifica 212VQM Electric Guitar Quilted Maple Tobacco" id="_EKM_SHOWDATA_PRODUCT_13663" border="0" /></a></div>
+			<header class="item-name"><a href="yamaha-pacifica-212vqm-electric-guitar-quilted-maple-tobacco-13663-p.asp">Yamaha Pacifica 212VQM Electric Guitar Quilted Maple Tobacco</a></header>
+			<div class="item-short-description"></div>
+			<div class="item-price">&#163;309.00</div>
+			<div class="item-rrp">&#163;359.00</div>
+		</section><!-- .item -->
+		</div><!-- .row --><div class="row cf">
+		<section class="item i-1">
+			<div class="item-image"><a  href="yamaha-revstar-rs420-electric-guitar-factory-blue-13659-p.asp" data-ekm-badges="" data-ekm-badges-max-width="72" data-ekm-badges-max-height="72"><img itemprop="image" src="/ekmps/shops/granisty/images/yamaha-revstar-rs420-electric-guitar-factory-blue-13659-p[ekm]180x180[ekm].jpg" width="180" height="180" alt="Yamaha Revstar RS420 Electric Guitar, Factory Blue" id="_EKM_SHOWDATA_PRODUCT_13659" border="0" /></a></div>
+			<header class="item-name"><a href="yamaha-revstar-rs420-electric-guitar-factory-blue-13659-p.asp">Yamaha Revstar RS420 Electric Guitar, Factory Blue</a></header>
+			<div class="item-short-description"></div>
+			<div class="item-price">&#163;425.00</div>
+			<div class="item-rrp"></div>
+		</section><!-- .item -->
+		</div><!-- .row --></div><!-- #special-offers -->
+	
+	<div id="products"><header id="products-header">Products</header><div class="row cf">
+		<section class="item i-1">
+			<div class="item-image"><a  href="ashbury-rathlin-000c-electro-acoustic-14149-p.asp" data-ekm-badges="" data-ekm-badges-max-width="72" data-ekm-badges-max-height="72"><img itemprop="image" src="/ekmps/shops/granisty/images/ashbury-rathlin-000c-electro-acoustic-14149-p[ekm]137x180[ekm].jpeg" width="137" height="180" alt="Ashbury Rathlin 000C Electro Acoustic" id="_EKM_SHOWDATA_PRODUCT_14149" border="0" /></a></div>
+			<header class="item-name"><a href="ashbury-rathlin-000c-electro-acoustic-14149-p.asp">Ashbury Rathlin 000C Electro Acoustic</a></header>
+			<div class="item-short-description"></div>
+			<div class="item-price">&#163;219.00</div>
+			<div class="item-rrp">&#163;399.00</div>
+		</section><!-- .item -->
+		</div><!-- .row --></div><!-- #special-offers -->
+	
+	
+	
+		<section id="welcome-area">
+			<header>Welcome To Music Matters DIRECT mail order site.</header>
+			<div id="welcome-cont">
+		<div>As one of Kents leading Musical Instrument retailer we have provided over tens years of service to musicians young and old ,from the beginner to international music stars. We pride ourselves on friendly service and dedication to all our customers making sure we provide the right information for the right product at the right&nbsp;price.&nbsp;</div>
+
+<div style="text-align: center;"><span style="font-size: 22px;">Price match and service guaranteed.</span><span style="line-height: 1.6;">&nbsp;</span><br />
+&nbsp;</div>
+
+			</div>
+		</section><!-- #welcome-area -->
+		
+
+</div><!-- #main-page --></div><!-- #main-col -->
+			
+			<div class="side-bar">
+			
+			
+				<section class="element editable-area">
+					<header class="element-header"><span>Divido Online Finance</span></header>
+					<div class="element-cont">
+				<a href="http://www.musicmattersdirect.co.uk/finance-22-w.asp"><img alt="" src="/ekmps/shops/granisty/resources/Design/smallbanner.jpg" style="width: 178px; height: 154px;" /></a><br />
+<!-- Begin eWAY Linking Code -->
+<div id="eWAYBlock">
+<div style="text-align:center;"></div>
+</div>
+<!-- End eWAY Linking Code -->
+					</div>
+				</section><!-- .editable-area -->
+				
+			
+			
+			
+			
+				<section class="element editable-area">
+					<header class="element-header"><span>Casio Microsite</span></header>
+					<div class="element-cont">
+				<a href="http://musicmattersdirect.casiomusicdealer.co.uk/" target="_blank"><img alt="" src="/ekmps/shops/granisty/resources/Design/casiomicrosight.jpg" style="width: 180px; height: 46px;" /></a>
+					</div>
+				</section><!-- .editable-area -->
+				
+			
+			
+				<section class="element editable-area">
+					<header class="element-header"><span>Guitar Repairs & Setups</span></header>
+					<div class="element-cont">
+				<a href="http://www.musicmattersdirect.co.uk/guitar-servicing-4-w.asp"><img alt="" src="/ekmps/shops/granisty/resources/Design/guitarsetup.jpg" style="width: 183px; height: 173px;" /></a>
+					</div>
+				</section><!-- .editable-area -->
+				
+			
+			
+				<section class="element editable-area">
+					<header class="element-header"><span>Realex Secure Payments</span></header>
+					<div class="element-cont">
+				<a href="https://www.realexpayments.com/features/fraud-management/" onclick="window.open(this.href, '', 'resizable=yes,status=no,location=no,toolbar=no,menubar=no,fullscreen=no,scrollbars=no,dependent=no'); return false;"><img alt="" src="/ekmps/shops/granisty/resources/Design/secure.png" style="width: 180px; height: 131px;" /></a>
+					</div>
+				</section><!-- .editable-area -->
+				
+			
+			
+				<section class="element editable-area">
+					<header class="element-header"><span>Sell Your Gear</span></header>
+					<div class="element-cont">
+				<div style="text-align: center;"><a href="http://www.musicmattersdirect.co.uk/contact-amp-info-2-w.asp"><img alt="" src="/ekmps/shops/granisty/resources/Design/sellyourgear.jpg" style="width: 178px; height: 163px;" /></a></div>
+
+					</div>
+				</section><!-- .editable-area -->
+				
+			
+			
+				<section class="element editable-area">
+					<header class="element-header"><span>Map</span></header>
+					<div class="element-cont">
+				<span aria-label="div widget" contenteditable="false" role="region" style="width: 176px;" tabindex="-1"><span aria-label="div widget" contenteditable="false" role="region" style="width: 176px;" tabindex="-1">
+<div class="powermaps"><iframe border="0" class="powermap" height="280" src="/ekmps/data/ckeditor/plugins/powermaps/googlemapsmall.html?lat=51.27753835589654&amp;lon=0.521514131367212&amp;zoom=16&amp;height=280&amp;width=176" style="border:0" width="176"></iframe>
+<div class="powermapMarkers" style="display: none">
+<div data-label="MM UK" data-lat="51.277380847271" data-lon="0.5220408501625116"></div>
+
+					</div>
+				</section><!-- .editable-area -->
+				
+			
+			
+			
+			</div><!-- .side-bar -->
+		
+		</div><!-- #columns -->
+		
+		
+		<div id="footer" class="cf"><div class="gloss cf">
+			<div id="copyright">
+				<div id="copyright"><p style="text-align: center;"><a href="https://www.avsl.com/brands/adastra"><img alt="" src="/ekmps/shops/granisty/resources/Design/adastra.png" style="width: 136px; height: 28px;" /></a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<a href="https://www.avsl.com/brands/avlink"><img alt="" src="/ekmps/shops/granisty/resources/Design/avlink.png" style="width: 115px; height: 28px;" /></a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<a href="https://www.avsl.com/brands/chord"><img alt="" src="/ekmps/shops/granisty/resources/Design/chord.png" style="width: 106px; height: 28px;" /></a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<a href="https://www.avsl.com/brands/citronic"><img alt="" src="/ekmps/shops/granisty/resources/Design/citronic.png" style="width: 128px; height: 28px;" /></a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<a href="https://www.avsl.com/brands/mercury"><img alt="" src="/ekmps/shops/granisty/resources/Design/mercury.png" style="width: 137px; height: 28px;" /></a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<a href="https://www.avsl.com/brands/qtx"><img alt="" src="/ekmps/shops/granisty/resources/Design/qtx.png" style="width: 73px; height: 28px;" /></a></p>
+</div><!-- #copyright -->
+			</div><!-- #copyright -->
+			
+			<div id="system-links">
+				<a href="https://www.ekm.com" title="Powered by EKM" target="_blank">Powered by EKM</a> -
+				<a href="privacy.asp">privacy &amp; cookies</a>
+				
+						- <a href="sitemap.asp">sitemap</a> -
+						<a href="terms.asp"><!--lc-->terms &amp; conditions<!--/lc--></a>
+					
+				
+			</div><!-- #system-links -->
+		</div></div><!-- #footer -->
+		
+		<div id="payment-graphics" class="cf">
+			<div id="credit-cards"><img alt="" src="/ekmps/shops/granisty/resources/Design/cards.png" style="width: 500px; height: 60px;" /></div><!-- #credit-cards -->
+			
+			<div id="secure-payment"><img src="/ekmps/designs/assets/master/598/images/secure-payment.png"></div><!-- #secure-payment -->
+		</div><!-- #payment-graphics -->
+		
+    
+    </div><!-- #container -->
+    
+<!-- Start of ekmLiveChat Script -->
+<script type='text/javascript' id='ekmLiveChatInitialisation'>
+(function () {var body = document.getElementsByTagName('body')[0];var protocol = location.protocol;var visitorGuid = '';var pairs = document.cookie.split('; ');var decode = decodeURIComponent;for (var i = 0, pair; pair = pairs[i] && pairs[i].split('='); i++) {if (decode(pair[0]) === 'ekmLiveChat_1bdea081-bf8d-4eda-b0b9-ebee3eb1d704'){ visitorGuid = decode(pair[1] || '');}}var date;try{ date = new Date().toJSON(); } catch(e){ date = ''; }var src = protocol + '//www.ekmlivechat.com/Visitor/ekmlivechat/1bdea081-bf8d-4eda-b0b9-ebee3eb1d704/?page=' + encodeURIComponent(window.location.href) + '&title=' + encodeURIComponent(document.title) + '&referrer=' + encodeURIComponent(document.referrer) + '&visitorId=' + visitorGuid + '&date=' + date;var ekmLiveChat = document.createElement('script');ekmLiveChat.setAttribute('type', 'text/javascript');ekmLiveChat.setAttribute('src', src);ekmLiveChat.setAttribute('id', 'ekmLiveChatScript');body.appendChild(ekmLiveChat);})();</script>
+<!-- End of ekmLiveChat Script -->
+<script src="//ekmpinpoint.ekmsecure.com/harvest/stats.js"></script>
+<script>
+_ekmpinpoint.getStats('granisty');
+</script>
+<script src="//globalstats.ekmsecure.com/hits/stats-global.js"></script>
+<script>
+_ekmpinpoint.getStatsGlobal('granisty', '19');
+</script>
+<!-- Google Tag Manager --><noscript><iframe src='//www.googletagmanager.com/ns.html?id=GTM-KF9VMP' height='0' width='0' style='display:none;visibility:hidden'></iframe></noscript><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','EKMdataLayer','GTM-KF9VMP');</script><!-- End Google Tag Manager --></body>
+</html>
+

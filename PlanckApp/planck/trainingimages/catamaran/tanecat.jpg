@@ -1,0 +1,1294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tahaa Activities and Excursions | Tahiti.com</title>
+	<meta charset="utf-8" />
+
+        <meta name="description" content="Tahaa activities guide. Discover all the many excursions and adventures that await you! Tahiti.com" />
+        <meta name="abstract" content="Tahaa activities guide. Discover all the many excursions and adventures that await you! Tahiti.com">
+        <meta name="TITLE" content="Tahaa Activities and Excursions | Tahiti.com">
+        <link rel="canonical" href="https://www.tahiti.com/activities/tahaa" />
+        <!--static field-->
+		<meta name="OWNER" content="Tahiti.com">
+        <meta name="robots" content="index, follow">
+        <meta name="GOOGLEBOT" content="INDEX, FOLLOW">
+	<meta name="viewport" content="width=device-width" />
+    <script type="text/JavaScript">
+
+        window.onerror = null;
+        function myErrHandler(msg, url, lno) {
+            console.log(msg);
+            console.log(url);
+            console.log(lno);
+            return true;
+        };
+        window.onerror = myErrHandler;
+</script>
+    <script src="/bundles/jqueryBase?v=FKoke_1ihJT4NtNfbo_1FX1c_jSabttTBzXppUs31D81"></script>
+
+    <script src="/bundles/angular?v=CK_Njx313m2AGEHaV0Nask_QIBX6n055ElYJXwHuePQ1"></script>
+
+    
+    <!--filterContext.Controller.ViewBag.PageMetaData-->
+    
+    <script src="/Scripts/buttons.js"></script>
+    <script type="text/javascript"> stLight.options({ publisher: "eba67879-b5df-41f2-8461-db98a9acee99", doNotHash: true, doNotCopy: false, hashAddressBar: false }); </script>
+    <link rel="shortcut icon" href="/Content/images/icon2/favicon.ico" />
+
+    <!-- For third-generation iPad with high-resolution Retina display: -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/Content/Images/icon2/apple-touch-icon-144x144-precomposed.png">
+
+    <!-- For iPhone with high-resolution Retina display: -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/Content/Images/icon2/apple-touch-icon-114x114-precomposed.png">
+
+    <!-- For first- and second-generation iPad: -->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/Content/Images/icon2/apple-touch-icon-72x72-precomposed.png">
+
+    <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+    <link rel="apple-touch-icon-precomposed" href="/Content/Images/icon2/apple-touch-icon-precomposed.png">
+
+    <script type="text/javascript">
+        if (window['google'] != undefined && window['google']['loader'] != undefined) {
+            if (!window['google']['ads']) {
+                window['google']['ads'] = {};
+                google.ads.Version = '3.0';
+                google.ads.JSHash = 'aa1b0afa99a7bc6de46dd1e6e1676411';
+                google.ads.LoadArgs = 'file\75ads\46v\0753\46packages\75search\46async\0752';
+            }
+            google.loader.writeLoadTag("script", google.loader.ServiceBase + "/api/ads/3.0/aa1b0afa99a7bc6de46dd1e6e1676411/search.I.js", true);
+        }
+    </script>
+
+
+
+    <link href="/Content/css?v=LXlZZvzfvxqoKtdWb-LzAIygm7YaLxmKaxygs8udAbU1" rel="stylesheet"/>
+
+    <script src="/bundles/modernizr?v=qVODBytEBVVePTNtSFXgRX0NCEjh9U_Oj8ePaSiRcGg1"></script>
+
+    <script type="text/javascript">
+        //var tahitiMyApp = angular.module("tahitiApp", []);
+    </script>
+    <script src="/bundles/Tahiticomasp-app?v=zOZ--ZcwcT_B7PHBZ04Vb0TYw8TrrxHbv4SJGUBbE2c1"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!---Google analytics -->
+        <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-25050823-1', 'tahiti.com');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+        <!---end Google Analytics code2 -->
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','//connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '142264772855133');
+fbq('track', "PageView");</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=142264772855133&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+</head>
+<body xmlns:ng="http://angularjs.org" id="ng-app" ng-app="tahitiMyApp">
+
+	<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-5VQN3J"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5VQN3J');</script>
+<!-- End Google Tag Manager -->
+
+    <!-- header -->
+    <header class="main-header">
+    <div class="row">
+        <div class="eight columns">
+            <nav role="navigation" class="main-nav">
+                <ul id='thisCanBeTheOnlyOne'>
+                    <li class="name">
+
+                            <a href="/" class="logo" style="margin-top:4px">
+                                <img title="Tahiti.com" alt="Tahiti.com" src="/Content/Images/header/thti_logo_2x.png" />
+                            </a>
+
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" class="bar">Vacations</a>
+<div class="nav-sub wide discover">
+    <div class="nav-sub__pad seven columns">
+        <div class="five columns">
+            <div class="heading gray"><a href="/vacations">BY ISLANDS <span class="right hovervis">ALL <i class="fa fa-angle-right"></i></span></a></div>
+            <ul>
+                <li><a href="/vacations/moorea">Moorea</a></li>
+                <li><a href="/vacations/huahine">Huahine</a></li>
+                <li><a href="/vacations/bora-bora">Bora Bora</a></li>
+                <li><a href="/vacations/raiatea">Raiatea</a></li>
+                <li><a href="/vacations/tahaa">Taha'a</a></li>
+                <li><a href="/vacations/tikehau">Tikehau</a></li>
+                <li><a href="/vacations/rangiroa">Rangiroa</a></li>
+                <li><a href="/vacations/tetiaroa">Tetiaroa</a></li>
+
+
+            </ul>
+        </div>
+        <div class="six columns">
+            <div class="heading gray"><a href="/vacations">BY TYPE <span class="right hovervis">ALL <i class="fa fa-angle-right"></i></span></a></div>
+            <ul>
+                <li><a href="/vacations/honeymoons">Honeymoons</a></li>
+                <li><a href="/vacations/family-friendly">Family</a></li>
+                <li><a href="/vacations/value-vacations">Value</a></li>
+                <li><a href="/vacations/weddings">Weddings</a></li>
+                <li><a href="/vacations/cruises">Cruises</a></li>
+                <!--<li><a href="/vacations/best-sellers">Best Sellers</a></li>-->
+                <li><a href="/vacations/active-adventures">Adventures</a></li>
+                <li><a href="/vacations/luxury">Luxury</a></li>
+                <li><a href="/vacations/festivals-and-events">Events</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="nav-sub__nopad five columns">
+        <div class="column last" style="background-color: #434343;">
+            <ul class="">
+                <li><a href="/travel/request-a-quote">
+                    <div class="scale-up-img">
+                        <img alt="Tailored Vacations" src="/Content/Images/header/tailored_vacation.jpg">
+                        <div class="bg-color">
+                            <div class="cta">Tailored Vacations</div>
+                        </div>
+                    </div>
+                </a></li>
+                <li><a href="/services/about-us">
+                    <div class="scale-up-img">
+                        <img alt="Meet the Experts" src="/Content/Images/header/experts.jpg">
+                        <div class="bg-color">
+                            <div class="cta">Meet the Experts</div>
+                        </div>
+                    </div>
+                </a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" class="bar">Honeymoons</a>
+<div class="nav-sub wide honeymoons">
+    <div class="nav-sub__pad seven columns">
+        <div class="five columns">
+            <div class="heading gray"><a href="/vacations">BY ISLANDS <span class="right hovervis">ALL <i class="fa fa-angle-right"></i></span></a></div>
+            <ul>
+                <li><a href="/vacations/bora-bora-honeymoons">Bora Bora Honeymoons</a></li>
+                <li><a href="/vacations/moorea-honeymoons">Moorea Honeymoons</a></li>
+                <li><a href="/vacations/tahaa-honeymoons">Taha'a Honeymoons</a></li>
+                <li><a href="/vacations/honeymoons">All Honeymoons</a></li>
+            </ul>
+        </div>
+        <div class="five columns offset-by-one end">
+            <div class="heading gray"><a href="/vacations">BY TYPE <span class="right hovervis">ALL <i class="fa fa-angle-right"></i></span></a></div>
+            <ul>
+                <li><a href="/vacations/honeymoons-luxury">Luxury Honeymoons</a></li>
+                <li><a href="/vacations/honeymoons-value-vacations">Value Honeymoons</a></li>
+                <li><a href="/vacations/active-adventures-honeymoons">Active Honeymoons</a></li>
+                <li><a href="/vacations/cruises-honeymoons">Honeymoon Cruises</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="nav-sub__nopad five columns">
+        <div class="column last" style="background-color: #434343;">
+            <ul class="">
+                <li><a href="/travel/request-a-quote">
+                    <div class="scale-up-img">
+                        <img alt="Tailored Honeymoon" src="/Content/Images/header/tailored_honeymoon.jpg">
+                        <div class="bg-color">
+                            <div class="cta">Tailored Honeymoon</div>
+                        </div>
+                    </div>
+                </a></li>
+                <li><a href="/travel/reviews">
+                    <div class="scale-up-img">
+                        <img alt="Stories" src="/Content/Images/header/stories.jpg">
+                        <div class="bg-color">
+                            <div class="cta">Stories</div>
+                        </div>
+                    </div>
+                </a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">Travel Guide</a>
+<div class="nav-sub travel">
+    <dl class="vertical tabs column">
+      <dd class="active"><a href="#simple1">Islands</a></dd>
+      <dd><a href="#simple2">Hotels</a></dd>
+      <dd><a href="#simple3">Activities</a></dd>
+    </dl>
+    <ul class="tabs-content five columns">
+      <li class="active" id="simple1Tab">
+        <div class="tabs-content-pad">
+          <div class="heading gray"><a href="/islands">ISLANDS <span class="right hovervis">ALL <i class="fa fa-angle-right"></i></span></a></div>
+          <ul class="flexwrap threeUp">
+            <li><a href="/island/tahiti">Tahiti</a></li>
+            <li><a href="/island/bora-bora">Bora Bora</a></li>
+            <li><a href="/island/moorea">Moorea</a></li>
+            <li><a href="/island/tahaa">Taha'a</a></li>
+            <li><a href="/island/raiatea">Raiatea</a></li>
+            <li><a href="/island/tetiaroa">Tetiaroa  </a></li>
+            <li><a href="/island/huahine">Huahine</a></li>
+            <li><a href="/island/rangiroa">Rangiroa</a></li>
+            <li><a href="/island/tikehau">Tikehau</a></li>
+            <li><a href="/island/fakarava">Fakarava</a></li>
+            <li><a href="/island/manihi">Manihi</a></li>
+            <li><a href="/island/marquesas-islands">Marquesas</a></li>
+            <li><a href="/island/austral-islands">Austral Islands</a></li>
+          </ul>
+        </div>
+      </li>
+      <li id="simple2Tab">
+        <div class="tabs-content-pad">
+          <div class="seven columns">
+            <div class="heading gray"><a href="/hotels">BY ISLANDS <span class="right hovervis">ALL <i class="fa fa-angle-right"></i></span></a></div>
+            <ul class="flexwrap twoUp">
+                <li><a href="/hotels/Tahiti">Tahiti</a></li>
+                <li><a href="/hotels/bora-bora">Bora Bora</a></li>
+                <li><a href="/hotels/moorea">Moorea</a></li>
+                <li><a href="/hotels/tahaa">Taha'a</a></li>
+                <li><a href="/hotels/raiatea">Raiatea</a></li>
+                <li><a href="/hotels/tetiaroa">Tetiaroa</a></li>
+                <li><a href="/hotels/huahine">Huahine</a></li>
+                <li><a href="/hotels/rangiroa">Rangiroa</a></li>
+                <li><a href="/hotels/tikehau">Tikehau</a></li>
+                <li><a href="/hotels/Fakarava">Fakarava</a></li>
+                <li><a href="/hotels/Fakarava">Fakarava</a></li>
+                <li><a href="/hotels/marquesas-islands">Marquesas</a></li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li id="simple3Tab">
+        <div class="tabs-content-pad">
+          <div class="seven columns">
+            <div class="heading gray"><a href="/activities">BY ISLANDS <span class="right hovervis">ALL <i class="fa fa-angle-right"></i></span></a></div>
+            <ul class="flexwrap twoUp">
+              <li><a href="/activities/tahiti">Tahiti</a></li>
+              <li><a href="/activities/huahine">Huahine</a></li>
+              <li><a href="/activities/bora-bora">Bora Bora</a></li>
+              <li><a href="/activities/rangiroa">Rangiroa</a></li>
+              <li><a href="/activities/moorea">Moorea</a></li>
+              <li><a href="/activities/tikehau">Tikehau</a></li>
+              <li><a href="/activities/tahaa">Taha'a</a></li>
+              <li><a href="/activities/fakarava">Fakarava</a></li>
+              <li><a href="/activities/raiatea">Raiatea</a></li>
+              <li><a href="/activities/marquesas-islands">Marquesas</a></li>
+              <li><a href="/activities/tetiaroa">Tetiaroa</a></li>
+            </ul>
+          </div>
+          <div class="five columns">
+            <div class="heading gray"><a href="/vacations">BY TYPE <span class="right hovervis">ALL <i class="fa fa-angle-right"></i></span></a></div>
+            <ul class="">
+              <li><a href="/activities/Water">Water</a></li>
+              <li><a href="/activities/adventure">Adventure</a></li>
+              <li><a href="/activities/family">Family</a></li>
+              <li><a href="/activities/Culture">Culture</a></li>
+              <li><a href="/activities/Relaxation">Relaxation</a></li>
+              <li><a href="/activities/Cuisine">Cuisine</a></li>
+            </ul>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <div class="nav-sub__nopad five columns">
+        <div class="column last" style="background-color: #434343;">
+            <ul class="">
+                <li><a href="/travel/preparing-to-travel-general">
+                    <div class="scale-up-img">
+                        <img alt="Preparing to Travel" src="/Content/Images/header/preparing_to_travel.jpg">
+                        <div class="bg-color">
+                            <div class="cta">Preparing to Travel</div>
+                        </div>
+                    </div>
+                </a></li>
+                <li><a href="/travel/about-tahiti">
+                    <div class="scale-up-img">
+                        <img alt="Culture and History" src="/Content/Images/header/culture.jpg">
+                        <div class="bg-color">
+                            <div class="cta">Culture & History</div>
+                        </div>
+                    </div>
+                </a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+                    </li>
+                </ul>
+
+            </nav>
+        </div>
+        <div class="three columns chatty">
+            <div class="header-request-btn show-for-small">
+                <a class="button small radius secondary" href="/travel/request-a-quote">REQUEST QUOTE</a>
+            </div>
+            <div class="header-request-btn hide-for-small">
+
+
+
+                    <a class="button small radius secondary" href="/travel/request-a-quote">REQUEST QUOTE</a>
+            </div>
+            <p style="color: white!important; font-size: 12px;" class="phone">1-866-584-2336</p>
+        </div>
+        <div class="one column questions">
+            <p id="searchTrigger"><i class="fa fa-search"></i></p>
+        </div>
+    </div>
+    <div class="hamburger">
+        <div id="nav-icon2">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <!-- <a href="#" class="button hamburger"><i class="fa fa-bars"></i></a> -->
+    <div class="mobile-menu">
+        <ul class="accordion">
+          <li class="">
+            <div class="title">
+              <h5>Vacations</h5>
+            </div>
+            <div class="content">
+              <div class="nav-sub wide">
+                  <div class="nav-sub__pad seven tablet100 mobile-four columns">
+                      <div class="five mobile-two tablet50 mobile100 columns">
+                          <div class="heading"><a href="/vacations">BY ISLANDS <span class="right hovervis">ALL <i class="fa fa-angle-right"></i></span></a></div>
+                          <ul class="flexwrap threeUp navblock">
+                              <li><a href="/vacations/moorea">Moorea</a></li>
+                              <li><a href="/vacations/huahine">Huahine</a></li>
+                              <li><a href="/vacations/bora-bora">Bora Bora</a></li>
+                              <li><a href="/vacations/raiatea">Raiatea</a></li>
+                              <li><a href="/vacations/tahaa">Taha'a</a></li>
+                              <li><a href="/vacations/tikehau">Tikehau</a></li>
+                              <li><a href="/vacations/rangiroa">Rangiroa</a></li>
+                              <li><a href="/vacations/tetiaroa">Tetiaroa</a></li>
+
+
+                          </ul>
+                      </div>
+                      <div class="six mobile-two tablet50 mobile100 columns">
+                          <div class="heading"><a href="/vacations">BY TYPE <span class="right hovervis">ALL <i class="fa fa-angle-right"></i></span></a></div>
+                          <ul class="flexwrap threeUp navblock">
+                              <li><a href="/vacations/honeymoons">Honeymoons</a></li>
+                              <li><a href="/vacations/family-friendly">Family</a></li>
+                              <li><a href="/vacations/value-vacations">Value</a></li>
+                              <li><a href="/vacations/weddings">Weddings</a></li>
+                              <li><a href="/vacations/cruises">Cruises</a></li>
+                              <!--<li><a href="/vacations/best-sellers">Best Sellers</a></li>-->
+                              <li><a href="/vacations/active-adventures">Adventures</a></li>
+                              <li><a href="/vacations/luxury">Luxury</a></li>
+                              <li><a href="/vacations/festivals-and-events">Events</a></li>
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="nav-sub__nopad five mobile-four columns tablet100">
+                      <div class="column last" style="background-color: #434343;">
+                          <ul class="">
+                              <li><a href="/travel/request-a-quote">
+                                  <div class="scale-up-img">
+                                      <img alt="Tailored Vacations" src="/Content/Images/header/tailored_vacation.jpg">
+                                      <div class="bg-color">
+                                          <div class="cta">Tailored Vacations</div>
+                                      </div>
+                                  </div>
+                              </a></li>
+                              <li><a href="/services/about-us">
+                                  <div class="scale-up-img">
+                                      <img alt="Meet the Experts" src="/Content/Images/header/experts.jpg">
+                                      <div class="bg-color">
+                                          <div class="cta">Meet the Experts</div>
+                                      </div>
+                                  </div>
+                              </a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="title">
+              <h5>Honeymoons</h5>
+            </div>
+            <div class="content">
+              <div class="nav-sub wide honeymoons">
+                  <div class="nav-sub__pad seven tablet100 mobile-four columns">
+                      <div class="five tablet50 mobile-four columns">
+                          <div class="heading"><a href="/vacations">BY ISLANDS <span class="right hovervis">ALL <i class="fa fa-angle-right"></i></span></a></div>
+                          <ul style="margin-bottom: 20px;" class="navblock">
+                              <li><a href="/vacations/bora-bora-honeymoons">Bora Bora Honeymoons</a></li>
+                              <li><a href="/vacations/moorea-honeymoons">Moorea Honeymoons</a></li>
+                              <li><a href="/vacations/tahaa-honeymoons">Taha'a Honeymoons</a></li>
+                              <li><a href="/vacations/honeymoons">All Honeymoons</a></li>
+                          </ul>
+                      </div>
+                      <div class="five tablet50 mobile-four columns offset-by-one end">
+                          <div class="heading"><a href="/vacations">BY ISLANDS <span class="right hovervis">ALL <i class="fa fa-angle-right"></i></span></a></div>
+                          <ul style="margin-bottom: 20px;" class="navblock">
+                              <li><a href="/vacations/honeymoons-luxury">Luxury Honeymoons</a></li>
+                              <li><a href="/vacations/honeymoons-value-vacations">Value Honeymoons</a></li>
+                              <li><a href="/vacations/active-adventures-honeymoons">Active Honeymoons</a></li>
+                              <li><a href="/vacations/cruises-honeymoons">Honeymoon Cruises</a></li>
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="nav-sub__nopad five tablet100 columns">
+                      <div class="column last" style="background-color: #434343;">
+                          <ul class="">
+                              <li><a href="/travel/request-a-quote">
+                                  <div class="scale-up-img">
+                                      <img alt="Tailored Honeymoon" src="/Content/Images/header/tailored_honeymoon.jpg">
+                                      <div class="bg-color">
+                                          <div class="cta">Tailored Honeymoon</div>
+                                      </div>
+                                  </div>
+                              </a></li>
+                              <li>
+                                <!--<a href="/travel/reviews">-->
+                                      <div class="scale-up-img">
+                                          <img alt="Stories" src="/Content/Images/header/stories.jpg">
+                                          <div class="bg-color">
+                                              <div class="cta">Stories</div>
+                                              <div style="color: white;">Coming Soon</div>
+                                          </div>
+                                      </div>
+                                  <!--</a>--></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="title">
+              <h5>Travel Guide</h5>
+            </div>
+            <div class="content">
+              <div class="nav-sub travel">
+                  <div class="hide-for-small">
+                    <dl class="vertical tabs column">
+                      <dd class="active"><a href="#simple1">Islands</a></dd>
+                      <dd><a href="#simple2">Hotels</a></dd>
+                      <dd><a href="#simple3">Activities</a></dd>
+                    </dl>
+                    <ul class="tabs-content five tablet80 columns">
+                      <li class="active" id="simple1Tab">
+                        <div class="tabs-content-pad">
+                          <ul class="flexwrap threeUp navblock">
+                            <li><a href="/island/tahiti">Tahiti</a></li>
+                            <li><a href="/island/tetiaroa">Tetiaroa  </a></li>
+                            <li><a href="/island/manihi">Manihi</a></li>
+                            <li><a href="/island/bora-bora">Bora Bora</a></li>
+                            <li><a href="/island/huahine">Huahine</a></li>
+                            <li><a href="/island/marquesas-islands">Marquesas</a></li>
+                            <li><a href="/island/moorea">Moorea</a></li>
+                            <li><a href="/island/rangiroa">Rangiroa</a></li>
+                            <li><a href="/island/austral-islands">Austral Islands</a></li>
+                            <li><a href="/island/tahaa">Taha'a</a></li>
+                            <li><a href="/island/tikehau">Tikehau</a></li>
+                            <li><a href="/island/raiatea">Raiatea</a></li>
+                            <li><a href="/island/fakarava">Fakarava</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li id="simple2Tab">
+                        <div class="tabs-content-pad">
+                          <div class="seven columns">
+                            <div class="heading"><a href="/hotels">BY ISLANDS <span class="right hovervis">ALL <i class="fa fa-angle-right"></i></span></a></div>
+                            <ul class="flexwrap twoUp navblock">
+                                <li><a href="/hotels/moorea">Moorea</a></li>
+                                <li><a href="/hotels/huahine">Huahine</a></li>
+                                <li><a href="/hotels/bora-bora">Bora Bora</a></li>
+                                <li><a href="/hotels/raiatea">Raiatea</a></li>
+                                <li><a href="/hotels/tahaa">Taha'a</a></li>
+                                <li><a href="/hotels/tikehau">Tikehau</a></li>
+                                <li><a href="/hotels/rangiroa">Rangiroa</a></li>
+                                <li><a href="/hotels/tetiaroa">Tetiaroa</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+                      <li id="simple3Tab">
+                        <div class="tabs-content-pad">
+                          <div class="seven columns">
+                            <div class="heading"><a href="/activities">BY ISLANDS <span class="right hovervis">ALL <i class="fa fa-angle-right"></i></span></a></div>
+                            <ul class="flexwrap twoUp navblock">
+                              <li><a href="/activities/tahiti">Tahiti</a></li>
+                              <li><a href="/activities/huahine">Huahine</a></li>
+                              <li><a href="/activities/bora-bora">Bora Bora</a></li>
+                              <li><a href="/activities/rangiroa">Rangiroa</a></li>
+                              <li><a href="/activities/moorea">Moorea</a></li>
+                              <li><a href="/activities/tikehau">Tikehau</a></li>
+                              <li><a href="/activities/tahaa">Taha'a</a></li>
+                              <li><a href="/activities/fakarava">Fakarava</a></li>
+                              <li><a href="/activities/raiatea">Raiatea</a></li>
+                              <li><a href="/activities/marquesas-islands">Marquesas</a></li>
+                              <li><a href="/activities/tetiaroa">Tetiaroa</a></li>
+                            </ul>
+                          </div>
+                          <div class="five columns">
+                            <div class="heading"><a href="/vacations">BY TYPE <span class="right hovervis">ALL <i class="fa fa-angle-right"></i></span></a></div>
+                            <ul class="navblock">
+                              <li><a href="/activities/adventure">Adventure</a></li>
+                              <li><a href="/activities/family">Family</a></li>
+                              <li><a href="/activities/Culture">Culture</a></li>
+                              <li><a href="/activities/Relaxation">Relaxation</a></li>
+                              <li><a href="/activities/Cuisine">Cuisine</a></li>
+                              <li><a href="/activities/Water">Water</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                    <div class="nav-sub__nopad five tablet100 columns">
+                        <div class="column last" style="background-color: #434343;">
+                            <ul class="">
+                                <li><a href="/travel/request-a-quote">
+                                    <div class="scale-up-img">
+                                        <img alt="Preparing to Travel" src="/Content/Images/header/preparing_to_travel.jpg">
+                                        <div class="bg-color">
+                                            <div class="cta">Preparing to Travel</div>
+                                        </div>
+                                    </div>
+                                </a></li>
+                                <li><!--<a href="/travel/about-tahiti">-->
+                                    <div class="scale-up-img">
+                                        <img alt="Culture and History" src="/Content/Images/header/culture.jpg">
+                                        <div class="bg-color">
+                                            <div class="cta">Culture & History</div>
+                                        </div>
+                                    </div>
+                                <!--</a>--></li>
+                            </ul>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="tabs-content-pad show-for-small">
+                    <ul class="show-for-small navblock">
+                        <li><a href="/islands">Islands</a></li>
+                        <li><a href="/hotels">Hotels</a></li>
+                        <li><a href="/activities">Activites</a></li>
+                    </ul>
+                  </div>
+                  <div class="nav-sub__nopad five tablet100 columns mobileCultureHistory">
+                      <div class="column last" style="background-color: #434343;">
+                          <ul class="">
+                              <li><a href="/travel/request-a-quote">
+                                  <div class="scale-up-img">
+                                      <img alt="Preparing to Travel" src="/Content/Images/header/preparing_to_travel.jpg">
+                                      <div class="bg-color">
+                                          <div class="cta">Preparing to Travel</div>
+                                      </div>
+                                  </div>
+                              </a></li>
+                              <li><!--<a href="/travel/about-tahiti">-->
+                                  <div class="scale-up-img">
+                                      <img alt="Culture and History" src="/Content/Images/header/culture.jpg">
+                                      <div class="bg-color">
+                                          <div class="cta">Culture & History</div>
+                                          <div style="color: white;">Coming Soon</div>
+                                      </div>
+                                  </div>
+                              <!--</a>--></li>
+                          </ul>
+                      </div>
+                  </div>
+            </div>
+          </li>
+        </ul>
+        <div class="request-info">
+          <p class="phoneNo">866-584-2336</p>
+          <a href="/travel/request-a-quote" class="button secondary radius">REQUEST A QUOTE</a>
+        </div>
+        <div class="">
+          <div class="mobile-full-width-search">
+            <form id="cref" action="/services/search" class="ng-pristine ng-valid">
+                <input type="hidden" value="https://www.tahiti.com/cse2.xml" name="cref">
+                <!-- <input class="button button-arrow" type="submit" value=""> -->
+                <div class="search-outer">
+                    <input class="search" type="text" placeholder="Type your search here" name="q">
+                </div>
+            </form>
+          </div>
+        </div>
+    </div>
+    <div class="row">
+      <div class="full-width-search">
+        <form id="cref" action="/services/search" class="ng-pristine ng-valid">
+            <input type="hidden" value="https://www.tahiti.com/cse2.xml" name="cref">
+            <!-- <input class="button button-arrow" type="submit" value=""> -->
+            <div class="search-outer">
+                <input class="search" type="text" placeholder="Type your search here" name="q">
+            </div>
+            <div class="close-button">&times;</div>
+        </form>
+      </div>
+    </div>
+</header>
+    <!-- end header -->
+    
+
+<script src="/bundles/activitylist?v=ulTGUT1NWljvVthEGpUKEfX88hDdI3zHMEUczXcFEDo1"></script>
+
+<section class="filter" id="mobile-filter">
+    <div class="row-full filter-by bubbles">
+        <div class="mobile-four filter">
+            <div class="vacations_intro-title">
+                    <p class="h1">Taha`a Activities</p>
+            </div>
+        </div>
+    </div>
+</section>
+<div ng-controller="ActivityListController" ng-init="initActivityListController()">
+    <section class="filter" id="packageFilterMenu">
+        <div class="row-full filter-by bubbles">
+            <div class="seasons-item close-section show-for-small" style="opacity: 1; pointer-events: initial;">
+                <a href="#" class="close-modal">CLOSE</a>
+            </div>
+            <form class="custom">
+                <div class="mobile-four filter">
+                    <div class="vacations_intro-title">
+                            <h1>Taha`a Activities</h1>
+                    </div>
+                </div>
+                <div class="mobile-four four filter">
+                    <h5><span>FILTER:</span>By Theme</h5>
+                    <ul class="block-grid">
+                            <li class="theme-1" ng-click="clickOnTheme(1, 'adventure')"><a href="javascript:void(0)">Adventure</a></li>
+                            <span style="display: none;" class="theme-id">1</span>
+                            <span style="display: none;" class="theme-name">adventure</span>
+                            <li class="theme-2" ng-click="clickOnTheme(2, 'family')"><a href="javascript:void(0)">Family</a></li>
+                            <span style="display: none;" class="theme-id">2</span>
+                            <span style="display: none;" class="theme-name">family</span>
+                            <li class="theme-3" ng-click="clickOnTheme(3, 'culture')"><a href="javascript:void(0)">Culture</a></li>
+                            <span style="display: none;" class="theme-id">3</span>
+                            <span style="display: none;" class="theme-name">culture</span>
+                            <li class="theme-4" ng-click="clickOnTheme(4, 'relaxation')"><a href="javascript:void(0)">Relaxation</a></li>
+                            <span style="display: none;" class="theme-id">4</span>
+                            <span style="display: none;" class="theme-name">relaxation</span>
+                            <li class="theme-5" ng-click="clickOnTheme(5, 'cuisine')"><a href="javascript:void(0)">Cuisine</a></li>
+                            <span style="display: none;" class="theme-id">5</span>
+                            <span style="display: none;" class="theme-name">cuisine</span>
+                            <li class="theme-6" ng-click="clickOnTheme(6, 'water')"><a href="javascript:void(0)">Water</a></li>
+                            <span style="display: none;" class="theme-id">6</span>
+                            <span style="display: none;" class="theme-name">water</span>
+                    </ul>
+                </div>
+                <div class="mobile-four four filter">
+                    <h5>By Island</h5>
+                    <ul class="block-grid">
+                            <li class="island-austral-islands" ng-click="clickOnIsland('Austral Islands')"><a href="javascript:void(0)">Austral Islands</a></li>
+                            <span style="display: none;" class="island-name">Austral Islands</span>
+                            <li class="island-bora-bora" ng-click="clickOnIsland('Bora Bora')"><a href="javascript:void(0)">Bora Bora</a></li>
+                            <span style="display: none;" class="island-name">Bora Bora</span>
+                            <li class="island-fakarava" ng-click="clickOnIsland('Fakarava')"><a href="javascript:void(0)">Fakarava</a></li>
+                            <span style="display: none;" class="island-name">Fakarava</span>
+                            <li class="island-huahine" ng-click="clickOnIsland('Huahine')"><a href="javascript:void(0)">Huahine</a></li>
+                            <span style="display: none;" class="island-name">Huahine</span>
+                            <li class="island-manihi" ng-click="clickOnIsland('Manihi')"><a href="javascript:void(0)">Manihi</a></li>
+                            <span style="display: none;" class="island-name">Manihi</span>
+                            <li class="island-marquesas" ng-click="clickOnIsland('Marquesas')"><a href="javascript:void(0)">Marquesas</a></li>
+                            <span style="display: none;" class="island-name">Marquesas</span>
+                            <li class="island-moorea" ng-click="clickOnIsland('Moorea')"><a href="javascript:void(0)">Moorea</a></li>
+                            <span style="display: none;" class="island-name">Moorea</span>
+                            <li class="island-raiatea" ng-click="clickOnIsland('Raiatea')"><a href="javascript:void(0)">Raiatea</a></li>
+                            <span style="display: none;" class="island-name">Raiatea</span>
+                            <li class="island-rangiroa" ng-click="clickOnIsland('Rangiroa')"><a href="javascript:void(0)">Rangiroa</a></li>
+                            <span style="display: none;" class="island-name">Rangiroa</span>
+                            <li class="island-tahaa" ng-click="clickOnIsland('Tahaa')"><a href="javascript:void(0)">Taha&#39;a</a></li>
+                            <span style="display: none;" class="island-name">Tahaa</span>
+                            <li class="island-tahiti" ng-click="clickOnIsland('Tahiti')"><a href="javascript:void(0)">Tahiti</a></li>
+                            <span style="display: none;" class="island-name">Tahiti</span>
+                            <li class="island-tetiaroa" ng-click="clickOnIsland('Tetiaroa')"><a href="javascript:void(0)">Tetiaroa</a></li>
+                            <span style="display: none;" class="island-name">Tetiaroa</span>
+                            <li class="island-tikehau" ng-click="clickOnIsland('Tikehau')"><a href="javascript:void(0)">Tikehau</a></li>
+                            <span style="display: none;" class="island-name">Tikehau</span>
+                    </ul>
+                </div>
+                
+            </form>
+        </div>
+    </section>
+    <header class="page-header">
+        <div class="row-full">
+            <div class="wrap">
+                
+                <div class="sort-by right">
+                    <ul class="inline dropdown">
+                        <li class="title">Sort By:</li>
+                        <li>
+                            <a href="javascript:void(0)"><span class="dropdownListTitle">PRICE (LOW TO HIGH)</span>
+                            </a>
+                            <ul class="dropdownListItems">
+                                <li ng-click="clickOnSorting('lh')">
+                                    <a href="javascript:void(0)">PRICE (LOW TO HIGH)</a>
+                                </li>
+                                <li ng-click="clickOnSorting('hl')">
+                                    <a href="javascript:void(0)">PRICE (HIGH TO LOW)</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="main-content modules activity" style="display: none;" ng-show="!StateObject.serverListVisible">
+        <div class="module module-wide" ng-repeat="p in activityList | filter:themeFilter | filter:islandFilter | filter:priceFilter | orderBy:predicate:reverse" ng-show="$index < StateObject.showCount">
+            <a href="/activities/{{ p.TitleForLink }}-{{p.Id}}" class="thumbnail mobile-four four columns" style="background-image: url('/images1/thumbs/{{p.Image}}')"></a>
+
+            <div class="details six columns">
+
+                <h2 class="title"><a href="/activities/{{ p.TitleForLink }}-{{p.Id}}">{{p.Title}}</a></h2>
+
+
+                <p class="sub-heading">{{p.Title2}}</p>
+
+
+                <p class="description" ng-bind-html-unsafe="p.Description"></p>
+
+                <div class="travel-details">
+
+                    <dl class="dl-horizontal">
+                        <dt>ISLAND:</dt>
+                        <dd>{{p.Island}}</dd>
+                    </dl>
+
+                </div>
+            </div>
+            <div class="two mobile-four columns pricing">
+                <div class="pricing-inner">
+
+                    <p>from</p>
+                    <p class="price">${{p.Price}}*</p>
+
+                    <a href="/activities/{{ p.TitleForLink }}-{{p.Id}}" class="list-items_lear-more"><span></span></a>
+                </div>
+                <button class="circle-gold" onclick="window.location.pathname='/hotels/{{ hotelItem.TitleForLink }}-{{ hotelItem.Id }}';"><span class="chevron"></span></button>
+            </div>
+        </div>
+        <div class="more-offers" ng-show="(activityList | filter:themeFilter | filter:islandFilter | filter:priceFilter).length > StateObject.showCount" ng-click="clickOnMore()"></div>
+    </section>
+
+    <!--server -->
+
+    <section class="main-content modules activity" ng-show="StateObject.serverListVisible">
+            <div class="module module-wide">
+                <a href="/activities/tahitian-dance-lesson-3203" class="thumbnail four mobile-four columns" style="background-image: url('/images1/thumbs/TAH_Dance_Thumb_600x360.jpg')"></a>
+                <div class="details six columns">
+                    <h2 class="title"><a href="/activities/tahitian-dance-lesson-3203">Tahitian Dance Lesson</a></h2>
+                    <p class="sub-heading">1 Hour</p>
+                    <p class="description">Learn how to sway your hips to the sounds of the Tahitian drums and the ukulele. Your instructor will first show you the different ways to wear a Polynesian pareo, then teach you the basics of this traditional art. You`ll learn the movements that make up the Oritahiti (rapid, rhythmic dance) and of the Aparima (slow, sensual dance). Price is per person based on two people traveling together.&nbsp;Available only to guests of Le Taha&#39;a Resort and Spa.</p>
+                    <div class="travel-details">
+                        <dl class="dl-horizontal">
+                            <dt>ISLAND:</dt>
+                            <dd>Taha&#39;a</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="two mobile-four columns pricing">
+                    <div class="pricing-inner">
+                        <p>from</p>
+                        <p class="price">$38*</p>
+
+                        <a href="/activities/tahitian-dance-lesson-3203" class="list-items_lear-more"><span></span></a>
+                    </div>
+                    <button class="circle-gold" onclick="window.location.pathname='/hotels/{{ hotelItem.TitleForLink }}-{{ hotelItem.Id }}';"><span class="chevron"></span></button>
+                </div>
+            </div>
+            <div class="module module-wide">
+                <a href="/activities/tahaa-bicycle-tour-5606" class="thumbnail four mobile-four columns" style="background-image: url('/images1/thumbs/TAHTPI-Bike-Tour-600x360.jpg')"></a>
+                <div class="details six columns">
+                    <h2 class="title"><a href="/activities/tahaa-bicycle-tour-5606">Taha&#39;a Bicycle Tour</a></h2>
+                    <p class="sub-heading">4 Hours, Departure at 9:15AM</p>
+                    <p class="description">Discover a working pearl farm, the rum distillery and the secrets of the Taha&#39;a forests while riding your bike with a knowledgeable guide. Available only to guests of Le Taha&#39;a Resort and Spa.&nbsp;</p>
+                    <div class="travel-details">
+                        <dl class="dl-horizontal">
+                            <dt>ISLAND:</dt>
+                            <dd>Taha&#39;a</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="two mobile-four columns pricing">
+                    <div class="pricing-inner">
+                        <p>from</p>
+                        <p class="price">$70*</p>
+
+                        <a href="/activities/tahaa-bicycle-tour-5606" class="list-items_lear-more"><span></span></a>
+                    </div>
+                    <button class="circle-gold" onclick="window.location.pathname='/hotels/{{ hotelItem.TitleForLink }}-{{ hotelItem.Id }}';"><span class="chevron"></span></button>
+                </div>
+            </div>
+            <div class="module module-wide">
+                <a href="/activities/faaroa-river-kayak-excursion-5612" class="thumbnail four mobile-four columns" style="background-image: url('/images1/thumbs/TAHTPI-Faaroa-River-Kayak-600x360.jpg')"></a>
+                <div class="details six columns">
+                    <h2 class="title"><a href="/activities/faaroa-river-kayak-excursion-5612">Faaroa River Kayak Excursion</a></h2>
+                    <p class="sub-heading">3 Hours</p>
+                    <p class="description">Explore Raiatea&#39;s lush jungle interior with a guided kayak excursion down the Faaroa River, French Polynesia&#39;s only navigable river. It is recommended that you bring a hat, bug spray, and sunscreen. Available only to guests of Le Taha&#39;a Resort and Spa.&nbsp;</p>
+                    <div class="travel-details">
+                        <dl class="dl-horizontal">
+                            <dt>ISLAND:</dt>
+                            <dd>Taha&#39;a</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="two mobile-four columns pricing">
+                    <div class="pricing-inner">
+                        <p>from</p>
+                        <p class="price">$72*</p>
+
+                        <a href="/activities/faaroa-river-kayak-excursion-5612" class="list-items_lear-more"><span></span></a>
+                    </div>
+                    <button class="circle-gold" onclick="window.location.pathname='/hotels/{{ hotelItem.TitleForLink }}-{{ hotelItem.Id }}';"><span class="chevron"></span></button>
+                </div>
+            </div>
+            <div class="module module-wide">
+                <a href="/activities/overland-safari-3177" class="thumbnail four mobile-four columns" style="background-image: url('/images1/thumbs/TAH_Jeep_Thumb_600x360.jpg')"></a>
+                <div class="details six columns">
+                    <h2 class="title"><a href="/activities/overland-safari-3177">Overland Safari</a></h2>
+                    <p class="sub-heading">4 Hours, Departure at 8:45AM </p>
+                    <p class="description">Explore the beautiful interior of Taha`a by 4x4 and discover its luxurious tropical vegetation with a friendly guide. You`ll taste the local fruit and admire breathtaking views of the magnificent turquoise bay of Haamene. This excursion also includes a visit to the pearl farm and a traditional vanilla plantation. Available for guests staying at Le Taha`a Island Resort and Spa.</p>
+                    <div class="travel-details">
+                        <dl class="dl-horizontal">
+                            <dt>ISLAND:</dt>
+                            <dd>Taha&#39;a</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="two mobile-four columns pricing">
+                    <div class="pricing-inner">
+                        <p>from</p>
+                        <p class="price">$94*</p>
+
+                        <a href="/activities/overland-safari-3177" class="list-items_lear-more"><span></span></a>
+                    </div>
+                    <button class="circle-gold" onclick="window.location.pathname='/hotels/{{ hotelItem.TitleForLink }}-{{ hotelItem.Id }}';"><span class="chevron"></span></button>
+                </div>
+            </div>
+            <div class="module module-wide">
+                <a href="/activities/island-culture-tour-with-polynesian-guide-5609" class="thumbnail four mobile-four columns" style="background-image: url('/images1/thumbs/TAHTPI-Island-Culture-Tour-600x3601.jpg')"></a>
+                <div class="details six columns">
+                    <h2 class="title"><a href="/activities/island-culture-tour-with-polynesian-guide-5609">Island Culture Tour with Polynesian Guide</a></h2>
+                    <p class="sub-heading">4 Hours</p>
+                    <p class="description">Your local guide will lead you on a discovery of his culture, passed down from generation to generation. Learn of the abundant richness of the environment as he shares his passion for the island&#39;s flora and fauna. Available only to guests of Le Taha&#39;a Resort and Spa.&nbsp;</p>
+                    <div class="travel-details">
+                        <dl class="dl-horizontal">
+                            <dt>ISLAND:</dt>
+                            <dd>Taha&#39;a</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="two mobile-four columns pricing">
+                    <div class="pricing-inner">
+                        <p>from</p>
+                        <p class="price">$105*</p>
+
+                        <a href="/activities/island-culture-tour-with-polynesian-guide-5609" class="list-items_lear-more"><span></span></a>
+                    </div>
+                    <button class="circle-gold" onclick="window.location.pathname='/hotels/{{ hotelItem.TitleForLink }}-{{ hotelItem.Id }}';"><span class="chevron"></span></button>
+                </div>
+            </div>
+            <div class="module module-wide">
+                <a href="/activities/first-dive-3145" class="thumbnail four mobile-four columns" style="background-image: url('/images1/thumbs/TAH_Expl_Thumb_600x360.jpg')"></a>
+                <div class="details six columns">
+                    <h2 class="title"><a href="/activities/first-dive-3145">First Dive</a></h2>
+                    <p class="sub-heading"></p>
+                    <p class="description">Discover a wide range of dive sites near the islands of Taha`a and Raiatea. You`ll have the opportunity to admire a variety of marine species that thrive in this extraordinary aquatic environment. A wide variety of options are available for divers, enquire at time of booking.&nbsp;Available only to guests of Le Taha&#39;a Resort and Spa.</p>
+                    <div class="travel-details">
+                        <dl class="dl-horizontal">
+                            <dt>ISLAND:</dt>
+                            <dd>Taha&#39;a</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="two mobile-four columns pricing">
+                    <div class="pricing-inner">
+                        <p>from</p>
+                        <p class="price">$115*</p>
+
+                        <a href="/activities/first-dive-3145" class="list-items_lear-more"><span></span></a>
+                    </div>
+                    <button class="circle-gold" onclick="window.location.pathname='/hotels/{{ hotelItem.TitleForLink }}-{{ hotelItem.Id }}';"><span class="chevron"></span></button>
+                </div>
+            </div>
+            <div class="module module-wide">
+                <a href="/activities/jet-ski-with-local-guide-3165" class="thumbnail four mobile-four columns" style="background-image: url('/images1/thumbs/TTNA-TS-BOB-jetski-crop-600x360.jpg')"></a>
+                <div class="details six columns">
+                    <h2 class="title"><a href="/activities/jet-ski-with-local-guide-3165">Jet Ski with Local Guide</a></h2>
+                    <p class="sub-heading"></p>
+                    <p class="description">Explore the lagoon of Taha&#39;a by Jet Ski. You`ll be accompanied by a local guide and stop for a portion of time to snorkel. Price is per person for 2 people sharing a jet ski. Available only to guests of Le Taha&#39;a Resort and Spa.</p>
+                    <div class="travel-details">
+                        <dl class="dl-horizontal">
+                            <dt>ISLAND:</dt>
+                            <dd>Taha&#39;a</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="two mobile-four columns pricing">
+                    <div class="pricing-inner">
+                        <p>from</p>
+                        <p class="price">$120*</p>
+
+                        <a href="/activities/jet-ski-with-local-guide-3165" class="list-items_lear-more"><span></span></a>
+                    </div>
+                    <button class="circle-gold" onclick="window.location.pathname='/hotels/{{ hotelItem.TitleForLink }}-{{ hotelItem.Id }}';"><span class="chevron"></span></button>
+                </div>
+            </div>
+            <div class="module module-wide">
+                <a href="/activities/lagoon-safari-3169" class="thumbnail four mobile-four columns" style="background-image: url('/images1/thumbs/TAH_Lago_Thumb_600x360.jpg')"></a>
+                <div class="details six columns">
+                    <h2 class="title"><a href="/activities/lagoon-safari-3169">Lagoon Safari</a></h2>
+                    <p class="sub-heading">3 Hours 30 Minutes, Departure at 9:00AM</p>
+                    <p class="description">Watch stingrays and sharks being fed in their natural environment from the hands of your local guide. You`ll have the unique opportunity to swim with these surprisingly gentle creatures. This half-day excursion requires a minimum of four people to operate. &nbsp;Available only to guests of Le Taha&#39;a Resort and Spa.</p>
+                    <div class="travel-details">
+                        <dl class="dl-horizontal">
+                            <dt>ISLAND:</dt>
+                            <dd>Taha&#39;a</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="two mobile-four columns pricing">
+                    <div class="pricing-inner">
+                        <p>from</p>
+                        <p class="price">$130*</p>
+
+                        <a href="/activities/lagoon-safari-3169" class="list-items_lear-more"><span></span></a>
+                    </div>
+                    <button class="circle-gold" onclick="window.location.pathname='/hotels/{{ hotelItem.TitleForLink }}-{{ hotelItem.Id }}';"><span class="chevron"></span></button>
+                </div>
+            </div>
+            <div class="module module-wide">
+                <a href="/activities/mahana-moe-moea-tour-with-lunch-3197" class="thumbnail four mobile-four columns" style="background-image: url('/images1/thumbs/TAH_Coral_Thumb_600x360.jpg')"></a>
+                <div class="details six columns">
+                    <h2 class="title"><a href="/activities/mahana-moe-moea-tour-with-lunch-3197">Mahana Moe Moea Tour with Lunch</a></h2>
+                    <p class="sub-heading">Duration: 6 Hours, Departure at 8:45AM</p>
+                    <p class="description">Journey through Taha`a and discover the island`s expansive coral garden. You`ll first visit the island`s vanilla plantations, pearl farms, and turtle protection sites. Then, you`ll end your adventure at a beautiful coral garden where you`ll have the chance to swim with colorful fish. This full-day excursion includes a complimentary lunch on an idyllic motu. This excursion is available in a 6 or 8 hour tour.&nbsp;Available only to guests of Le Taha&#39;a Resort and Spa.</p>
+                    <div class="travel-details">
+                        <dl class="dl-horizontal">
+                            <dt>ISLAND:</dt>
+                            <dd>Taha&#39;a</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="two mobile-four columns pricing">
+                    <div class="pricing-inner">
+                        <p>from</p>
+                        <p class="price">$135*</p>
+
+                        <a href="/activities/mahana-moe-moea-tour-with-lunch-3197" class="list-items_lear-more"><span></span></a>
+                    </div>
+                    <button class="circle-gold" onclick="window.location.pathname='/hotels/{{ hotelItem.TitleForLink }}-{{ hotelItem.Id }}';"><span class="chevron"></span></button>
+                </div>
+            </div>
+            <div class="module module-wide">
+                <a href="/activities/faaroa-river-and-ancient-marae-tour-with-lunch-5615" class="thumbnail four mobile-four columns" style="background-image: url('/images1/thumbs/TAHTPI-Kayak-and-Marae-600x360.jpg')"></a>
+                <div class="details six columns">
+                    <h2 class="title"><a href="/activities/faaroa-river-and-ancient-marae-tour-with-lunch-5615">Faaroa River and Ancient Marae Tour with Lunch</a></h2>
+                    <p class="sub-heading">6 Hours</p>
+                    <p class="description">Discover the Faaroa River, Tahiti&#39;s only navigable river, by kayak with your expert guide leading the way through Raiatea&#39;s verdant interior. Then by car you will visit the ancient marae temple at Taputapuatea, which was recently designated a UNESCO World Heritage Site. You will learn about it&#39;s Polynesian origins, enjoy a local picnic lunch, and finally enjoy time for shopping in downtown Uturoa. Available only to guests of Le Taha&#39;a Resort and Spa.&nbsp;</p>
+                    <div class="travel-details">
+                        <dl class="dl-horizontal">
+                            <dt>ISLAND:</dt>
+                            <dd>Taha&#39;a</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="two mobile-four columns pricing">
+                    <div class="pricing-inner">
+                        <p>from</p>
+                        <p class="price">$145*</p>
+
+                        <a href="/activities/faaroa-river-and-ancient-marae-tour-with-lunch-5615" class="list-items_lear-more"><span></span></a>
+                    </div>
+                    <button class="circle-gold" onclick="window.location.pathname='/hotels/{{ hotelItem.TitleForLink }}-{{ hotelItem.Id }}';"><span class="chevron"></span></button>
+                </div>
+            </div>
+                    <div class="more-offers" ng-mouseenter="changeListVersion()"></div>
+    </section>
+    <section id="filtersMenu"></section>
+    <div class="show-for-small" id="filtersMenuTrigger"><a href="#">FILTERS</a></div>
+</div>
+
+    
+    
+    
+    
+    <script src="/bundles/jqueryFIW?v=bdS1Ej_hUWsaP-7Qle_PGon_vfQyYIJ3oPGpuvjgeGU1"></script>
+
+    
+
+    <!-- Footer -->
+<footer class="main-footer">
+    
+    <section class="breadcrumb-wrapper">
+        <div class="row">
+            <div class="twelve columns">
+                <span class="heading">You Are Here:</span>
+
+                <ul class="breadcrumbs">
+        <li><a href="/activities/list-activities">Activities</a></li>
+        <li><a href="/activities">All Activities</a></li>
+</ul>
+
+
+
+            </div>
+        </div>
+    </section>
+    <section class="top-footer">
+        <div class="row">
+            <div class="twelve columns">
+                <ul class="inline">
+                    <li class="heading">The Tahiti.com Distinction:</li>
+                    <li>Tailored Travel</li>
+                    <li>We Know You</li>
+                    <li>Years of Experience</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="bottom-footer">
+        <div class="row">
+            <div class="two mobile-four columns">
+                <div class="number show-for-small text-center">
+                    <h4>Questions?<br>1-866-584-2336</h4>
+                </div>
+                <ul class="accordion">
+                  <li class="active">
+                    <div class="title heading">
+                      <a class="heading" href="/islands/list-islands">Islands</a>
+                    </div>
+                    <div class="content">
+                      <a href="/island/tahiti">Tahiti</a>
+                      <a href="/island/bora-bora">Bora Bora</a>
+                      <a href="/island/moorea">Moorea</a>
+                      <a href="/island/huahine">Huahine</a>
+                      <a href="/island/raiatea">Raiatea</a>
+                      <a href="/island/tahaa">Taha'a</a>
+                      <a href="/island/rangiroa">Rangiroa</a>
+                      <a href="/island/tikehau">Tikehau</a>
+                      <a href="/island/fakarava">Fakarava</a>
+                      <a href="/island/tetiaroa">Tetiaroa  </a>
+                      <a href="/island/manihi">Manihi</a>
+                      <a href="/island/marquesas-islands">Marquesas</a>
+                      <a href="/island/austral-islands">Australs</a>
+                      <a href="/hotels">All Hotels</a>
+                      <a href="/activities">All Activites</a>
+                    </div>
+                  </li>
+                </ul>
+            </div>
+
+            <div class="two mobile-four columns">
+                <ul class="accordion">
+                  <li class="active">
+                    <div class="title heading">
+                      <a class="heading" href="/vacations/list-packages">Packages</a>
+                    </div>
+                    <div class="content">
+                      <a href="/vacations/honeymoons">Honeymoons</a>
+                      <a href="/vacations/cruises">Cruises</a>
+                      <a href="/vacations/value-vacations">Value Vacations</a>
+                      <a href="/vacations/weddings">Weddings & Vow Renewals</a>
+                      <!--<a href="/vacations/best-sellers">Best Sellers</a>-->
+                      <a href="/vacations/active-adventures">Active Adventures</a>
+                      <a href="/vacations/luxury">Luxury Escapes</a>
+                      <a href="/vacations/festivals-and-events">Festivals and Events</a>
+                      <a href="/vacations/family-friendly">Family Friendly</a>
+                      <br class="hide-for-small"><a href="/travel/request-a-quote">Tailor a Package</a>
+                    </div>
+                  </li>
+                </ul>
+            </div>
+
+            <div class="two mobile-four columns mob-pad-bot">
+                <ul class="accordion">
+                  <li class="active">
+                    <div class="title heading">
+                      <a class="heading" href="/">Tahiti.com</a>
+                    </div>
+                    <div class="content">
+                      <a href="/services/about-us">About Us</a>
+                      <a href="/travel/reviews">Reviews</a>
+                      <a href="/services/contact">Contact Us</a>
+                      <a href="/services/careers">Careers</a>
+                      <a href="/services/terms">Terms and Conditions</a>
+                      <a href="/services/privacy-policy">Privacy Policy</a>
+                    </div>
+                  </li>
+                </ul>
+
+                <ul class="accordion">
+                  <li class="active">
+                    <div class="title heading">
+                      <a class="heading" href="/travel/preparing-to-travel-general">Travel</a>
+                    </div>
+                    <div class="content">
+                      <a href="/travel/about-tahiti">About Tahiti</a>
+                      <a href="/travel/preparing-to-travel-general">Preparing to Travel</a>
+                    </div>
+                  </li>
+                </ul>
+				 <ul style="display: none;">
+                    <li class="heading"><a class="heading" href="/travel/preparing-to-travel-general">Travel</a></li>
+                    <li><a href="/travel/about-tahiti">About Tahiti</a></li>
+					<li><a href="/travel/preparing-to-travel-general">Preparing to Travel</a></li>
+                </ul>
+            </div>
+
+            <div class="six mobile-four mob-pad-bot columns">
+                <ul>
+
+
+
+                        <li class=""><a class="button small radius secondary show-for-small" style="margin-bottom: 15px; font-size: 16px; padding: 17px 10px;" href="/travel/request-a-quote">REQUEST QUOTE</a></li>
+                    <li class="heading">Stay Connected</li>
+                    <li class="newsletter"><a href="/sign-up/email">SIGN UP FOR OUR NEWSLETTER</a></li>
+                </ul>
+<form action="/Sign/ToSignUp" method="post">                    <input class="left five" type="email" placeholder="Email" name="email">
+                    <input class="button button-arrow" type="submit" value="">
+                    <!-- 	<input type="email" class="six" placeholder="Email">
+					<input class="button button-search" type="submit" value=""> -->
+</form>                <ul class="social inline">
+                    <li><a href="https://twitter.com/TahitiCom" target="_blank">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-square fa-stack-2x"></i>
+                          <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a></li>
+                    <li><a href="https://www.facebook.com/Tahitidotcom" target="_blank">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-square fa-stack-2x"></i>
+                          <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a></li>
+                    <li><a href="https://pinterest.com/tahitidotcom/" target="_blank">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-square fa-stack-2x"></i>
+                          <i class="fa fa-pinterest fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a></li>
+                    <li><a href="https://www.youtube.com/user/tahitidotcom" target="_blank">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-square fa-stack-2x"></i>
+                          <i class="fa fa-youtube-play fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a></li>
+                    <li><a href="https://www.instagram.com/tahiticom/" target="_blank">
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-square fa-stack-2x"></i>
+                          <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a></li>
+                </ul>
+                <div class="number hide-for-small">
+                    <h4>Questions? 1-866-584-2336</h4>
+                </div>
+            </div>
+        </div>
+        <div class="row copyright">
+            <div class="twelve columns mob-pad-bot">
+                <p>&copy; 2017 Tahiti.com California Seller of Travel Registration 2107198-40</p>
+            </div>
+        </div>
+
+    </section>
+    <section class="partner-footer">
+        <div class="row">
+            <div class="five mobile-four columns">
+
+                <ul class="thirdflex">
+                    <li>
+                        <div id="verisign">
+                            <script src="https://seal.verisign.com/getseal?host_name=www.tahiti.com&size=S&use_flash=NO&use_transparent=YES"></script>
+                        </div>
+                        <!--<a href="http://www.symantec.com/ssl-certificates" target="_blank"><img alt="Norton" src="/content/images/footer/norton.png"></a>-->
+                    </li>
+                    <!-- <li><a href="https://www.bbb.org/sdoc/business-reviews/travel-agencies-and-bureaus/tahiti-com-inc-in-santa-ana-ca-100113591" target="_blank">
+                        <img alt="Better Business Bureau" src="/content/images/footer/bbb.png"></a></li> -->
+                    <li>
+                        <img alt="Cruise Lines International Association" src="/content/images/footer/clia.png"></li>
+                    <li><a href="http://www.travelsense.org/agents/agntdetail.cfm?i=900222287" target="_blank">
+                        <img alt="American Society of Travel Agents" src="/content/images/footer/asta.png"></a></li>
+                </ul>
+
+            </div>
+            <!-- /3 cols -->
+            <div class="one columns">
+            </div>
+            <!-- / -->
+            <div class="six columns" style="margin-top: 15px;">
+
+                <ul class="smallflex">
+                    <li><span class="inline-title">Our Partners:</span></li>
+                    <li>
+                        <img alt="Air Tahiti Nui" src="/content/images/footer/air_tahiti.jpg"></li>
+                    <li>
+                        <img alt="Tahiti Tourism" src="/content/images/footer/tahiti_tourism.png"></li>
+                    <li>
+                        <img alt="Air France" src="/content/images/footer/airfrance.png"></li>
+
+                </ul>
+            </div>
+            <!-- /3 cols -->
+        </div>
+        <!-- row -->
+    </section>
+
+</footer>
+
+
+    
+
+        <!-- begin olark code -->
+        <!-- end olark code -->
+  	<script type="text/javascript">
+    adroll_adv_id = "BOSGDQI7CJHB7DIOKNSACP";
+    adroll_pix_id = "ZHZN2MAWXRAHFLL6L2TRK7";
+    // adroll_email = "username@example.com"; // OPTIONAL: provide email to improve user identification
+    (function () {
+        var _onload = function(){
+            if (document.readyState && !/loaded|complete/.test(document.readyState)){setTimeout(_onload, 10);return}
+            if (!window.__adroll_loaded){__adroll_loaded=true;setTimeout(_onload, 50);return}
+            var scr = document.createElement("script");
+            var host = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com");
+            scr.setAttribute('async', 'true');
+            scr.type = "text/javascript";
+            scr.src = host + "/j/roundtrip.js";
+            ((document.getElementsByTagName('head') || [null])[0] ||
+                document.getElementsByTagName('script')[0].parentNode).appendChild(scr);
+        };
+        if (window.addEventListener) {window.addEventListener('load', _onload, false);}
+        else {window.attachEvent('onload', _onload)}
+    }());
+	</script>
+
+</body>
+</html>

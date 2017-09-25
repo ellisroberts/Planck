@@ -30,6 +30,10 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
+MEDIA_ROOT = os.path.join(BASE_DIR, "trainingimages")
+
+MEDIA_URL = "/images/"
+
 INSTALLED_APPS = [
     'models',
     'django.contrib.admin',

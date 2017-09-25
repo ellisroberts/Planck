@@ -4,12 +4,17 @@
 
 <form  method="post" enctype="multipart/form-data">
 {% csrf_token %}
-<input type="text" name="cnn" id="cnn" />
-<label for="Updload network"> Upload Neural Network </label><br></br>
-<input type="text" name="weights" id="weights" />
-<label for="Updload Image"> Upload Filters </label><br></br>
-<input type="text" name="numResults", id="numResults" />
-<label for="Set Number of Results to Display"> How Many Top Results to Display </label><br></br>
-{{form}}
+<input type="radio" name="modelSelect" id="pretrained" value="trained" checked>
+{{preTrained}}
+<br></br>
+<input type="radio" name="modelSelect" id="default" value="nottrained">
+{{default}}
+<br></br>
+{{image}}
+<label for="Image to Upload"> Select Image to upload </label>
+<br></br>
+<input type="text" name="numresults" id="numresults">
+<label for="Number of results to display"> Number of top predictions to show </label>
+<br></br>
 <input type="submit" value="OK">
 </form>

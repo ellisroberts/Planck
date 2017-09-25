@@ -13,7 +13,7 @@
 
 <form action="{% url 'models:train'%}" method="post">
 {% csrf_token %}
-<input type="text", value="checker" id="checker">
+<input type="text", name="checker" id="checker">
 <label for="Is Correct"> Is Result Expected? </label> 
 <input type="submit" value="OK">
 </form>

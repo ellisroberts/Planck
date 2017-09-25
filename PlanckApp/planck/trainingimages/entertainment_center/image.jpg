@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+
+<head><script type="text/javascript">var NREUMQ=NREUMQ||[];NREUMQ.push(["mark","firstbyte",new Date().getTime()]);</script>
+
+
+
+
+<link rel="stylesheet" href="/v2/css/style-abs.css?9d8a5b7">
+
+
+
+<link rel="stylesheet" href="/v2/css/lightbox.css">
+<link rel="stylesheet" href="/v2/css/camera.css">
+<link rel="stylesheet" href="/pages/custom-css.css?9d8a5b7">
+<link href='https://fonts.googleapis.com/css?family=Doppio+One' rel='stylesheet' type='text/css'>
+
+<!--[if IE 7]>
+	<link rel="stylesheet" type="text/css" href="/v2/css/ie7.css">
+<![endif]-->
+
+<script src="/v2/js/jquery-1.7.2.min.js"></script>
+<script src="/v2/js/lightbox.js"></script>
+<script src="/v2/js/jquery.leanmodal.min.js"></script>
+<script src="/v2/js/organictabs.jquery.js"></script>
+<script src="/v2/js/camera.js"></script>
+<script src="/v2/js/jquery-ui.js"></script>
+
+
+<script src="/v2/js/custom.js?9d8a5b7"></script>
+
+<script type="text/javascript">
+	jQuery(function($) {
+    jQuery( document ).tooltip();
+		jQuery("a[rel*=leanModal]").leanModal();
+    jQuery("#product-tabs").organicTabs();
+	});
+
+  
+	jQuery(function(){
+    if (jQuery('#camera_wrap_1').length > 0) {
+      jQuery('#camera_wrap_1').camera();
+    }
+ 
+    //Diplay nav img on hover 
+    $('#nav li img').hide();  
+    $("#nav li").on({
+      mouseover: function() {
+         $(this).find ("img").show();
+      }, 
+      mouseout: function() {
+         $(this).find ("img").hide();
+      }
+    }) 
+
+  });
+   
+</script>
+
+<title>Furniture From Home | Online Furniture Store</title>
+
+
+  <meta name="robots" content="index, follow">
+
+
+
+  <meta name="description" content="The largest Furniture Store Online, Free shipping from our online furniture store on dining room sets, entertainment centers, living room sets, bedroom sets, and more."/>
+
+
+
+  <meta name="keywords" content="furniture store, furniture stores, furniture online, online furniture, online furniture store, online furniture stores, furniture stores online, furniture store online, bedroom furniture, office furniture, living room furniture, dining room furniture"/>
+
+
+
+<script type="text/javascript">
+var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-1983475-1']);
+    _gaq.push(['_trackPageview']);
+
+(function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+
+
+</head>
+<body>
+
+<div id="content-red">
+	<div id="content">
+
+		<div id="header">
+      <div id="fixed">
+        <div id="cart-header">
+          
+
+          <a id="cart_link" href="#" title="Your shopping cart">
+            <img class="icon" src="/images/v2/cart-icon.png" />
+            CART 
+          </a>
+          <a href="/favorites" title="Your favorites">
+            <img class="icon" src="/images/v2/love-icon.png" />FAVORITES</a>
+          <a href="http://furniturefromhome.com/track" title="Track your orders">
+            <img class="icon" src="/images/v2/location-icon.png" />TRACK ORDER
+          </a>
+          
+            <a id ="sign_in_link" href="#signin" rel="leanModal" onclick="setTimeout(function() { $('#sign_in_email').focus() }, 500);" title="Sign in to your account"> 
+              <img class="icon" src="/images/v2/key-icon.png" />SIGN IN
+            </a>
+          
+          
+            <a href="http://furniturefromhome.com/contact-us" title="Email us questions or concerns">
+          
+            <img class="icon" src="/images/v2/mail-icon.png" />EMAIL US
+          </a>
+          
+          <a id="call" rel="lightbox" href="/images/v2/phonenumber.png" title="We are Open M-F 6AM - 6PM and Sat-Sun 6AM - 2PM PST ">
+            <img src="/images/v2/ffh-call.png" />
+          </a>
+        </div>
+    </div>
+			
+			<div id="logo">
+
+        
+
+        <div style="width:580px; height:90px; float:left; cursor:pointer;" onclick="jQuery('#home-a')[0].click()"></div>
+       
+
+        
+          <a id="live-chat" href="#" onclick="window.open('http://server.iad.liveperson.net/hc/46437039/?cmd=file&file=visitorWantsToChat&site=46437039&referrer='+escape(document.location),'chat46437039','width=472,height=320');return false;">
+            <img src="/images/v2/ffh-livechat.png" />
+          </a>
+        
+
+        <a id="int-ship" href="#"><img src="/images/v2/int-ship.png" /></a>
+
+        <div id="search-ffh">
+          <form action="http://furniturefromhome.com/search" id="search_form" method="post"><div style="margin:0;padding:0"><input name="authenticity_token" type="hidden" value="fZ/8t1cXePNW/1luubihrV/FCtvOLuG2nO00GSoIzrs=" /></div>
+            <span><input type="text" id="search-area" placeholder="SEARCH" name="query"><input id="search-btn" type="button" onclick="jQuery('#search_form')[0].submit()"></span>
+          </form>
+				</div>
+			</div>
+
+			<div id="nav-header">
+        
+          
+          
+				<ul id="nav">
+          <li><a href="/" id="home-a">HOME</a></li>
+          
+            
+            <li class="bed">
+              <a href="http://furniturefromhome.com/category/bedroom">BEDROOM</a>
+              
+              
+              
+              <ul>
+                
+                  <li>
+                    <a href="/category/bedroom/contemporary">Contemporary</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/bedroom/traditional">Traditional</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/bedroom/country">Country</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/bedroom/furniture-canopy-bed-king-queen">Canopy Beds</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/bedroom/panel-bed-furniture-queen-king">Panel Bed</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/bedroom/sleigh-bed-furniture-queen-king">Sleigh Beds</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/bedroom/storage-beds">Storage Beds</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/bedroom/eco-furniture">Eco-Furniture</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/bedroom/upholstered-beds">Upholstered Beds</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/bedroom/low-footboard">Low Footboard</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/bedroom/coastal-furniture">Coastal</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/bedroom/ornate">Ornate</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/bedroom/shelter-beds">Shelter Beds</a>
+                  </li>
+                
+              </ul>
+               <!-- empty -->
+            </li>
+          
+            
+            <li class="livingroom">
+              <a href="http://furniturefromhome.com/category/livingroom">LIVING ROOM</a>
+              
+              
+              
+              <ul>
+                
+                  <li>
+                    <a href="/category/livingroom/contemporary">Contemporary</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/livingroom/traditional">Traditional</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/livingroom/country">Country</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/livingroom/quality-leather-furniture">Leather</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/livingroom/sleeper-sofa-living-room-furniture-set-sets">Sleeper Sofa</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/livingroom/premium-furniture">Premium Furniture</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/livingroom/coastal-furniture">Coastal</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/livingroom/ornate">Ornate</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/livingroom/old-world">Old World</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/livingroom/cottage">Cottage</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/livingroom/formal-living-room">Formal Living Room</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/livingroom/family-room">Family Room</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/livingroom/media-room">Media Room</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/livingroom/chairs">Chairs</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/livingroom/recliners">Recliners</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/livingroom/sofas">Sofas</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/livingroom/loveseats">Loveseats</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/livingroom/ottomans">Ottomans</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/livingroom/wood-frame">Wood Frame</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/livingroom/skirted-sofa">Skirted Sofa</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/livingroom/pillow-top">Pillow Top</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/livingroom/tufted">Tufted</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/livingroom/rolled-arm">Rolled Arm</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/livingroom/box-arm">Box Arm</a>
+                  </li>
+                
+              </ul>
+               <!-- empty -->
+            </li>
+          
+            
+            <li class="diningroom">
+              <a href="http://furniturefromhome.com/category/dining">DINING ROOM</a>
+              
+              
+              
+              <ul>
+                
+                  <li>
+                    <a href="/category/dining/traditional">Traditional</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/dining/counter-height-dining-furniture">Counter Height Tables</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/dining/dinette-furniture-sets">Dinette Sets</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/dining/buffet-hutch">Buffet/Hutch/Server</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/dining/pedestal">Pedestal</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/dining/queen-anne">Queen Anne</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/dining/formal">Formal</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/dining/parson-chairs">Parson Chairs</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/dining/eco-furniture">Eco-Furniture</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/dining/premium-furniture">Premium Furniture</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/dining/ornate">Ornate</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/dining/leather-seats">Leather Seats</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/dining/trestle-table">Trestle Table</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/dining/square-tables">Square Tables</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/dining/upholstered-seats">Upholstered Seats</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/dining/leg-table">Leg Table</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/dining/glass-top-tables">Glass Top Tables</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/dining/bench-seating">Bench Seating</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/dining/ladder-back-chairs">Ladder Back</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/dining/early-american">Early American</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/dining/old-world">Old World</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/dining/round-table">Round Table</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/dining/oval-tables">Oval Tables</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/dining/rectanular-tables">Rectangular Table</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/dining/wood-seats">Wood Seats</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/dining/metal">Metal</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/dining/round-back">Round Back</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/dining/cottage">Cottage</a>
+                  </li>
+                
+              </ul>
+               <!-- empty -->
+            </li>
+          
+            
+            <li class="ent">
+              <a href="http://furniturefromhome.com/category/entertainment">ENTERTAINMENT</a>
+              
+              
+              
+              <ul>
+                
+                  <li>
+                    <a href="/category/entertainment/contemporary">Contemporary</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/entertainment/traditional">Traditional</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/entertainment/country">Country</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/entertainment/eco-furniture">Eco-Furniture</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/entertainment/premium-furniture">Premium Furniture</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/entertainment/coastal-furniture">Coastal</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/entertainment/ornate">Ornate</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/entertainment/tv-console-up-to-49inches">TV Up To 49"</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/entertainment/tv-consoles-that-fit-a-tv-up-to-69inches">TV Between 50" - 69"</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/entertainment/tv-console-for-tvs-over-70inches">TV's Over 70"</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/entertainment/tv-console">TV Console</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/entertainment/tv-console-with-hutch">TV Console with Hutch</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/entertainment/entertainment-wall-units">Entertainment Wall Units</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/entertainment/armoire-entertainment-centers">Armoire Entertainment Center</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/entertainment/tv-lift-entertainment-centers">TV Lift Entertainment Center</a>
+                  </li>
+                
+              </ul>
+               <!-- empty -->
+            </li>
+          
+            
+            <li class="homeoffice">
+              <a href="http://furniturefromhome.com/category/office">HOME OFFICE</a>
+              
+              
+              
+              <ul>
+                
+                  <li>
+                    <a href="/category/office/traditional">Traditional</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/office/eco-furniture">Eco-Furniture</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/office/peninsula-desk">Peninsula Desk</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/office/executive-desk">Executive Desk</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/office/ornate">Ornate</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/office/writing-desk">Writing Desk</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/office/l-shape-desk">L-Shaped Desk</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/office/executive-chairs">Executive Chairs</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/office/desk-with-hutch">Desk With Hutch</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/office/rolltop-desks">Roll Top Desks</a>
+                  </li>
+                
+              </ul>
+               <!-- empty -->
+            </li>
+          
+            
+            <li class="">
+              <a href="http://furniturefromhome.com/category/leather">LEATHER</a>
+              
+              
+               <!-- empty -->
+            </li>
+          
+            
+            <li class="">
+              <a href="http://furniturefromhome.com/category/dinettes">DINETTES</a>
+              
+              
+               <!-- empty -->
+            </li>
+          
+            
+            <li class="sectional">
+              <a href="http://furniturefromhome.com/category/sectionals">SECTIONALS</a>
+              
+              
+              
+              <ul>
+                
+                  <li>
+                    <a href="/category/sectionals/traditional">Traditional</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/sectionals/quality-leather-furniture">Leather</a>
+                  </li>
+                
+                  <li>
+                    <a href="/category/sectionals/upholstered">Upholstered</a>
+                  </li>
+                
+              </ul>
+               <!-- empty -->
+            </li>
+          
+				</ul>
+         <!-- cache categories_top -->
+			</div>
+		</div>
+		
+		<div class="clear"></div>
+
+    <div id="product-rating">
+
+  
+
+  <a class="shipping" href="#shipping-and-returns" rel="leanModal"><img src="/images/v2/shipping.png" /></a>
+
+  
+
+  <div class="clear"></div>
+</div>
+
+	
+
+    
+
+<div id="video">
+  <div id="video-container">
+    <div class="vimeo">
+      
+      <iframe src="https://player.vimeo.com/video/49998653" width="600" height="338" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+    </div>
+
+    <style id="twitter-style">
+.timeline {background-color: #e9d4ba !important; border: none !important;}
+.tweet-actions {display: none;}
+.customisable, .customisable:link, .customisable:visited, .customisable:hover, .customisable:active, .customisable-highlight:hover, a:hover .customisable-highlight, a:focus .customisable-highlight {color: #470000;}
+.timeline-footer { display: none; }
+    </style>
+
+    <div id="twitter-container" class="twitter" style="">
+      
+
+      <a class="twitter-timeline"  href="https://twitter.com/FurnFromHome"  data-widget-id="312720767433445377">Tweets by @FurnFromHome</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+      <script>
+tDelay = 50;
+function twiFrameReady() {
+  var iFrame = window.frames['twitter-widget-0'];
+  if (iFrame) {
+    if (iFrame.document || iFrame.contentDocument) {
+      var docu = (iFrame.document || iFrame.contentDocument);
+      if (docu.getElementsByClassName('timeline').length > 0) {
+        return true;
+      }
+    }
+  }
+  return false;
+}
+function injectTwitStyles() {
+  if (twiFrameReady()) {
+    jQuery('#twitter-widget-0')[0].title = null;
+    var iFrame = window.frames['twitter-widget-0'];
+    var docu = (iFrame.document || iFrame.contentDocument);
+    var tStyles = $('#twitter-style')[0];
+    jQuery(docu.body).append(tStyles);
+  }
+  else {
+    tDelay = tDelay + 10;
+    setTimeout(injectTwitStyles, tDelay);
+  }
+}
+$(function() {
+    injectTwitStyles();
+});
+      </script>
+    </div>
+    <div class="clear"></div>
+  </div>
+</div>
+
+
+
+<div id="buttons">
+  
+  <a href="http://furniturefromhome.com/category/entertainment" class="media button"></a>
+  <a href="http://furniturefromhome.com/category/office" class="home button"></a>
+  <a href="http://furniturefromhome.com/category/livingroom" class="living button"></a>
+  <a href="http://furniturefromhome.com/category/dining" class="dining button"></a>
+  <a href="http://furniturefromhome.com/category/bedroom" class="bedroom button"></a>
+  <a href="/pages/designer" class="designer button"></a>
+</div>
+
+<div class="clear"></div>
+
+
+<div id="service">
+  <img class="left" src="/images/v2/large-left.png" />
+  <img class="right" src="/images/v2/large-right.png" />
+
+  <div id="social-service">
+    <h3>Customer Service</h3>
+    <p class="line"><img src="/images/v2/footer-border.png" /></p>
+    <p>Our Team Loves to Deliver.</p>
+    <img src="/images/v2/service-img-left.jpg" />
+    <img src="/images/v2/service-img-center.jpg" />
+    <img src="/images/v2/service-img-right.jpg" />
+    <img class="worldwide" src="/images/v2/worldwide.png" />
+    <p class="small">We're here to help. Please call</p>
+    <ul>
+      <li>
+      <span style="display:none;">
+        <a id="pinny-a" data-pin-config="above" href="//pinterest.com/pin/create/button/?url=http%3A%2F%2Ffurniturefromhome.com&media=http%3A%2F%2Ffurniturefromhome.com%2Fimages%2Fstore%2Fglossy_wood_bedroom_set_rb9088%2F800x800%2Fimage.jpg%3Fquality%3D80&description=Furniture%20From%20Home" data-pin-do="buttonPin" ><img src="//assets.pinterest.com/images/pidgets/pin_it_button.png" /></a>
+      </span>
+    
+        <a onclick="$('#pinny-a')[0].click(); return false;" href="#">
+          <img src="/images/v2/pinterest.png" />
+        </a>
+      </li>
+      <li>
+      <a href="http://www.facebook.com/sharer.php?s=100&p[title]=Furniture+From+Home&p[summary]=Check+out+Furniture+From+Home&p[url]=http%3A%2F%2Ffurniturefromhome.com%2F">
+          <img src="/images/v2/facebook.png" />
+        </a>
+        </li>
+        <a href="https://twitter.com/share?url=http%3A%2F%2Ffurniturefromhome.com%2F&text=Check+out+Furniture+From+Home">
+      <li>
+        <img src="/images/v2/twitter.png" />
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="column">
+    <img src="/images/v2/text-left.png" />
+  </div>
+
+  <div class="column">
+    <img src="/images/v2/text-right.png" />
+  </div>
+  <div class="clear"></div>
+</div>
+
+
+<div class="clear"></div>
+
+<div id="videos">
+  
+  <div class="clear"></div>
+</div>
+
+
+
+    <div class="clear"></div>
+		
+    <div id="signin">
+      <script>
+  function signIn() {
+  $.post('/customers/sign_in', 
+  $('#sign_in_form').serialize(), 
+  function(d) { eval(d) });
+  }
+      </script>
+      <div id="signin-container">
+        <h4>Sign In</h4>
+        <form action="/customers/sign_in" id="sign_in_form" method="post" onsubmit="signIn(); return false;"><div style="margin:0;padding:0"><input name="authenticity_token" type="hidden" value="fZ/8t1cXePNW/1luubihrV/FCtvOLuG2nO00GSoIzrs=" /></div>
+        <div class="txt-fld">
+          <label>Email Address</label>
+          <input type="text" name="email" id="sign_in_email" placeholder="EMAIL">
+        </div>
+        <div class="fnl-fld">
+          <a href="#" onclick="signIn(); return false;">
+            <img src="/images/v2/enter-btn.png" />
+          </a>
+        </div>
+        <div class="clear"></div>
+        </form>          
+      </div> <!-- signin-container -->
+    </div> <!-- signin -->
+
+
+		<div id="footer">
+			<div id="footer-container">
+				<div class="third">
+					<h3>Customer Center</h3>
+					<p><img src="/images/v2/footer-border.png" /></p>
+					<ul>
+						<li><a href="http://furniturefromhome.com/track" rel="nofollow">Track Order</a></li>
+						<li><a href="http://furniturefromhome.com/contact-us" rel="nofollow">Service &amp; Sales</a></li>
+						<li><a href="http://furniturefromhome.com/support" rel="nofollow">Open a Support Ticket</a></li>
+					</ul>
+				</div>
+				<div class="third">
+					<h3>Research Center</h3>
+					<p><img src="/images/v2/footer-border.png" /></p>
+					<ul>
+            <li><a href="http://furniturefromhome.com/pages/company-information" rel="nofollow">Company Information</a></li>
+            <li><a href="http://furniturefromhome.com/pages/faq" rel="nofollow">Frequently Asked Questions</a></li>
+            <li><a href="http://furniturefromhome.com/pages/privacy" rel="nofollow">Privacy Policy</a></li>
+            <li><a href="http://furniturefromhome.com/pages/terms" rel="nofollow">Terms and Conditions</a></li>
+            <li><a href="http://furniturefromhome.com/sitemap.html" rel="nofollow">Site Map</a></li>
+					</ul>
+				</div>
+				<div class="third">
+          
+            
+            <h3>Quick Links</h3>
+            <p><img src="/images/v2/footer-border.png" /></p>
+            <ul>
+            <li><a href="http://furniturefromhome.com/category/bedroom">Bedroom Furniture</a></li>
+            <li><a href="http://furniturefromhome.com/category/livingroom">Living Room Furniture</a></li>
+            <li><a href="http://furniturefromhome.com/category/dining">Dining Room Furniture</a></li>
+            <li><a href="http://furniturefromhome.com/category/entertainment">Entertainment Furniture</a></li>
+            <li><a href="http://furniturefromhome.com/category/office">Home Office Furniture</a></li>
+            <li><a href="http://furniturefromhome.com/category/youth-bedroom-furniture">Kids Bedroom Furniture</a></li>
+            </ul>
+          
+				</div>
+				
+				<div class="clear"></div>
+				
+				<div class="full">
+        
+          </ul>
+          
+            <p>Furniture From Home, Copyright 2017 Furniture From Home LLC</p>
+          
+				</div>
+			</div>
+		</div>
+		
+		<div class="clear"></div>
+		
+	</div>
+</div>	
+
+
+<!-- ABSOLUTE SLIDEOUTS -->
+
+
+
+
+
+<div id="sidePanel-l-2" class="sidePanel-alone">
+  <div id="panelContent-l">
+
+    
+        Favorite a product to add it to your list.
+    
+  </div>
+  <div id="panelHandle-l-2" onclick="window.location='http://furniturefromhome.com/favorites'; return false;">
+    <p><a href="yayo">FAVORITES</a></p>
+	</div>
+</div>
+
+
+
+<div id="shipping-and-returns" class="window" style="width:600px;">
+<div class="window-container" style="padding:32px; text-transform: none;">
+  <h2 style="font-size: 18px">Peaceful Returns</h2>
+  <p style="font-size: 16px">We believe in your happiness, for this reason we offer a 30 day peaceful return policy.  If you are not completely satisfied with the items, contact us, we’ll send the same hard-working gentlemen to pick-up the furniture from your home. We ask that you take care of the return shipping, with our gratitude.</p>
+  <p style="font-size: 12px;padding-left: 20px">
+    
+
+<h2 style="font-size: 18px">Practically Picture Perfect Delivery</h2> 
+   <p style="font-size: 16px">Enjoy the video below, illustrating our exclusive and thoughtful delivery process:</p>
+  <p style="font-size: 12px;padding-left: 20px">
+
+<iframe src="//player.vimeo.com/video/64926678" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+
+</div>
+</div>
+
+
+
+<!-- BEGIN HumanTag Monitor. DO NOT MOVE! MUST BE PLACED JUST BEFORE THE /BODY TAG -->
+
+<!-- BEGIN LivePerson Monitor. -->
+<script type="text/javascript"> window.lpTag=window.lpTag||{};if(typeof window.lpTag._tagCount==='undefined'){window.lpTag={site:'46437039'||'',section:lpTag.section||'',autoStart:lpTag.autoStart===false?false:true,ovr:lpTag.ovr||{},_v:'1.5.1',_tagCount:1,protocol:location.protocol,events:{bind:function(app,ev,fn){lpTag.defer(function(){lpTag.events.bind(app,ev,fn);},0);},trigger:function(app,ev,json){lpTag.defer(function(){lpTag.events.trigger(app,ev,json);},1);}},defer:function(fn,fnType){if(fnType==0){this._defB=this._defB||[];this._defB.push(fn);}else if(fnType==1){this._defT=this._defT||[];this._defT.push(fn);}else{this._defL=this._defL||[];this._defL.push(fn);}},load:function(src,chr,id){var t=this;setTimeout(function(){t._load(src,chr,id);},0);},_load:function(src,chr,id){var url=src;if(!src){url=this.protocol+'//'+((this.ovr&&this.ovr.domain)?this.ovr.domain:'lptag.liveperson.net')+'/tag/tag.js?site='+this.site;}var s=document.createElement('script');s.setAttribute('charset',chr?chr:'UTF-8');if(id){s.setAttribute('id',id);}s.setAttribute('src',url);document.getElementsByTagName('head').item(0).appendChild(s);},init:function(){this._timing=this._timing||{};this._timing.start=(new Date()).getTime();var that=this;if(window.attachEvent){window.attachEvent('onload',function(){that._domReady('domReady');});}else{window.addEventListener('DOMContentLoaded',function(){that._domReady('contReady');},false);window.addEventListener('load',function(){that._domReady('domReady');},false);}if(typeof(window._lptStop)=='undefined'){this.load();}},start:function(){this.autoStart=true;},_domReady:function(n){if(!this.isDom){this.isDom=true;this.events.trigger('LPT','DOM_READY',{t:n});}this._timing[n]=(new Date()).getTime();},vars:lpTag.vars||[],dbs:lpTag.dbs||[],ctn:lpTag.ctn||[],sdes:lpTag.sdes||[],ev:lpTag.ev||[]};lpTag.init();}else{window.lpTag._tagCount+=1;} </script>
+<!-- END LivePerson Monitor. -->
+
+
+
+
+<!-- Google Code for Remarketing Tag -->
+<!--------------------------------------------------
+Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. See more information and instructions on how to setup the tag on: http://google.com/ads/remarketingsetup
+--------------------------------------------------->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 1067050947;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1067050947/?value=0&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+
+
+<script type="text/javascript">if (!NREUMQ.f) { NREUMQ.f=function() {
+NREUMQ.push(["load",new Date().getTime()]);
+var e=document.createElement("script");
+e.type="text/javascript";
+e.src=(("http:"===document.location.protocol)?"http:":"https:") + "//" +
+  "js-agent.newrelic.com/nr-100.js";
+document.body.appendChild(e);
+if(NREUMQ.a)NREUMQ.a();
+};
+NREUMQ.a=window.onload;window.onload=NREUMQ.f;
+};
+NREUMQ.push(["nrfj","bam.nr-data.net","8af435a891","1327527","JwwLQkBeXQ1SRhkXQQsRABlaXlwE",0.0,221.0,new Date().getTime(),"","","","",""]);</script></body>
+</html>

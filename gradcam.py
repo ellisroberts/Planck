@@ -126,11 +126,23 @@ def grad_cam(input_model, image, category_index, layer_name):
     cam = 255 * cam / np.max(cam)
     return np.uint8(cam), heatmap
 
+def loadModel(inputFile):    
+    model = load_model(inputFile)
+    return model
+
+def instantiateModel(cnn, inputWeights):
+    if (inputWeights == 'imagenet'):
+        model =  VGG19(weights=inputWeights)
+    else:
+        model = VGG19(weights=None)
+
+    return model
+        
+
 #TODO Add a static dictionary to support multiple cnn
-def returnPredictions(image, inputWeights, cnn, numResults):
+def returnPredictions(image, inputModel, numResults):
     preprocessed_input = load_image(image)
-    model = VGG19(weights=inputWeights)
-    predictions = model.predict(preprocessed_input)
+    predictions = inputModel.predict(preprocessed_input)              
     return decode_predictions(predictions, top=numResults)[0];
 
 if __name__=="__main__":
