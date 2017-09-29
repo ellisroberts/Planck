@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>fashion mnist d3 canvas</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<script src="http://d3js.org/d3.v4.js"></script>
+	<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+	
+	<style type="text/css">
+		
+		body {
+			font-family: 'Open Sans', sans-serif;
+
+		}
+		
+		canvas {
+			border:  1px dotted #ccc;
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<h3>Fashion MNIST t-SNE Embedding</h3>
+
+	<div id="container"></div>
+	
+
+	<script>
+
+		// === Set up canvas === //
+
+		var width = 800, height = 800;
+
+		var data = [];
+		var value = 10000;
+		var coords_x = [];
+		var coords_y = [];
+		var coords_class = [];
+		var coords_error = [];
+
+		var canvas = d3.select('#container')
+			.append('canvas')
+			.attr('width', width)
+			.attr('height', height);
+
+		var context = canvas.node().getContext('2d');
+
+		// === Load and prepare the data === //
+
+		d3.csv("tsne_embedding_coords.csv", function(kappa) {
+			kappa.forEach(function(d, i) {
+				coords_x.push(d['x']);
+				coords_y.push(d['y']);
+				coords_class.push(d['class']);
+				coords_error.push(d['log_loss']);
+			});
+
+			console.log(coords_x.length);
+			console.log(coords_y.length);
+
+			d3.range(value).forEach(function(el) {
+				data.push({ value: el });
+			});
+			console.log(data.length);
+			console.log(data);
+
+			// === Bind data to custom elements === //
+
+			var customBase = document.createElement('custom');
+			var custom = d3.select(customBase); // this is our svg replacement
+
+			// i haven't used the camera with the lunt after the feathertouch upgrade, so i may try that (with the barlow, for now)
+			// i'll also try using the quark/focal reducer along with this setup, but i won't be retarded now!
+			// settings for a grid with 40 cells in a row and 2x5 cells in a group
+
+			// === First call === //
+
+			databind(data); // ...then update the databind function
+			
+			var t = d3.timer(function(elapsed) {
+				draw();
+				if (elapsed > 300) t.stop();
+			}); // start a timer that runs the draw function for 500 ms (this needs to be higher than the transition in the databind function)
+
+			// === Bind and draw functions === //
+
+			function databind(data) {
+
+				var color_dict = ['red', 'forestgreen', 'blue', 'black', 'pink', 'orange', 'brown', 'lightgreen', 'cyan', 'violet'];
+
+				var join = custom.selectAll('custom.rect')
+					.data(data);
+
+				var enterSel = join.enter()
+					.append('custom')
+					.attr('class', 'rect')
+			        .attr('x', function(d, i) {
+			        	return 4*coords_x[i]+400;
+			        })
+			        .attr('y', function(d, i) {
+			        	return 4*coords_y[i]+400;
+			        })
+					.attr('width', 0)
+					.attr('height', 0)
+					.attr('fillStyle', function(d, i) { 
+						return color_dict[parseInt(coords_class[i])]; 
+				    })
+				    .attr('width', function(d, i) { 
+						return Math.max(2, 2*coords_error[i]); 
+				    })
+				    .attr('height', function(d, i) { 
+						return Math.max(2, 2*coords_error[i]); 
+				    });
+				join
+					.merge(enterSel)
+					.transition();
+
+				var exitSel = join.exit()
+					.transition()
+					.attr('width', 0)
+					.attr('height', 0)
+					.remove();
+
+			} // databind()
+
+			// === Draw canvas === //
+
+			function draw() {
+
+				// clear canvas
+				
+				context.fillStyle = '#fff';
+				context.fillRect(0, 0, width, height);
+
+				// draw each individual custom element with their properties
+				
+				var elements = custom.selectAll('custom.rect') // this is the same as the join variable, but used here to draw
+				
+				elements.each(function(d,i) {
+
+					// for each virtual/custom element...
+
+					var node = d3.select(this);
+					context.fillStyle = node.attr('fillStyle');
+					context.fillRect(node.attr('x'), node.attr('y'), node.attr('width'), node.attr('height'))
+
+				});
+
+			} // draw()
+		});
+
+	</script>
+
+</body>
+</html>
