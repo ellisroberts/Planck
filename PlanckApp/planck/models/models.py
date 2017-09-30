@@ -4,8 +4,6 @@ class Image(models.Model):
     name = models.CharField(max_length=100)
 
 class TrainingImage(models.Model):
-    label = models.CharField(max_length=100)
-    image = models.ImageField()
 
     def __init__(self, label):
         self.label = label

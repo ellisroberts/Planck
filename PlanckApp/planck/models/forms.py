@@ -9,3 +9,6 @@ class DefaultModelForm(forms.Form):
 
 class ImageFileForm(forms.Form):
     image = forms.ImageField()
+    def __init__(self, isMultiple=False):
+        super(ImageFileForm, self).__init__()
+        self.fields['image'] = forms.ImageField(widget=forms.ClearableFileInput(attrs={'multiple': isMultiple}))

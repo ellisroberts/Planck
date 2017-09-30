@@ -1,5 +1,6 @@
 from keras.applications.vgg19 import VGG19, preprocess_input, decode_predictions
-from keras.preprocessing import image
+from keras.utils.np_utils import to_categorical
+from keras.preprocessing.image import ImageDataGenerator
 from keras.layers.core import Lambda
 from keras.models import Sequential
 from tensorflow.python.framework import ops
@@ -12,10 +13,10 @@ import cv2
 from django.conf import settings
 import os
 import pdb
+import math
 
 def getResizedIm(path, height, width):
     # Load as grayscale
-    print(path)
     img = cv2.imread(path)
     img = cv2.resize(img, (224, 224))
     # Reduce size
@@ -23,24 +24,30 @@ def getResizedIm(path, height, width):
 
 def TrainModel(model):
 
-    images = []
+    trainData = []
     labels = []
+    index = 0
     #Grab the imagedirectoryies
-    root = settings.MEDIA_ROOT
-    dirlist = [ os.path.join(root,item) for item in os.listdir(root) if os.path.isdir(os.path.join(root, item)) ]
-    
-    #for each of the directories, grab all of the images
-    for directory in dirlist:
-        images = [f for f in os.listdir(directory) if os.path.isfile(os.path.join(directory,f))]
-        for image in images[:1]: 
-            #build up labels and images folder
-            labels.append(directory)
-            resizedImage = getResizedIm(os.path.join(directory, image), 224, 224)
-            images.append(resizedImage)
+    root = os.path.join(settings.MEDIA_ROOT, "trainingimages")
 
-    model.fit(images, labels)
+    dirList = [directory for directory in os.listdir(root) if os.path.isdir(os.path.join(root,directory))]
+    for directory in dirList:
+        curDir = os.path.join(root,directory)
+        images = [image for image in os.listdir(os.path.join(root,directory)) \
+                 if os.path.isfile(os.path.join(curDir, image))]
+        for image in images:
+            img = cv2.imread(os.path.join(curDir, image))
+            resized = cv2.resize(img, (224,224))
+            trainData.append(resized)
+            labels.append(index)
+        index += 1
+ 
+    trainData = np.array(trainData, dtype=np.uint8)
+    trainData = trainData.reshape(trainData.shape[0], 224, 224, 3)
+
+    labels = np.array(labels, dtype=np.uint8)
+    labels = to_categorical(labels, num_classes=len(labels))
+
+    model.compile(loss='categorical_crossentropy', optimizer='sgd', metrics=['accuracy'])
+    model.fit(trainData, labels, epochs = 1)
     return model
-
-    #recompile model if needed
-    #run fit function to train
-    #save updates model to fule

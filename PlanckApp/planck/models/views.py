@@ -5,13 +5,16 @@ from .models import Result, Image
 from django.http import HttpResponse, HttpResponseRedirect
 from .forms import *
 from django.core.urlresolvers import reverse
+from django.contrib import messages
 
+from django.conf import settings
 from keras.models import load_model
 import pdb
 import json
 import numpy as np
 import time
 
+import os
 import sys
 sys.path.append("../..")
 import gradcam
@@ -43,16 +46,19 @@ def index(request):
         ##TODO: Generate a prompt here to save the file
 
         #TODO: handle exception and prompt user to upload proper image file
-        predictions = gradcam.returnPredictions(imageFile, model, int(numResults))
+        predictions = gradcam.returnPredictionsandGenerateHeatMap(imageFile, model, int(numResults))
 
         model.save('current.hdf5')
+
         #create Image object
         try:
             image = Image.objects.get(name=imageFile.name)
         except Image.DoesNotExist:
             image = Image(name=imageFile.name)
             image.save()
-            Result.objects.all().delete()
+
+        #Want to restart with fresh results
+        Result.objects.all().delete()
 
         #need to properly serialize predictions to output them on webpage
         request.session['predictions'] = json.dumps((np.array(predictions)).tolist())
@@ -62,17 +68,22 @@ def index(request):
     else:
         preTrainedModelForm = PreTrainedModelForm()
         defaultModelForm = DefaultModelForm()
-        imageFileForm = ImageFileForm()
+        imageFileForm = ImageFileForm(isMultiple=False)
     return render(request, 'models/models.html', {'preTrained':preTrainedModelForm, 'default':defaultModelForm, 'image':
- ImageFileForm})
+ imageFileForm})
 
 def classify(request):
-
     if (request.method == "POST"):
-        return HttpResponseRedirect(reverse("Models:train"))
+        if (request.POST["checker"] == "yes"):
+            return HttpResponseRedirect(reverse("models:index"))
+        if (request.POST["checker"] == "no"):
+            return HttpResponseRedirect(reverse("models:train"))
+        #otherwise response is invalid, ask user to try again
+        else:
+            messages.error(request, "Please state yes or no")
 
     else:
-        #Create json Decoder to convert json object back into python list
+        #Create json Decoder to convert json object back` into python list
         jsonDec = json.decoder.JSONDecoder()
 
         #Pull prediction results to display
@@ -92,5 +103,7 @@ def train(request):
         #model = load_model(request.session['current'])
         model = load_model('current.hdf5')
         model = modelTrain.TrainModel(model)
-        return HttpResponseRedirect(reverse("Models:Index"))
-    return render(request, 'models/train.html')
+        return HttpResponseRedirect(reverse("models:index"))
+    else:
+        imageUploader = ImageFileForm(isMultiple=True)
+    return render(request, 'models/train.html', {"imageUploader":imageUploader})

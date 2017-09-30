@@ -3,9 +3,9 @@
 {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
 
 
-<form action="{% url 'models:index'%}" method="post">
+<form action="" method="post">
 {% csrf_token %}
-{{File Form to Upload set of files and labels}}
+{{imageUploader}}
 <label for="Training Data"> Upload New Training Data </label>
 <input type="submit" value="OK">
 </form>

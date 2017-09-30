@@ -12,9 +12,16 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 
 import os
 
+# SECURITY WARNING: don't run with debug turned on in production!
+DEBUG = True
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
+STATICFILES_DIRS = [
+                    os.path.join(PROJECT_ROOT, "static"),
+]
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
@@ -22,15 +29,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'xzcl^p6ph3#cxt@xyg5!7w7gz(86100gsb@cfcjn_0nz%ta11l'
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
 ALLOWED_HOSTS = []
 
 
 # Application definition
 
-MEDIA_ROOT = os.path.join(BASE_DIR, "trainingimages")
+MEDIA_ROOT = os.path.join(BASE_DIR, "images")
 
 MEDIA_URL = "/images/"
 

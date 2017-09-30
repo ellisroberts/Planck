@@ -10,8 +10,10 @@
     <li> Result is {{result.result}} </li><br></br>
 {% endfor %}
 </ul>
-
-<form action="{% url 'models:train'%}" method="post">
+{% load static %}
+<img src="{% static "outputheatmap.jpg" %}"/>
+<img src="{% static "guidedoutput.jpg" %}"/>
+<form method="post" enctype="multipart/form-data">
 {% csrf_token %}
 <input type="text", name="checker" id="checker">
 <label for="Is Correct"> Is Result Expected? </label> 

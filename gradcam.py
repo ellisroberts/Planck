@@ -1,4 +1,9 @@
 from keras.applications.vgg19 import VGG19, preprocess_input, decode_predictions
+from keras.applications.vgg16 import VGG16, preprocess_input, decode_predictions
+from keras.applications.resnet50 import ResNet50, preprocess_input, decode_predictions
+from keras.applications.xception import Xception, preprocess_input, decode_predictions
+from keras.applications.inception_v3 import InceptionV3, preprocess_input, decode_predictions
+from keras.applications.mobilenet import MobileNet, preprocess_input, decode_predictions
 from keras.preprocessing import image
 from keras.layers.core import Lambda
 from keras.models import Sequential
@@ -9,9 +14,8 @@ import numpy as np
 import keras
 import sys
 import cv2
-
-# python3 grad-cam.py path-to-img
-final_conv_layer_name = 'block5_conv4' # use block5_conv3 for VGG16
+import os
+import pdb
 
 def target_category_loss(x, category_index, nb_classes):
     return tf.multiply(x, K.one_hot([category_index], nb_classes))
@@ -41,7 +45,7 @@ def register_gradient():
             return grad * tf.cast(grad > 0., dtype) * \
                 tf.cast(op.inputs[0] > 0., dtype)
 
-def compile_saliency_function(model, activation_layer=final_conv_layer_name):
+def compile_saliency_function(model, activation_layer="block5_conv4"):
     input_img = model.input
     layer_dict = dict([(layer.name, layer) for layer in model.layers[1:]])
     layer_output = layer_dict[activation_layer].output
@@ -99,7 +103,8 @@ def grad_cam(input_model, image, category_index, layer_name):
                      output_shape = target_category_loss_output_shape))
 
     loss = K.sum(model.layers[-1].output)
-    conv_output =  [l for l in model.layers[0].layers if l.name is layer_name][0].output
+    t =  [l for l in model.layers[0].layers if l.name == layer_name]
+    conv_output = t[0].output
     grads = normalize(K.gradients(loss, conv_output)[0])
     gradient_function = K.function([model.layers[0].input], [conv_output, grads])
 
@@ -131,18 +136,38 @@ def loadModel(inputFile):
     return model
 
 def instantiateModel(cnn, inputWeights):
+    cnnDict = {"vgg19": VGG19, "vgg16": VGG16, "xception":Xception, "resnet50": ResNet50,
+                "inceptionV3": InceptionV3, "mobilenet": MobileNet}
+    ##Initialize the neural network based on input string
     if (inputWeights == 'imagenet'):
-        model =  VGG19(weights=inputWeights)
+        model =  cnnDict[cnn](weights=inputWeights)
     else:
-        model = VGG19(weights=None)
+        model = cnnDict[cnn](weights=None)
 
     return model
         
 
 #TODO Add a static dictionary to support multiple cnn
-def returnPredictions(image, inputModel, numResults):
+def returnPredictionsandGenerateHeatMap(image, inputModel, numResults):
     preprocessed_input = load_image(image)
-    predictions = inputModel.predict(preprocessed_input)              
+    predictions = inputModel.predict(preprocessed_input)  
+
+    predicted_class = np.argmax(predictions)
+
+    lastConvLayers = {"vgg19": 'block5_conv4', "vgg16": "block5_conv3"}
+
+    #heatmap only works for vgg nerual net architectures
+    if ((inputModel.name == "vgg19") or (inputModel.name == "vgg16")):
+        cam, heatmap = grad_cam(inputModel, preprocessed_input, predicted_class, lastConvLayers[inputModel.name])
+        cv2.imwrite("planck/static/outputheatmap.jpg", cam)
+
+        register_gradient()
+        guided_model = modify_backprop(inputModel, 'GuidedBackProp')
+        saliency_fn = compile_saliency_function(guided_model)
+        saliency = saliency_fn([preprocessed_input, 0])
+        gradcam = saliency[0] * heatmap[..., np.newaxis]
+        cv2.imwrite("planck/static/guidedoutput.jpg", deprocess_image(gradcam))   
+		 
     return decode_predictions(predictions, top=numResults)[0];
 
 if __name__=="__main__":
