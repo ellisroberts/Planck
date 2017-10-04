@@ -14,6 +14,7 @@ from django.conf import settings
 import os
 import pdb
 import math
+import json
 
 def getResizedIm(path, height, width):
     # Load as grayscale
@@ -28,26 +29,37 @@ def TrainModel(model):
     labels = []
     index = 0
     #Grab the imagedirectoryies
-    root = os.path.join(settings.MEDIA_ROOT, "trainingimages")
+    root = settings.MEDIA_ROOT
+    imageDir = os.path.join(root, "trainingimages")
+    classes = json.load(open(os.path.join(root, "class_index.json")))    
+    num_classes = len(classes)
 
-    dirList = [directory for directory in os.listdir(root) if os.path.isdir(os.path.join(root,directory))]
-    for directory in dirList:
-        curDir = os.path.join(root,directory)
-        images = [image for image in os.listdir(os.path.join(root,directory)) \
+    #get the dimensiosn of the input
+    shape = model.get_input_shape_at(0)
+    height = shape[1]
+    width = shape[2]
+    depth = shape[3]
+
+    #go through dict and build up the label and training arrays
+    for classNum in classes:
+        directory = classes[classNum][1]
+        curDir = os.path.join(imageDir,directory)
+        images = [image for image in os.listdir(os.path.join(imageDir,directory)) \
                  if os.path.isfile(os.path.join(curDir, image))]
         for image in images:
             img = cv2.imread(os.path.join(curDir, image))
             resized = cv2.resize(img, (224,224))
             trainData.append(resized)
-            labels.append(index)
-        index += 1
+            labels.append(classNum)
  
     trainData = np.array(trainData, dtype=np.uint8)
-    trainData = trainData.reshape(trainData.shape[0], 224, 224, 3)
+    trainData = trainData.reshape(trainData.shape[0], height, width, depth)
+    trainData = trainData.astype('float32')
+    trainData /= 255
 
     labels = np.array(labels, dtype=np.uint8)
-    labels = to_categorical(labels, num_classes=len(labels))
+    labels = to_categorical(labels, num_classes=1000)
 
     model.compile(loss='categorical_crossentropy', optimizer='sgd', metrics=['accuracy'])
-    model.fit(trainData, labels, epochs = 1)
+    model.fit(trainData, labels, batch_size=1, epochs = 1)
     return model

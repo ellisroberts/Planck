@@ -156,6 +156,12 @@ def returnPredictionsandGenerateHeatMap(image, inputModel, numResults):
 
     lastConvLayers = {"vgg19": 'block5_conv4', "vgg16": "block5_conv3"}
 
+    #remove the heatmap files
+    for entry in os.listdir("planck/static"): 
+        fullPath = os.path.join("planck/static", entry)
+        if os.path.isfile(fullPath):
+            os.remove(fullPath)
+
     #heatmap only works for vgg nerual net architectures
     if ((inputModel.name == "vgg19") or (inputModel.name == "vgg16")):
         cam, heatmap = grad_cam(inputModel, preprocessed_input, predicted_class, lastConvLayers[inputModel.name])

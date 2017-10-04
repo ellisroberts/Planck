@@ -11,11 +11,15 @@
 {% endfor %}
 </ul>
 {% load static %}
-<img src="{% static "outputheatmap.jpg" %}"/>
-<img src="{% static "guidedoutput.jpg" %}"/>
+<img src="{% static "outputheatmap.jpg" %}" alt="Heat Map cannot be displayed for this neural net"/><br></br>
+<img src="{% static "guidedoutput.jpg" %}" alt="Heat Map cannot be displayed for this neural net"/>
 <form method="post" enctype="multipart/form-data">
 {% csrf_token %}
-<input type="text", name="checker" id="checker">
-<label for="Is Correct"> Is Result Expected? </label> 
+
+<input type="radio" name="reTrain" id="Do" value="Yes" checked>
+<label for="Is Correct"> Top Prediction Is Correct </label>
+<br></br>
+<input type="radio" name="reTrain" id="Do Not" value="No">
+<label for="Is not Correct"> Top Prediction Is Not Correct </label> 
 <input type="submit" value="OK">
 </form>

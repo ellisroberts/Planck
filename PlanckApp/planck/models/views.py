@@ -2,6 +2,8 @@ from django.shortcuts import render, get_object_or_404
 from .models import Result, Image
 # Create your views here.
 
+from django.forms import formset_factory
+from django.forms.models import modelformset_factory
 from django.http import HttpResponse, HttpResponseRedirect
 from .forms import *
 from django.core.urlresolvers import reverse
@@ -54,7 +56,7 @@ def index(request):
         try:
             image = Image.objects.get(name=imageFile.name)
         except Image.DoesNotExist:
-            image = Image(name=imageFile.name)
+            image = Image(image=imageFile, name=imageFile.name)
             image.save()
 
         #Want to restart with fresh results
@@ -63,24 +65,25 @@ def index(request):
         #need to properly serialize predictions to output them on webpage
         request.session['predictions'] = json.dumps((np.array(predictions)).tolist())
         request.session['imageName'] = imageFile.name
+        request.session['numresults'] = numResults
 
         return HttpResponseRedirect(reverse("models:classify"))
     else:
         preTrainedModelForm = PreTrainedModelForm()
         defaultModelForm = DefaultModelForm()
-        imageFileForm = ImageFileForm(isMultiple=False)
+        imageFileForm = ImageFileForm()
     return render(request, 'models/models.html', {'preTrained':preTrainedModelForm, 'default':defaultModelForm, 'image':
  imageFileForm})
 
 def classify(request):
     if (request.method == "POST"):
-        if (request.POST["checker"] == "yes"):
+        if (request.POST["reTrain"] == "Yes"):
+            #delete all images added by user
+            TrainingImage.objects.all().delete()
             return HttpResponseRedirect(reverse("models:index"))
-        if (request.POST["checker"] == "no"):
+
+        if (request.POST["reTrain"] == "No"):
             return HttpResponseRedirect(reverse("models:train"))
-        #otherwise response is invalid, ask user to try again
-        else:
-            messages.error(request, "Please state yes or no")
 
     else:
         #Create json Decoder to convert json object back` into python list
@@ -90,6 +93,7 @@ def classify(request):
         predictions=jsonDec.decode(request.session['predictions'])
         imageName = request.session['imageName']
 
+        #Get the Results for the Image
         curImage = get_object_or_404(Image, name=imageName)
         for index in range(len(predictions)):
            result = Result(instance=index, output=predictions[index][0], result=predictions[index][1], probability=predictions[index][2], image=curImage)
@@ -99,11 +103,31 @@ def classify(request):
     return render(request, 'models/classify.html', {'image':curImage})
 
 def train(request):
+    testImagePath = os.path.join(settings.MEDIA_ROOT,"testImages")
     if (request.method == "POST"):
-        #model = load_model(request.session['current'])
+    
+        #upload set of images to add more training data for requested class    
+        form = MultipleImageForm(request.POST, request.FILES)
+        for image in request.FILES.getlist('images'):
+            trainImage = TrainingImage(image=image, label=request.POST['label'])
+            trainImage.save()
+
+        #load the model, train it, and save it again
         model = load_model('current.hdf5')
         model = modelTrain.TrainModel(model)
-        return HttpResponseRedirect(reverse("models:index"))
+        model.save('current.hdf5')
+
+        #run inference on updated model
+        imageName = request.session['imageName']
+        imagePath = os.path.join(testImagePath, imageName)
+
+        numResults = request.session['numresults']        
+
+        predictions = gradcam.returnPredictionsandGenerateHeatMap(imagePath, model, int(numResults))
+        request.session['predictions'] = json.dumps((np.array(predictions)).tolist())
+
+        return HttpResponseRedirect(reverse("models:classify"))
     else:
-        imageUploader = ImageFileForm(isMultiple=True)
-    return render(request, 'models/train.html', {"imageUploader":imageUploader})
+        imageUploader = MultipleImageForm()
+    return render(request, 'models/train.html', {"imageUploader":imageUploader}
+)
