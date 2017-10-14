@@ -8,9 +8,11 @@ from django.http import HttpResponse, HttpResponseRedirect
 from .forms import *
 from django.core.urlresolvers import reverse
 from django.contrib import messages
-
 from django.conf import settings
+
+import keras.applications
 from keras.models import load_model
+from keras.utils.generic_utils import CustomObjectScope
 import pdb
 import json
 import numpy as np
@@ -23,29 +25,22 @@ import gradcam
 import modelTrain 
 
 def index(request):
-    preTrainedModelForm = None
-    emptyForm = None
 
+    modelForm = None
     if request.method == 'POST':
         #Get the paramters to use for prediction
         imageFile = request.FILES['image']
         numResults = request.POST['numresults']
+ 
+        #Did we start from a fresh cnn
+        request.session['freshModel'] = True
 
-        if (request.POST['modelSelect'] == 'trained'):
-            preTrainedModelForm = PreTrainedModelForm(request.POST, request.FILES)
-            #if (preTrainedModelForm.is_valid()):
-            ##TODO: Throw exception and message prompting user to upload proper file
-            model = loadModel(request.FILES['modelFile'])
-
+        #TODO validate the form
+        if (request.POST['modelInfo_radio'] == '0'):
+             model = gradcam.instantiateModel('imagenet', request.POST['cnn'])
+             request.session['freshModel'] = False
         else:
-            if (request.POST['modelSelect'] == 'nottrained'):
-               ##TODO Verify that the form fields are valid, if not, clear the form fields and rerender (optimal way?)
-               data = {'cnn': request.POST['cnn'], 'weights': request.POST['weights']}
-               emptyForm = DefaultModelForm(initial=data)
-               #if (emptyForm.is_valid()):
-               model = gradcam.instantiateModel(request.POST['cnn'], request.POST['weights'])
-
-        ##TODO: Generate a prompt here to save the file
+             model = gradcam.instantiateModel('None')
 
         #TODO: handle exception and prompt user to upload proper image file
         predictions = gradcam.returnPredictionsandGenerateHeatMap(imageFile, model, int(numResults))
@@ -66,20 +61,19 @@ def index(request):
         request.session['predictions'] = json.dumps((np.array(predictions)).tolist())
         request.session['imageName'] = imageFile.name
         request.session['numresults'] = numResults
-
-        return HttpResponseRedirect(reverse("models:classify"))
+  
+        return HttpResponseRedirect(reverse("models:classify")) 
     else:
-        preTrainedModelForm = PreTrainedModelForm()
-        defaultModelForm = DefaultModelForm()
-        imageFileForm = ImageFileForm()
-    return render(request, 'models/models.html', {'preTrained':preTrainedModelForm, 'default':defaultModelForm, 'image':
- imageFileForm})
+        modelForm = ModelForm()
+        imageFileForm = ImageFileForm() 
+    return render(request, 'models/models.html', {'model':modelForm, 'image':imageFileForm})
 
 def classify(request):
     if (request.method == "POST"):
         if (request.POST["reTrain"] == "Yes"):
             #delete all images added by user
             TrainingImage.objects.all().delete()
+            Image.objects.all().delete()
             return HttpResponseRedirect(reverse("models:index"))
 
         if (request.POST["reTrain"] == "No"):
@@ -100,6 +94,10 @@ def classify(request):
            result.save()
            curImage.result_set.add(result)
 
+    #If we are starting with a fresh model, give user the option to retrain
+    if (request.session['freshModel']):        
+        return render(request, 'models/classifyredirect.html', {'image':curImage})
+    
     return render(request, 'models/classify.html', {'image':curImage})
 
 def train(request):
@@ -109,11 +107,12 @@ def train(request):
         #upload set of images to add more training data for requested class    
         form = MultipleImageForm(request.POST, request.FILES)
         for image in request.FILES.getlist('images'):
-            trainImage = TrainingImage(image=image, label=request.POST['label'])
+            trainImage = TrainingImage(image=image, label=request.POST['className'])
             trainImage.save()
 
         #load the model, train it, and save it again
-        model = load_model('current.hdf5')
+        with CustomObjectScope({'relu6': keras.applications.mobilenet.relu6,'DepthwiseConv2D': keras.applications.mobilenet.DepthwiseConv2D}):
+            model = load_model('current.hdf5')
         model = modelTrain.TrainModel(model)
         model.save('current.hdf5')
 

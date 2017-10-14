@@ -1,0 +1,10 @@
+{% extends 'models/classify.html' %}
+
+{% block content %}
+<input type="radio" name="reTrain" id="Do" value="Yes" checked>
+<label for="Is Correct"> Top Prediction Is Correct </label>
+<br></br>
+<input type="radio" name="reTrain" id="Do Not" value="No">
+<label for="Is not Correct"> Top Prediction Is Not Correct </label>
+<input type="submit" value="OK">
+{% endblock %}

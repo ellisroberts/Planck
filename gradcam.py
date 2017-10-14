@@ -131,18 +131,14 @@ def grad_cam(input_model, image, category_index, layer_name):
     cam = 255 * cam / np.max(cam)
     return np.uint8(cam), heatmap
 
-def loadModel(inputFile):    
-    model = load_model(inputFile)
-    return model
-
-def instantiateModel(cnn, inputWeights):
+def instantiateModel(inputWeights, cnn="Vgg19"):
     cnnDict = {"vgg19": VGG19, "vgg16": VGG16, "xception":Xception, "resnet50": ResNet50,
-                "inceptionV3": InceptionV3, "mobilenet": MobileNet}
+                "inceptionV3": InceptionV3}
     ##Initialize the neural network based on input string
     if (inputWeights == 'imagenet'):
         model =  cnnDict[cnn](weights=inputWeights)
     else:
-        model = cnnDict[cnn](weights=None)
+        model = MobileNet(weights=None)
 
     return model
         

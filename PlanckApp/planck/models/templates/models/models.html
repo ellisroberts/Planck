@@ -2,13 +2,12 @@
 
 {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
 <form  method="post" enctype="multipart/form-data">
 {% csrf_token %}
-<input type="radio" name="modelSelect" id="pretrained" value="trained" checked>
-{{preTrained}}
-<br></br>
-<input type="radio" name="modelSelect" id="default" value="nottrained">
-{{default}}
+{{model}}
+{{model.media}}
 <br></br>
 {{image}}
 <label for="Image to Upload"> Select Image to upload </label>
