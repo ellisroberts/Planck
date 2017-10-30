@@ -39,7 +39,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "images")
 MEDIA_URL = "/images/"
 
 INSTALLED_APPS = [
-    'debugtools',
     'models',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -89,9 +88,6 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-            ],
-           'builtins': [                                     # Add this section
-                "debugtools.templatetags.debugtools_tags",   # Add this line
             ],
         },
     },
